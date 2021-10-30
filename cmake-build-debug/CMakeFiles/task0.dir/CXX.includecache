@@ -9,10 +9,8 @@
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroApp.cpp
 AllegroApp.hpp
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroApp.hpp
-Square.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
-Circle.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Circle.hpp
+FigureFactory.h
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory.h
 
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroApp.hpp
 AllegroBase.hpp
@@ -30,10 +28,6 @@ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.hpp
 DynamicFigures.hpp
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/DynamicFigures.hpp
 
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Circle.hpp
-Figure.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
-
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/DynamicFigures.hpp
 Figure.hpp
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
@@ -44,11 +38,11 @@ cstddef
 
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
 
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureRecord.hpp
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory.h
 Figure.hpp
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
 
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureRecord.hpp
 Figure.hpp
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
 

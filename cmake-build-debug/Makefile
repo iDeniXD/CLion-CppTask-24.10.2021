@@ -272,6 +272,30 @@ Figure.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Figure.cpp.s
 .PHONY : Figure.cpp.s
 
+FigureFactory.obj: FigureFactory.cpp.obj
+.PHONY : FigureFactory.obj
+
+# target to build an object file
+FigureFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/FigureFactory.cpp.obj
+.PHONY : FigureFactory.cpp.obj
+
+FigureFactory.i: FigureFactory.cpp.i
+.PHONY : FigureFactory.i
+
+# target to preprocess a source file
+FigureFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/FigureFactory.cpp.i
+.PHONY : FigureFactory.cpp.i
+
+FigureFactory.s: FigureFactory.cpp.s
+.PHONY : FigureFactory.s
+
+# target to generate assembly for a file
+FigureFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/FigureFactory.cpp.s
+.PHONY : FigureFactory.cpp.s
+
 FigureRecord.obj: FigureRecord.CPP.obj
 .PHONY : FigureRecord.obj
 
@@ -419,6 +443,9 @@ help:
 	@echo ... Figure.obj
 	@echo ... Figure.i
 	@echo ... Figure.s
+	@echo ... FigureFactory.obj
+	@echo ... FigureFactory.i
+	@echo ... FigureFactory.s
 	@echo ... FigureRecord.obj
 	@echo ... FigureRecord.i
 	@echo ... FigureRecord.s

@@ -6,11 +6,10 @@ CMakeFiles/task0.dir/AllegroApp.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroApp.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroBase.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.hpp
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Circle.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/DynamicFigures.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureRecord.hpp
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro_primitives.h
@@ -271,6 +270,12 @@ CMakeFiles/task0.dir/Figure.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.h
+CMakeFiles/task0.dir/FigureFactory.cpp.obj
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Circle.hpp
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory.cpp
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory.h
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
 CMakeFiles/task0.dir/FigureRecord.CPP.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureRecord.CPP

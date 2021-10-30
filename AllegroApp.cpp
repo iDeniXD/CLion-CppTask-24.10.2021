@@ -1,15 +1,14 @@
 #include "AllegroApp.hpp"
-#include "Square.hpp"
-#include "Circle.hpp"
+#include "FigureFactory.h"
 
 AllegroApp::AllegroApp() :
     AllegroBase(),
     canvas()
 {
-    canvas.Add(new Square(40,60));
-    canvas.Add(new Square(60,120));
-    canvas.Add(new Circle(60,120));
-    canvas.Add(new Circle(100,240));
+    canvas.Add(FigureFactory::Create(FigureFactory::RandomSquare));
+    canvas.Add(FigureFactory::Create(FigureFactory::RandomSquare));
+    canvas.Add(FigureFactory::Create(FigureFactory::RandomCircle));
+    canvas.Add(FigureFactory::Create(FigureFactory::RandomCircle));
 }
 void AllegroApp::Fps()
 {

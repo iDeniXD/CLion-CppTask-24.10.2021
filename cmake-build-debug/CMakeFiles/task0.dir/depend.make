@@ -6,11 +6,10 @@ CMakeFiles/task0.dir/AllegroApp.cpp.obj: \
  ../AllegroApp.hpp \
  ../AllegroBase.hpp \
  ../Canvas.hpp \
- ../Circle.hpp \
  ../DynamicFigures.hpp \
  ../Figure.hpp \
+ ../FigureFactory.h \
  ../FigureRecord.hpp \
- ../Square.hpp \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro_primitives.h \
@@ -271,6 +270,12 @@ CMakeFiles/task0.dir/Figure.cpp.obj: \
  ../Figure.hpp \
  ../Preferences.h \
  ../Screen.h
+CMakeFiles/task0.dir/FigureFactory.cpp.obj: \
+ ../Circle.hpp \
+ ../Figure.hpp \
+ ../FigureFactory.cpp \
+ ../FigureFactory.h \
+ ../Square.hpp
 CMakeFiles/task0.dir/FigureRecord.CPP.obj: \
  ../Figure.hpp \
  ../FigureRecord.CPP \

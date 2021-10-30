@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/task0.dir/Circle.cpp.obj"
   "CMakeFiles/task0.dir/DynamicFigures.cpp.obj"
   "CMakeFiles/task0.dir/Figure.cpp.obj"
+  "CMakeFiles/task0.dir/FigureFactory.cpp.obj"
   "CMakeFiles/task0.dir/FigureRecord.CPP.obj"
   "CMakeFiles/task0.dir/Preferences.cpp.obj"
   "CMakeFiles/task0.dir/Screen.cpp.obj"
