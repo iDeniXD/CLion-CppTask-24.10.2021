@@ -20,6 +20,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.cpp" "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/CMakeFiles/task0.dir/Screen.cpp.obj"
   "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.cpp" "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/CMakeFiles/task0.dir/Square.cpp.obj"
   "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/main.cpp" "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/CMakeFiles/task0.dir/main.cpp.obj"
+  "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math2D.cpp" "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/CMakeFiles/task0.dir/math2D.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

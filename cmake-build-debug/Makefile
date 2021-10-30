@@ -416,6 +416,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+math2D.obj: math2D.cpp.obj
+.PHONY : math2D.obj
+
+# target to build an object file
+math2D.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/math2D.cpp.obj
+.PHONY : math2D.cpp.obj
+
+math2D.i: math2D.cpp.i
+.PHONY : math2D.i
+
+# target to preprocess a source file
+math2D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/math2D.cpp.i
+.PHONY : math2D.cpp.i
+
+math2D.s: math2D.cpp.s
+.PHONY : math2D.s
+
+# target to generate assembly for a file
+math2D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/math2D.cpp.s
+.PHONY : math2D.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -461,6 +485,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... math2D.obj
+	@echo ... math2D.i
+	@echo ... math2D.s
 .PHONY : help
 
 

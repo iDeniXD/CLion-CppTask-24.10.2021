@@ -137,6 +137,7 @@ CMakeFiles/task0.dir/Canvas.cpp.obj: \
  ../DynamicFigures.hpp \
  ../Figure.hpp \
  ../FigureRecord.hpp \
+ ../math2D.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro_primitives.h \
@@ -202,6 +203,7 @@ CMakeFiles/task0.dir/Circle.cpp.obj: \
  ../Figure.hpp \
  ../Preferences.h \
  ../Screen.h \
+ ../math2D.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro_primitives.h \
@@ -294,6 +296,7 @@ CMakeFiles/task0.dir/Square.cpp.obj: \
  ../Screen.h \
  ../Square.cpp \
  ../Square.hpp \
+ ../math2D.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro_primitives.h \
@@ -420,3 +423,6 @@ CMakeFiles/task0.dir/main.cpp.obj: \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/touch_input.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/transformations.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/utf8.h
+CMakeFiles/task0.dir/math2D.cpp.obj: \
+ ../math2D.cpp \
+ ../math2D.h

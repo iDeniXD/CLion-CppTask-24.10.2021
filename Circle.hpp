@@ -11,5 +11,8 @@ public:
     Circle(double r, unsigned char color);
     virtual void Draw();
     virtual void Move();
+    virtual double DistanceToEdgeFacingPoint(double x0, double y0);
+
+    virtual double tmp();
 };
 #endif // CIRCLE_H

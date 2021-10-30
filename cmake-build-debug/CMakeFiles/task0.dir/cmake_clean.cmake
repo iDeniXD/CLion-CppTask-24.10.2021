@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/task0.dir/Screen.cpp.obj"
   "CMakeFiles/task0.dir/Square.cpp.obj"
   "CMakeFiles/task0.dir/main.cpp.obj"
+  "CMakeFiles/task0.dir/math2D.cpp.obj"
   "libtask0.dll.a"
   "task0.exe"
   "task0.exe.manifest"

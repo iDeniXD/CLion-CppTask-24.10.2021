@@ -137,6 +137,7 @@ CMakeFiles/task0.dir/Canvas.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/DynamicFigures.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureRecord.hpp
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math2D.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro_primitives.h
@@ -202,6 +203,7 @@ CMakeFiles/task0.dir/Circle.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.h
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math2D.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro_primitives.h
@@ -294,6 +296,7 @@ CMakeFiles/task0.dir/Square.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.cpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math2D.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro_primitives.h
@@ -420,3 +423,6 @@ CMakeFiles/task0.dir/main.cpp.obj
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/touch_input.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/transformations.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/utf8.h
+CMakeFiles/task0.dir/math2D.cpp.obj
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math2D.cpp
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math2D.h
