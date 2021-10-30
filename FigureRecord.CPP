@@ -1,0 +1,2 @@
+#include "FigureRecord.hpp"
+

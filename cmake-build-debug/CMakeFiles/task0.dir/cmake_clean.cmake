@@ -1,0 +1,22 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/task0.dir/AllegroApp.cpp.obj"
+  "CMakeFiles/task0.dir/AllegroBase.cpp.obj"
+  "CMakeFiles/task0.dir/Canvas.cpp.obj"
+  "CMakeFiles/task0.dir/Circle.cpp.obj"
+  "CMakeFiles/task0.dir/DynamicFigures.cpp.obj"
+  "CMakeFiles/task0.dir/Figure.cpp.obj"
+  "CMakeFiles/task0.dir/FigureRecord.CPP.obj"
+  "CMakeFiles/task0.dir/Preferences.cpp.obj"
+  "CMakeFiles/task0.dir/Screen.cpp.obj"
+  "CMakeFiles/task0.dir/Square.cpp.obj"
+  "CMakeFiles/task0.dir/main.cpp.obj"
+  "libtask0.dll.a"
+  "task0.exe"
+  "task0.exe.manifest"
+  "task0.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/task0.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

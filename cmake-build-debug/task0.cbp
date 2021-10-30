@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="task0"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task0">
+				<Option output="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/task0.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include"/>
+					<Add directory="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 task0"/>
+					<CompileFile command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="task0/fast">
+				<Option output="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/task0.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include"/>
+					<Add directory="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 task0/fast"/>
+					<CompileFile command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="E:/installed_CodeBlocks20/CodeBlocks20/MinGW/bin/mingw32-make.exe -f &quot;E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroApp.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroApp.hpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroBase.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroBase.hpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.hpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Circle.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Circle.hpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/DynamicFigures.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/DynamicFigures.hpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureRecord.CPP">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureRecord.hpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.h">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/config.h">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/main.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
