@@ -3,12 +3,13 @@
 #include "Preferences.h"
 #include "math2D.h"
 
-Square::Square(double a, unsigned char color = 1) :
+Square::Square(double a, unsigned char color) :
     Figure(color),
     a_(a)
 {
     mass_ = a * a;
 }
+Square::~Square(){}
 void Square::Draw()
 {
     double half = a_ / 2;
@@ -51,7 +52,22 @@ double Square::DistanceToEdgeFacingPoint(double x0, double y0) {
     return (dToPoint > dToEdge ? dToEdge : dToPoint);
 }
 
-double Square::tmp()
-{
-    return a_;
+string Square::ToString() {
+    string s = Figure::ToString();
+    s = s.substr(s.find(':'));
+    s = "Square"+s+",a="+ to_string(a_);
+    return s;
+}
+
+void Square::FromString(string &s) {
+    if (s.substr(0,s.find(':')) == "Square")
+    {
+        Figure::FromString(s.replace(0, 6, "Figure"));
+        Figure::SetParameter(s, this->a_, "a");
+        mass_ = a_ * a_;
+    }
+    else
+    {
+        cout << "Error occurred! This is info is not for square" << endl;
+    }
 }

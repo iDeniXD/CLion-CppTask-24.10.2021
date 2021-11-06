@@ -3,12 +3,13 @@
 #include "Preferences.h"
 #include "math2D.h"
 
-Circle::Circle(double r, unsigned char color = 1) :
+Circle::Circle(double r, unsigned char color) :
     Figure(color),
     r_(r)
 {
     mass_ = 3.14*r*r;
 }
+Circle::~Circle(){}
 void Circle::Draw()
 {
     al_draw_filled_circle( x_, y_, r_, al_map_rgb( 0, color_, 0 ) );
@@ -39,7 +40,25 @@ double Circle::DistanceToEdgeFacingPoint(double x0, double y0) {
     double dToPoint = math2D::DistanceBetweenTwoPoints(x_,y_,x0,y0);
     return (dToPoint > r_ ? r_ : dToPoint);
 }
-double Circle::tmp()
-{
-    return r_;
+
+string Circle::ToString() {
+    string s = Figure::ToString();
+    s = s.substr(s.find(':'));
+    s = "Circle"+s+",r="+ to_string(r_);
+    return s;
 }
+
+void Circle::FromString(string &s) {
+    if (s.substr(0,s.find(':')) == "Circle")
+    {
+        Figure::FromString(s.replace(0, 6, "Figure"));
+        Figure::SetParameter(s, this->r_, "r");
+        mass_ = 3.14*r_*r_;
+    }
+    else
+    {
+        cout << "Error occurred! This info is not for circle" << endl;
+    }
+}
+
+

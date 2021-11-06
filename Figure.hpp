@@ -1,8 +1,9 @@
 #ifndef FIGURE_H
 #define FIGURE_H
 
+#include "ISerializable.h"
 
-class Figure
+class Figure : public ISerializable
 {
 protected:
     double x_, y_, dx_, dy_;
@@ -12,6 +13,7 @@ protected:
     static double newVelocity(double v1,double v2,double m1,double m2);
 public:
     Figure(unsigned char color);
+    ~Figure();
     virtual void Bounce();
     virtual void Bounce(Figure *pFigure);
     virtual void Draw() = 0;
@@ -26,7 +28,15 @@ public:
     virtual double GetDY();
     virtual void SetDY(double dy0);
     double GetMass();
-    virtual double tmp() = 0;
 
+    virtual string ToString();
+    virtual void FromString(string &s);
+
+protected:
+    static bool SetParameter(string &s, double &param, const string& field);
+    static bool SetParameter(string &s, unsigned char &param, const string& field);
+
+private:
+    static string GetParameter(string &s, const string &field);
 };
 #endif // FIGURE_H

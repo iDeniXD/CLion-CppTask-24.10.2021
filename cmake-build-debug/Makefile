@@ -320,6 +320,30 @@ FigureRecord.CPP.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/FigureRecord.CPP.s
 .PHONY : FigureRecord.CPP.s
 
+ISerializable.obj: ISerializable.cpp.obj
+.PHONY : ISerializable.obj
+
+# target to build an object file
+ISerializable.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/ISerializable.cpp.obj
+.PHONY : ISerializable.cpp.obj
+
+ISerializable.i: ISerializable.cpp.i
+.PHONY : ISerializable.i
+
+# target to preprocess a source file
+ISerializable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/ISerializable.cpp.i
+.PHONY : ISerializable.cpp.i
+
+ISerializable.s: ISerializable.cpp.s
+.PHONY : ISerializable.s
+
+# target to generate assembly for a file
+ISerializable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/ISerializable.cpp.s
+.PHONY : ISerializable.cpp.s
+
 Preferences.obj: Preferences.cpp.obj
 .PHONY : Preferences.obj
 
@@ -473,6 +497,9 @@ help:
 	@echo ... FigureRecord.obj
 	@echo ... FigureRecord.i
 	@echo ... FigureRecord.s
+	@echo ... ISerializable.obj
+	@echo ... ISerializable.i
+	@echo ... ISerializable.s
 	@echo ... Preferences.obj
 	@echo ... Preferences.i
 	@echo ... Preferences.s

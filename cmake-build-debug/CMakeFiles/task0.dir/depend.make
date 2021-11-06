@@ -6,10 +6,13 @@ CMakeFiles/task0.dir/AllegroApp.cpp.obj: \
  ../AllegroApp.hpp \
  ../AllegroBase.hpp \
  ../Canvas.hpp \
+ ../Circle.hpp \
  ../DynamicFigures.hpp \
  ../Figure.hpp \
  ../FigureFactory.h \
  ../FigureRecord.hpp \
+ ../ISerializable.h \
+ ../Square.hpp \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro_primitives.h \
@@ -134,9 +137,12 @@ CMakeFiles/task0.dir/Canvas.cpp.obj: \
  ../AllegroBase.hpp \
  ../Canvas.cpp \
  ../Canvas.hpp \
+ ../Circle.hpp \
  ../DynamicFigures.hpp \
  ../Figure.hpp \
+ ../FigureFactory.h \
  ../FigureRecord.hpp \
+ ../ISerializable.h \
  ../math2D.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h \
@@ -201,6 +207,7 @@ CMakeFiles/task0.dir/Circle.cpp.obj: \
  ../Circle.cpp \
  ../Circle.hpp \
  ../Figure.hpp \
+ ../ISerializable.h \
  ../Preferences.h \
  ../Screen.h \
  ../math2D.h \
@@ -266,10 +273,12 @@ CMakeFiles/task0.dir/DynamicFigures.cpp.obj: \
  ../DynamicFigures.cpp \
  ../DynamicFigures.hpp \
  ../Figure.hpp \
- ../FigureRecord.hpp
+ ../FigureRecord.hpp \
+ ../ISerializable.h
 CMakeFiles/task0.dir/Figure.cpp.obj: \
  ../Figure.cpp \
  ../Figure.hpp \
+ ../ISerializable.h \
  ../Preferences.h \
  ../Screen.h
 CMakeFiles/task0.dir/FigureFactory.cpp.obj: \
@@ -277,11 +286,16 @@ CMakeFiles/task0.dir/FigureFactory.cpp.obj: \
  ../Figure.hpp \
  ../FigureFactory.cpp \
  ../FigureFactory.h \
+ ../ISerializable.h \
  ../Square.hpp
 CMakeFiles/task0.dir/FigureRecord.CPP.obj: \
  ../Figure.hpp \
  ../FigureRecord.CPP \
- ../FigureRecord.hpp
+ ../FigureRecord.hpp \
+ ../ISerializable.h
+CMakeFiles/task0.dir/ISerializable.cpp.obj: \
+ ../ISerializable.cpp \
+ ../ISerializable.h
 CMakeFiles/task0.dir/Preferences.cpp.obj: \
  ../Preferences.cpp \
  ../Preferences.h \
@@ -292,6 +306,7 @@ CMakeFiles/task0.dir/Screen.cpp.obj: \
 CMakeFiles/task0.dir/Square.cpp.obj: \
  ../AllegroBase.hpp \
  ../Figure.hpp \
+ ../ISerializable.h \
  ../Preferences.h \
  ../Screen.h \
  ../Square.cpp \
@@ -362,6 +377,7 @@ CMakeFiles/task0.dir/main.cpp.obj: \
  ../DynamicFigures.hpp \
  ../Figure.hpp \
  ../FigureRecord.hpp \
+ ../ISerializable.h \
  ../Preferences.h \
  ../Screen.h \
  ../main.cpp \

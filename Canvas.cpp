@@ -2,7 +2,8 @@
 #include "AllegroBase.hpp"
 
 #include "math2D.h"
-
+#include "FigureFactory.h"
+#include "Circle.hpp"
 
 
 Canvas::Canvas()

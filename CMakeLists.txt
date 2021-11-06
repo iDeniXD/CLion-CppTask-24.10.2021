@@ -16,7 +16,7 @@ file(GLOB SOURCES
         "*.cpp")
 message("SOURCES = ${SOURCES}")
 
-add_executable(task0 ${SOURCES})
+add_executable(task0 ${SOURCES} ISerializable.cpp ISerializable.h)
 
 
 message("LIBRARIES = ${LIBRARIES}")

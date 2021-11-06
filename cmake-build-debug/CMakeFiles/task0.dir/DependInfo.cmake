@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.cpp" "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/CMakeFiles/task0.dir/Figure.cpp.obj"
   "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory.cpp" "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/CMakeFiles/task0.dir/FigureFactory.cpp.obj"
   "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureRecord.CPP" "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/CMakeFiles/task0.dir/FigureRecord.CPP.obj"
+  "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable.cpp" "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/CMakeFiles/task0.dir/ISerializable.cpp.obj"
   "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.cpp" "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/CMakeFiles/task0.dir/Preferences.cpp.obj"
   "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.cpp" "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/CMakeFiles/task0.dir/Screen.cpp.obj"
   "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.cpp" "E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/cmake-build-debug/CMakeFiles/task0.dir/Square.cpp.obj"
