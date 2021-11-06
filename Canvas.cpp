@@ -50,6 +50,7 @@ void Canvas::NextFrame()
             }
         }
     }
+
 }
 void Canvas::Add(Figure *f)
 {
