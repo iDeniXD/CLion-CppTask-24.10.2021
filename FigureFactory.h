@@ -13,7 +13,8 @@ public:
     enum Type
     {
         RandomCircle,
-        RandomSquare
+        RandomSquare,
+        RandomMovable
     };
 
     static Figure *Create(Type type);

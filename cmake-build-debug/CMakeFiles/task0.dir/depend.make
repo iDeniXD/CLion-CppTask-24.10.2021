@@ -288,6 +288,7 @@ CMakeFiles/task0.dir/FigureFactory.cpp.obj: \
  ../FigureFactory.cpp \
  ../FigureFactory.h \
  ../ISerializable.h \
+ ../MovableSquare.h \
  ../Square.hpp
 CMakeFiles/task0.dir/FigureRecord.CPP.obj: \
  ../Figure.hpp \

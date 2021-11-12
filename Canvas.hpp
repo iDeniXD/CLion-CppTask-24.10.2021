@@ -6,10 +6,13 @@
 class Canvas
 {
 private:
-    DynamicFigures figures_;
-public:
     Canvas();
     ~Canvas();
+
+    DynamicFigures figures_;
+public:
+    static Canvas &Instance();
+
     void Draw();
     void NextFrame();
     void Add(Figure *f);

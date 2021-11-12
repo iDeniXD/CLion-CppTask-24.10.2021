@@ -12,7 +12,7 @@ protected:
 
     static double newVelocity(double v1,double v2,double m1,double m2);
 public:
-    Figure(unsigned char color);
+    Figure(unsigned char color = 1);
     ~Figure();
     virtual void Bounce();
     virtual void Bounce(Figure *pFigure);

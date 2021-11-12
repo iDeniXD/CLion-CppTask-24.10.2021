@@ -6,6 +6,7 @@
 
 #include "Square.hpp"
 #include "Circle.hpp"
+#include "MovableSquare.h"
 #include <stdlib.h>
 #include <time.h>
 
@@ -17,6 +18,8 @@ Figure *FigureFactory::Create(Type type)
             return new Circle(rand() % 15 + 15, rand() % 100 + 70);
         case RandomSquare:
             return new Square(rand() % 30 + 30, rand() % 100 + 70);
+        case RandomMovable:
+            return new MovableSquare(rand() % 30 + 30, rand() % 100 + 70);
     }
     return nullptr;
 }

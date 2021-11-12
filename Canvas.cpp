@@ -60,3 +60,8 @@ void Canvas::Remove(int i)
 {
     figures_.Remove(i);
 }
+Canvas &Canvas::Instance() {
+    static Canvas instance;
+    return instance;
+}
+//TODO create method, that will hit two Figures

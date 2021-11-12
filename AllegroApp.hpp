@@ -7,8 +7,6 @@
 
 class AllegroApp : public AllegroBase
 {
-private:
-    Canvas canvas;
 public:
     AllegroApp();
     virtual void Fps();

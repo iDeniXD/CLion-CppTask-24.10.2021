@@ -5,7 +5,7 @@
 #include "math.h"
 
 
-Figure::Figure(unsigned char color = 1):
+Figure::Figure(unsigned char color):
     color_(color)
 {
     x_ = rand() % (Preferences::Instance()->GetScreen().getWidth() - 201) + 100;

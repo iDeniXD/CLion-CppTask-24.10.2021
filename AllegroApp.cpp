@@ -8,36 +8,36 @@
 static MovableSquare *moveableSquare;
 
 AllegroApp::AllegroApp() :
-    AllegroBase(),
-    canvas()
+    AllegroBase()
 {
-    canvas.Add(FigureFactory::Create(FigureFactory::RandomSquare));
-    canvas.Add(FigureFactory::Create(FigureFactory::RandomCircle));
     moveableSquare = new MovableSquare(30, 255);
-    canvas.Add(moveableSquare);
+    Canvas::Instance().Add(moveableSquare);
+    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomSquare));
+//    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
+
 
 
 
     // *****************************************
     // ****************TEST CODE****************
     // *****************************************
-    Figure *f;
-    string s;
-    cout << "Input your own figure:" << endl;
-    getline(cin, s);
-    string type = s.substr(0,s.find(':'));
-    if (type == "Circle") {
-        f = new Circle();
-        f->FromString(s);
-    }
-    else if (type == "Square") // If incorrect type then throw exception
-    {
-        f = new Square();
-        f->FromString(s);
-    } else {
-        f = FigureFactory::Create(FigureFactory::RandomCircle);
-    }
-        canvas.Add(f);
+//    Figure *f;
+//    string s;
+//    cout << "Input your own figure:" << endl;
+//    getline(cin, s);
+//    string type = s.substr(0,s.find(':'));
+//    if (type == "Circle") {
+//        f = new Circle();
+//        f->FromString(s);
+//    }
+//    else if (type == "Square") // If incorrect type then throw exception
+//    {
+//        f = new Square();
+//        f->FromString(s);
+//    } else {
+//        f = FigureFactory::Create(FigureFactory::RandomCircle);
+//    }
+//        Canvas::Instance().Add(f);
     // *********************************************
     // ****************TEST CODE END****************
     // *********************************************
@@ -64,9 +64,9 @@ void AllegroApp::Fps()
     {
         moveableSquare->SpeedUp();
     }
-    canvas.NextFrame();
+    Canvas::Instance().NextFrame();
 }
 void AllegroApp::Draw()
 {
-    canvas.Draw();
+    Canvas::Instance().Draw();
 }

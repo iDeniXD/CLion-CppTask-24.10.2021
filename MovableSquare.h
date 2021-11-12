@@ -10,16 +10,21 @@
 class MovableSquare : public Square
 {
 protected:
-    double a_;
+    int health_;
 public:
-    MovableSquare(double a = 10, unsigned char color = 1);
+    MovableSquare(double a = 10, unsigned char color = 1, int health = 100);
     ~MovableSquare();
+
+    virtual void Draw();
+    virtual void Bounce(Figure *pFigure);
 
     void Up();
     void Down();
     void Left();
     void Right();
     void SpeedUp();
+
+    void SetHealth(int health);
 
     virtual void FromString(string &s);
 
