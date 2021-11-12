@@ -10,38 +10,15 @@ static MovableSquare *moveableSquare;
 AllegroApp::AllegroApp() :
     AllegroBase()
 {
-    moveableSquare = new MovableSquare(30, 255);
+    moveableSquare = new MovableSquare(30);
     Canvas::Instance().Add(moveableSquare);
+
+    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
     Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomSquare));
-    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::Input));
-//    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
+    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
 
-
-
-
-    // *****************************************
-    // ****************TEST CODE****************
-    // *****************************************
-//    Figure *f;
-//    string s;
-//    cout << "Input your own figure:" << endl;
-//    getline(cin, s);
-//    string type = s.substr(0,s.find(':'));
-//    if (type == "Circle") {
-//        f = new Circle();
-//        f->FromString(s);
-//    }
-//    else if (type == "Square") // If incorrect type then throw exception
-//    {
-//        f = new Square();
-//        f->FromString(s);
-//    } else {
-//        f = FigureFactory::Create(FigureFactory::RandomCircle);
-//    }
-//        Canvas::Instance().Add(f);
-    // *********************************************
-    // ****************TEST CODE END****************
-    // *********************************************
+//    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::Input));
+// Input - figure from sting
 }
 void AllegroApp::Fps()
 {

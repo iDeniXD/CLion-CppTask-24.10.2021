@@ -7,10 +7,8 @@ CMakeFiles/task0.dir/AllegroApp.cpp.obj: \
  ../AllegroBase.hpp \
  ../Canvas.hpp \
  ../Circle.hpp \
- ../DynamicFigures.hpp \
  ../Figure.hpp \
  ../FigureFactory.h \
- ../FigureRecord.hpp \
  ../ISerializable.h \
  ../MovableSquare.h \
  ../Square.hpp \
@@ -139,10 +137,8 @@ CMakeFiles/task0.dir/Canvas.cpp.obj: \
  ../Canvas.cpp \
  ../Canvas.hpp \
  ../Circle.hpp \
- ../DynamicFigures.hpp \
  ../Figure.hpp \
  ../FigureFactory.h \
- ../FigureRecord.hpp \
  ../ISerializable.h \
  ../math2D.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h \
@@ -270,12 +266,6 @@ CMakeFiles/task0.dir/Circle.cpp.obj: \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/touch_input.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/transformations.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/utf8.h
-CMakeFiles/task0.dir/DynamicFigures.cpp.obj: \
- ../DynamicFigures.cpp \
- ../DynamicFigures.hpp \
- ../Figure.hpp \
- ../FigureRecord.hpp \
- ../ISerializable.h
 CMakeFiles/task0.dir/Figure.cpp.obj: \
  ../Figure.cpp \
  ../Figure.hpp \
@@ -285,28 +275,19 @@ CMakeFiles/task0.dir/Figure.cpp.obj: \
 CMakeFiles/task0.dir/FigureFactory.cpp.obj: \
  ../Canvas.hpp \
  ../Circle.hpp \
- ../DynamicFigures.hpp \
  ../Figure.hpp \
  ../FigureFactory.cpp \
  ../FigureFactory.h \
- ../FigureRecord.hpp \
  ../ISerializable.h \
  ../MovableSquare.h \
  ../Square.hpp
-CMakeFiles/task0.dir/FigureRecord.CPP.obj: \
- ../Figure.hpp \
- ../FigureRecord.CPP \
- ../FigureRecord.hpp \
- ../ISerializable.h
 CMakeFiles/task0.dir/ISerializable.cpp.obj: \
  ../ISerializable.cpp \
  ../ISerializable.h
 CMakeFiles/task0.dir/MovableSquare.cpp.obj: \
  ../AllegroBase.hpp \
  ../Canvas.hpp \
- ../DynamicFigures.hpp \
  ../Figure.hpp \
- ../FigureRecord.hpp \
  ../ISerializable.h \
  ../MovableSquare.cpp \
  ../MovableSquare.h \
@@ -447,9 +428,7 @@ CMakeFiles/task0.dir/main.cpp.obj: \
  ../AllegroApp.hpp \
  ../AllegroBase.hpp \
  ../Canvas.hpp \
- ../DynamicFigures.hpp \
  ../Figure.hpp \
- ../FigureRecord.hpp \
  ../ISerializable.h \
  ../Preferences.h \
  ../Screen.h \

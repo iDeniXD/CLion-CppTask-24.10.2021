@@ -14,8 +14,6 @@ public:
     {
         RandomCircle,
         RandomSquare,
-        RandomMovable,
-        MovableSquare,
         Input
     };
 

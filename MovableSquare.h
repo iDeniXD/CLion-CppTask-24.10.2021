@@ -10,9 +10,9 @@
 class MovableSquare : public Square
 {
 protected:
-    int health_;
+    int health_, maxHealth_;
 public:
-    MovableSquare(double a = 10, unsigned char color = 1, int health = 100);
+    MovableSquare(double a = 10, int health = 100);
     ~MovableSquare();
 
     virtual void Draw();

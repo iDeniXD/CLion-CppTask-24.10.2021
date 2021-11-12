@@ -1,7 +1,10 @@
 #ifndef CANVAS_H
 #define CANVAS_H
 
-#include "DynamicFigures.hpp"
+#include "Figure.hpp"
+
+using namespace std;
+#include <list>
 
 class Canvas
 {
@@ -9,7 +12,8 @@ private:
     Canvas();
     ~Canvas();
 
-    DynamicFigures figures_;
+    list<Figure*> figures_;
+    list<Figure*> toDel_;
 public:
     static Canvas &Instance();
 

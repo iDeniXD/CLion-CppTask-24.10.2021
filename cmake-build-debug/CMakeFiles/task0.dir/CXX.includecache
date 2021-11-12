@@ -6,21 +6,51 @@
 
 #IncludeRegexTransform: 
 
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroApp.cpp
+AllegroApp.hpp
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroApp.hpp
+FigureFactory.h
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory.h
+Circle.hpp
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Circle.hpp
+Square.hpp
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
+MovableSquare.h
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h
+
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroApp.hpp
+AllegroBase.hpp
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroBase.hpp
+Canvas.hpp
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.hpp
-DynamicFigures.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/DynamicFigures.hpp
+
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroBase.hpp
+allegro5/allegro.h
+-
+allegro5/allegro_primitives.h
+-
+
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.cpp
+Canvas.hpp
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.hpp
+AllegroBase.hpp
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroBase.hpp
+math2D.h
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math2D.h
+FigureFactory.h
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory.h
+Circle.hpp
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Circle.hpp
+
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.hpp
+Figure.hpp
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
+list
+-
 
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Circle.hpp
 Figure.hpp
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
-
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/DynamicFigures.hpp
-Figure.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
-FigureRecord.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureRecord.hpp
-cstddef
--
 
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
 ISerializable.h
@@ -46,19 +76,495 @@ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory
 Figure.hpp
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
 
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureRecord.hpp
-Figure.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
-
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable.h
 iostream
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/iostream
+
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.cpp
+MovableSquare.h
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h
+iostream
+-
+AllegroBase.hpp
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroBase.hpp
+Canvas.hpp
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.hpp
+windows.h
+-
+cstdlib
+-
+cstdio
+-
 
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h
 Square.hpp
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
 
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h
+Screen.h
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.h
+
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.h
+
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
 Figure.hpp
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
+
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/main.cpp
+AllegroApp.hpp
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroApp.hpp
+Preferences.h
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h
+
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math2D.h
+Figure.hpp
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+allegro5/altime.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/altime.h
+allegro5/bitmap.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/bitmap.h
+allegro5/bitmap_draw.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/bitmap_draw.h
+allegro5/bitmap_io.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/bitmap_io.h
+allegro5/bitmap_lock.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/bitmap_lock.h
+allegro5/blender.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/blender.h
+allegro5/clipboard.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/clipboard.h
+allegro5/color.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/color.h
+allegro5/config.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/config.h
+allegro5/cpu.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/cpu.h
+allegro5/debug.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/debug.h
+allegro5/display.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/display.h
+allegro5/drawing.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/drawing.h
+allegro5/error.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/error.h
+allegro5/events.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/events.h
+allegro5/file.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/file.h
+allegro5/fixed.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/fixed.h
+allegro5/fmaths.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/fmaths.h
+allegro5/fshook.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/fshook.h
+allegro5/fullscreen_mode.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/fullscreen_mode.h
+allegro5/haptic.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/haptic.h
+allegro5/joystick.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/joystick.h
+allegro5/keyboard.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/keyboard.h
+allegro5/memory.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/memory.h
+allegro5/monitor.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/monitor.h
+allegro5/mouse.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/mouse.h
+allegro5/mouse_cursor.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/mouse_cursor.h
+allegro5/path.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/path.h
+allegro5/render_state.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/render_state.h
+allegro5/shader.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/shader.h
+allegro5/system.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/system.h
+allegro5/threads.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/threads.h
+allegro5/timer.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/timer.h
+allegro5/tls.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/tls.h
+allegro5/touch_input.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/touch_input.h
+allegro5/transformations.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/transformations.h
+allegro5/utf8.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/utf8.h
+allegro5/alcompat.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/alcompat.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro_primitives.h
+allegro5/allegro.h
+-
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/altime.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/base.h
+errno.h
+-
+limits.h
+-
+limits.h
+-
+stdarg.h
+-
+stddef.h
+-
+stdlib.h
+-
+time.h
+-
+string.h
+-
+sys/types.h
+-
+fortify/fortify.h
+-
+dmalloc.h
+-
+allegro5/internal/alconfig.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/internal/alconfig.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/bitmap.h
+allegro5/color.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/color.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/bitmap_draw.h
+allegro5/bitmap.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/bitmap.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/bitmap_io.h
+allegro5/bitmap.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/bitmap.h
+allegro5/file.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/file.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/bitmap_lock.h
+allegro5/bitmap.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/bitmap.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/blender.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+allegro5/color.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/color.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/clipboard.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+allegro5/display.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/display.h
+allegro5/utf8.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/utf8.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/color.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/config.h
+allegro5/file.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/file.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/cpu.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/debug.h
+assert.h
+-
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/display.h
+allegro5/bitmap.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/bitmap.h
+allegro5/color.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/color.h
+allegro5/events.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/events.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/drawing.h
+allegro5/color.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/color.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/error.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/events.h
+allegro5/altime.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/altime.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/file.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+allegro5/path.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/path.h
+allegro5/utf8.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/utf8.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/fixed.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/fmaths.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+allegro5/fixed.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/fixed.h
+allegro5/inline/fmaths.inl
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/inline/fmaths.inl
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/fshook.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+allegro5/file.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/file.h
+allegro5/path.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/path.h
+sys/types.h
+-
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/fullscreen_mode.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/haptic.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+allegro5/display.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/display.h
+allegro5/events.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/events.h
+allegro5/joystick.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/joystick.h
+allegro5/keyboard.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/keyboard.h
+allegro5/mouse.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/mouse.h
+allegro5/touch_input.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/touch_input.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/inline/fmaths.inl
+allegro5/error.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/inline/allegro5/error.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/alconfig.h
+allegro5/platform/alplatf.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/allegro5/platform/alplatf.h
+allegro5/platform/alwatcom.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/allegro5/platform/alwatcom.h
+allegro5/platform/almngw32.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/allegro5/platform/almngw32.h
+allegro5/platform/albcc32.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/allegro5/platform/albcc32.h
+allegro5/platform/almsvc.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/allegro5/platform/almsvc.h
+allegro5/platform/aliphonecfg.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/allegro5/platform/aliphonecfg.h
+allegro5/platform/alosxcfg.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/allegro5/platform/alosxcfg.h
+allegro5/platform/alandroidcfg.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/allegro5/platform/alandroidcfg.h
+allegro5/platform/alraspberrypicfg.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/allegro5/platform/alraspberrypicfg.h
+allegro5/platform/alucfg.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/allegro5/platform/alucfg.h
+allegro5/platform/allegro_sdl_config.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/allegro5/platform/allegro_sdl_config.h
+allegro5/platform/astdint.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/allegro5/platform/astdint.h
+allegro5/platform/astdbool.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/allegro5/platform/astdbool.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/joystick.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+allegro5/events.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/events.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/keyboard.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+allegro5/events.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/events.h
+allegro5/keycodes.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/keycodes.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/keycodes.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/memory.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/monitor.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/mouse.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+allegro5/events.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/events.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/mouse_cursor.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/path.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alandroidcfg.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/albcc32.h
+io.h
+-
+fcntl.h
+-
+direct.h
+-
+malloc.h
+-
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/aliphonecfg.h
+fcntl.h
+-
+unistd.h
+-
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/allegro_sdl_config.h
+fcntl.h
+-
+unistd.h
+-
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/almngw32.h
+io.h
+-
+fcntl.h
+-
+direct.h
+-
+malloc.h
+-
+allegro5/platform/alplatf.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/allegro5/platform/alplatf.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/almsvc.h
+io.h
+-
+fcntl.h
+-
+direct.h
+-
+malloc.h
+-
+allegro5/platform/alplatf.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/allegro5/platform/alplatf.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alosxcfg.h
+allegro5/platform/alplatf.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/allegro5/platform/alplatf.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alplatf.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alraspberrypicfg.h
+fcntl.h
+-
+unistd.h
+-
+sys/types.h
+-
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alucfg.h
+fcntl.h
+-
+unistd.h
+-
+alunix.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alunix.h
+allegro5/platform/alplatf.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/allegro5/platform/alplatf.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alunix.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alwatcom.h
+io.h
+-
+i86.h
+-
+conio.h
+-
+fcntl.h
+-
+direct.h
+-
+malloc.h
+-
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/astdbool.h
+stdbool.h
+-
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/astdint.h
+inttypes.h
+-
+stdint.h
+-
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/render_state.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/shader.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+allegro5/transformations.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/transformations.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/system.h
+allegro5/config.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/config.h
+allegro5/path.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/path.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/threads.h
+allegro5/altime.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/altime.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/timer.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+allegro5/events.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/events.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/tls.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/touch_input.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
+allegro5/events.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/events.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/transformations.h
+allegro5/display.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/display.h
+
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/utf8.h
+allegro5/base.h
+E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro5/base.h
 

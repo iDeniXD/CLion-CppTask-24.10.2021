@@ -20,7 +20,7 @@ Figure *FigureFactory::Create(Type type)
         case RandomSquare:
             return new Square(rand() % 30 + 30, rand() % 100 + 70);
 //        case RandomMovable:
-//            return new MovableSquare(rand() % 30 + 30, rand() % 100 + 70);
+//            return new MovableSquare(rand() % 30 + 30);
 //        case MovableSquare:
 //            return new MovableSquare(30,255);
         case Input:

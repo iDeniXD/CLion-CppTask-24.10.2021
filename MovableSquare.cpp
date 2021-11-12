@@ -13,12 +13,14 @@
 
 using namespace std;
 
-MovableSquare::MovableSquare(double a, unsigned char color, int health) : // TODO get rid of color
-        Square(a, color),
+MovableSquare::MovableSquare(double a, int health) :
+        Square(a, 1),
         health_(health)
 {
     dx_ = 0;
     dy_ = 0;
+
+    maxHealth_ = health_;
 }
 MovableSquare::~MovableSquare(){}
 
@@ -79,12 +81,12 @@ void MovableSquare::Draw() {
     al_draw_filled_rectangle(
             x_ - half, y_ - half,
             x_ + half, y_ + half,
-            al_map_rgb( 255 - (health_*255/100), health_*255/100, 0 )
+            al_map_rgb( 255 - (health_*255/maxHealth_), health_*255/maxHealth_, 0 )
     );
 
     al_draw_filled_rectangle(
             x_ - half, y_ - half-10,
-            x_ - half + (health_*a_/100), y_ - half-5,
+            x_ - half + (health_*a_/maxHealth_), y_ - half-5,
             al_map_rgb( 255, 255, 255 )
     );
 }
