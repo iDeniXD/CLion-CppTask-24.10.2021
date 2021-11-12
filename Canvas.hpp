@@ -17,6 +17,7 @@ public:
     void NextFrame();
     void Add(Figure *f);
     void Remove(int i);
+    void Remove(Figure *f);
 };
 
 #endif // CANVAS_H

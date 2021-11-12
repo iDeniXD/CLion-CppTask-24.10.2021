@@ -283,10 +283,13 @@ CMakeFiles/task0.dir/Figure.cpp.obj: \
  ../Preferences.h \
  ../Screen.h
 CMakeFiles/task0.dir/FigureFactory.cpp.obj: \
+ ../Canvas.hpp \
  ../Circle.hpp \
+ ../DynamicFigures.hpp \
  ../Figure.hpp \
  ../FigureFactory.cpp \
  ../FigureFactory.h \
+ ../FigureRecord.hpp \
  ../ISerializable.h \
  ../MovableSquare.h \
  ../Square.hpp
@@ -300,7 +303,10 @@ CMakeFiles/task0.dir/ISerializable.cpp.obj: \
  ../ISerializable.h
 CMakeFiles/task0.dir/MovableSquare.cpp.obj: \
  ../AllegroBase.hpp \
+ ../Canvas.hpp \
+ ../DynamicFigures.hpp \
  ../Figure.hpp \
+ ../FigureRecord.hpp \
  ../ISerializable.h \
  ../MovableSquare.cpp \
  ../MovableSquare.h \
@@ -507,5 +513,7 @@ CMakeFiles/task0.dir/main.cpp.obj: \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/transformations.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/utf8.h
 CMakeFiles/task0.dir/math2D.cpp.obj: \
+ ../Figure.hpp \
+ ../ISerializable.h \
  ../math2D.cpp \
  ../math2D.h

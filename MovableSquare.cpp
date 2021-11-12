@@ -3,17 +3,17 @@
 //
 
 #include "MovableSquare.h"
-//#include "AllegroBase.hpp"
 
 #include <iostream>
 #include "AllegroBase.hpp"
+#include "Canvas.hpp"
 #include <windows.h>
 #include <cstdlib>
 #include <cstdio>
 
 using namespace std;
 
-MovableSquare::MovableSquare(double a, unsigned char color, int health) :
+MovableSquare::MovableSquare(double a, unsigned char color, int health) : // TODO get rid of color
         Square(a, color),
         health_(health)
 {
@@ -50,10 +50,8 @@ void MovableSquare::SpeedUp() {
 void MovableSquare::SetHealth(int health)
 {
     this->health_ = health;
-//    if (health_ < 1)
-//    {
-//        this = nullptr;
-//    }
+    if (health_ < 1)
+        Canvas::Instance().Remove(this);
 }
 
 void MovableSquare::FromString(string &s) {
@@ -69,7 +67,11 @@ void MovableSquare::FromString(string &s) {
 
 void MovableSquare::Bounce(Figure *pFigure) {
     Figure::Bounce(pFigure);
-    this->SetHealth(health_ - (int)(pFigure->GetMass() / this->mass_ * 10) % 50);
+}
+void MovableSquare::Collapsed(Figure *f) {
+    Figure::Collapsed(f);
+
+    this->SetHealth(health_ - (int)(f->GetMass() / this->mass_ * 10) % 50);
 }
 
 void MovableSquare::Draw() {
@@ -77,13 +79,14 @@ void MovableSquare::Draw() {
     al_draw_filled_rectangle(
             x_ - half, y_ - half,
             x_ + half, y_ + half,
-            al_map_rgb( 0, 0, color_ )
+            al_map_rgb( 255 - (health_*255/100), health_*255/100, 0 )
     );
 
     al_draw_filled_rectangle(
             x_ - half, y_ - half-10,
             x_ - half + (health_*a_/100), y_ - half-5,
-            al_map_rgb( 255, 0, 0 )
+            al_map_rgb( 255, 255, 255 )
     );
 }
+
 

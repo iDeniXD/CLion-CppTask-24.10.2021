@@ -14,7 +14,9 @@ public:
     {
         RandomCircle,
         RandomSquare,
-        RandomMovable
+        RandomMovable,
+        MovableSquare,
+        Input
     };
 
     static Figure *Create(Type type);

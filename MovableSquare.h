@@ -17,6 +17,7 @@ public:
 
     virtual void Draw();
     virtual void Bounce(Figure *pFigure);
+    virtual void Collapsed(Figure *f);
 
     void Up();
     void Down();

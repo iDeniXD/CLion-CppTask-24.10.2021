@@ -33,6 +33,7 @@ void Figure::Bounce(Figure *pFigure) {
     pFigure->SetDX(dx0);
     pFigure->SetDY(dy0);
 }
+void Figure::Collapsed(Figure *f) {}
 double Figure::newVelocity(double v1, double v2, double m1, double m2) {
     return ((m1-m2)*v1 + 2*m2*v2)/(m1+m2);
 }
@@ -127,6 +128,7 @@ void Figure::FromString(string &s)
         cout << "Error occurred! This info is not for figure" << endl;
     }
 }
+
 
 
 

@@ -15,6 +15,10 @@ Canvas::~Canvas()
         delete figures_.Get(i);
     }
 }
+Canvas &Canvas::Instance() {
+    static Canvas instance;
+    return instance;
+}
 void Canvas::Draw()
 {
     al_clear_to_color( al_map_rgb( 0, 0, 0 ) ); // Clear creen
@@ -45,7 +49,7 @@ void Canvas::NextFrame()
                                 figures_.Get(i)->GetY())
                         )
                 {
-                    figures_.Get(i)->Bounce(figures_.Get(j));
+                    math2D::CollapseTwoFigures(figures_.Get(i), figures_.Get(j));
                 }
             }
         }
@@ -60,8 +64,14 @@ void Canvas::Remove(int i)
 {
     figures_.Remove(i);
 }
-Canvas &Canvas::Instance() {
-    static Canvas instance;
-    return instance;
+void Canvas::Remove(Figure *f)
+{
+    for(int i = 0; i < figures_.GetSize(); i++) {
+        if (figures_.Get(i) == f)
+        {
+            figures_.Remove(i);
+        }
+    }
 }
-//TODO create method, that will hit two Figures
+
+

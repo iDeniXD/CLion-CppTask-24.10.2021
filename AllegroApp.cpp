@@ -13,6 +13,7 @@ AllegroApp::AllegroApp() :
     moveableSquare = new MovableSquare(30, 255);
     Canvas::Instance().Add(moveableSquare);
     Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomSquare));
+    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::Input));
 //    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
 
 
