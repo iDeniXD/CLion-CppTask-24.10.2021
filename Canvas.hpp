@@ -22,6 +22,9 @@ public:
     void Add(Figure *f);
     void Remove(int i);
     void Remove(Figure *f);
+
+    void CountIfTest();
+    void AccumulateTest();
 };
 
 #endif // CANVAS_H

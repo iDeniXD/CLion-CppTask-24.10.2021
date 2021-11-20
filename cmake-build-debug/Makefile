@@ -224,30 +224,6 @@ Circle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Circle.cpp.s
 .PHONY : Circle.cpp.s
 
-DynamicFigures.obj: DynamicFigures.cpp.obj
-.PHONY : DynamicFigures.obj
-
-# target to build an object file
-DynamicFigures.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/DynamicFigures.cpp.obj
-.PHONY : DynamicFigures.cpp.obj
-
-DynamicFigures.i: DynamicFigures.cpp.i
-.PHONY : DynamicFigures.i
-
-# target to preprocess a source file
-DynamicFigures.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/DynamicFigures.cpp.i
-.PHONY : DynamicFigures.cpp.i
-
-DynamicFigures.s: DynamicFigures.cpp.s
-.PHONY : DynamicFigures.s
-
-# target to generate assembly for a file
-DynamicFigures.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/DynamicFigures.cpp.s
-.PHONY : DynamicFigures.cpp.s
-
 Figure.obj: Figure.cpp.obj
 .PHONY : Figure.obj
 
@@ -295,30 +271,6 @@ FigureFactory.s: FigureFactory.cpp.s
 FigureFactory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/FigureFactory.cpp.s
 .PHONY : FigureFactory.cpp.s
-
-FigureRecord.obj: FigureRecord.CPP.obj
-.PHONY : FigureRecord.obj
-
-# target to build an object file
-FigureRecord.CPP.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/FigureRecord.CPP.obj
-.PHONY : FigureRecord.CPP.obj
-
-FigureRecord.i: FigureRecord.CPP.i
-.PHONY : FigureRecord.i
-
-# target to preprocess a source file
-FigureRecord.CPP.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/FigureRecord.CPP.i
-.PHONY : FigureRecord.CPP.i
-
-FigureRecord.s: FigureRecord.CPP.s
-.PHONY : FigureRecord.s
-
-# target to generate assembly for a file
-FigureRecord.CPP.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/FigureRecord.CPP.s
-.PHONY : FigureRecord.CPP.s
 
 ISerializable.obj: ISerializable.cpp.obj
 .PHONY : ISerializable.obj
@@ -509,18 +461,12 @@ help:
 	@echo ... Circle.obj
 	@echo ... Circle.i
 	@echo ... Circle.s
-	@echo ... DynamicFigures.obj
-	@echo ... DynamicFigures.i
-	@echo ... DynamicFigures.s
 	@echo ... Figure.obj
 	@echo ... Figure.i
 	@echo ... Figure.s
 	@echo ... FigureFactory.obj
 	@echo ... FigureFactory.i
 	@echo ... FigureFactory.s
-	@echo ... FigureRecord.obj
-	@echo ... FigureRecord.i
-	@echo ... FigureRecord.s
 	@echo ... ISerializable.obj
 	@echo ... ISerializable.i
 	@echo ... ISerializable.s

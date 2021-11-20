@@ -140,6 +140,8 @@ CMakeFiles/task0.dir/Canvas.cpp.obj: \
  ../Figure.hpp \
  ../FigureFactory.h \
  ../ISerializable.h \
+ ../Preferences.h \
+ ../Screen.h \
  ../math2D.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h \

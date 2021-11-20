@@ -42,6 +42,14 @@ void AllegroApp::Fps()
     {
         moveableSquare->SpeedUp();
     }
+    if(IsPressed(ALLEGRO_KEY_F))
+    {
+        Canvas::Instance().CountIfTest();
+    }
+    if(IsPressed(ALLEGRO_KEY_G))
+    {
+        Canvas::Instance().AccumulateTest();
+    }
     Canvas::Instance().NextFrame();
 }
 void AllegroApp::Draw()

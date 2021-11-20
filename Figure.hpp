@@ -33,6 +33,8 @@ public:
     virtual string ToString();
     virtual void FromString(string &s);
 
+    static float SumArea(float acc, const Figure *f);
+
 protected:
     static bool SetParameter(string &s, double &param, const string& field);
     static bool SetParameter(string &s, unsigned char &param, const string& field);

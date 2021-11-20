@@ -6,24 +6,6 @@
 
 #IncludeRegexTransform: 
 
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroApp.cpp
-AllegroApp.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroApp.hpp
-FigureFactory.h
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory.h
-Circle.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Circle.hpp
-Square.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
-MovableSquare.h
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h
-
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroApp.hpp
-AllegroBase.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroBase.hpp
-Canvas.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.hpp
-
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroBase.hpp
 allegro5/allegro.h
 -
@@ -41,6 +23,12 @@ FigureFactory.h
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory.h
 Circle.hpp
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Circle.hpp
+Preferences.h
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h
+algorithm
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/algorithm
+numeric
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/numeric
 
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.hpp
 Figure.hpp
@@ -56,22 +44,6 @@ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
 ISerializable.h
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable.h
 
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory.cpp
-FigureFactory.h
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory.h
-Square.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
-Circle.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Circle.hpp
-MovableSquare.h
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h
-Canvas.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.hpp
-stdlib.h
--
-time.h
--
-
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory.h
 Figure.hpp
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
@@ -80,41 +52,11 @@ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable
 iostream
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/iostream
 
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.cpp
-MovableSquare.h
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h
-iostream
--
-AllegroBase.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroBase.hpp
-Canvas.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.hpp
-windows.h
--
-cstdlib
--
-cstdio
--
-
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h
-Square.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
-
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h
 Screen.h
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.h
 
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.h
-
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
-Figure.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
-
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/main.cpp
-AllegroApp.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroApp.hpp
-Preferences.h
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h
 
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math2D.h
 Figure.hpp
