@@ -42,17 +42,24 @@ void AllegroApp::Fps()
     {
         moveableSquare->SpeedUp();
     }
-    if(IsPressed(ALLEGRO_KEY_F))
-    {
-        Canvas::Instance().CountIfTest();
-    }
-    if(IsPressed(ALLEGRO_KEY_G))
-    {
-        Canvas::Instance().AccumulateTest();
-    }
     Canvas::Instance().NextFrame();
 }
 void AllegroApp::Draw()
 {
     Canvas::Instance().Draw();
+}
+
+void AllegroApp::OnKeyDown(const ALLEGRO_KEYBOARD_EVENT &keyboard) {
+    switch (keyboard.keycode) {
+        case ALLEGRO_KEY_F:
+            Canvas::Instance().CountIfTest();
+            break;
+        case ALLEGRO_KEY_G:
+            Canvas::Instance().AccumulateTest();
+            break;
+    }
+}
+
+void AllegroApp::Stop() {
+    Canvas::Instance().ClearMemory();
 }

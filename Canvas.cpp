@@ -30,14 +30,11 @@ void Canvas::Draw()
 void Canvas::NextFrame()
 {
     for_each(figures_.begin(),figures_.end(),[](Figure *f){f->Move();});
-//    for(list<Figure *>::iterator it = figures_.begin(); it != figures_.end(); ++it) {
-//        (*it)->Move();
-//    }
     for_each(figures_.begin(),figures_.end(),[this](Figure *f)
     {
         if (*prev(figures_.end()) != f)
         {
-            for_each(std::find(figures_.begin(), figures_.end(), f),figures_.end(),[&f](Figure *f2)
+            for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[&f](Figure *f2)
             {
                 if (
                         math2D::DistanceBetweenTwoPoints(
@@ -56,46 +53,15 @@ void Canvas::NextFrame()
             });
         }
     });
-    /*for(list<Figure *>::iterator i = figures_.begin(); i != figures_.end(); ++i) {
-        if (next(i) != figures_.end())
-        {
-            for (list<Figure *>::iterator j = next(i); j != figures_.end(); ++j) {
-                if (
-                        math2D::DistanceBetweenTwoPoints(
-                                (*i)->GetX(),(*i)->GetY(),
-                                (*j)->GetX(),(*j)->GetY())
-                        <
-                        (*i)->DistanceToEdgeFacingPoint(
-                                (*j)->GetX(),
-                                (*j)->GetY())
-                        +
-                        (*j)->DistanceToEdgeFacingPoint(
-                                (*i)->GetX(),
-                                (*i)->GetY())
-                        )
-                {
-                    math2D::CollapseTwoFigures((*i), (*j));
-                }
-            }
-        }
-    }*/
-// -------------------------------------------------------------------------------------------
-    // this one does not work, since we are iterating though it as well as deleting from it
-//    for_each(toDel_.begin(),toDel_.end(),[this](Figure *f)
-//    {
-//        figures_.remove(f);
-//        toDel_.erase(std::find(figures_.begin(), figures_.end(), f));
-//    });
-
-    for(list<Figure *>::iterator it = toDel_.begin(); it != toDel_.end(); ++it) {
-        figures_.remove((*it));
-        toDel_.erase(it++); // it++ ir required since we deleting it while iterating through it
-    }
-// -------------------------------------------------------------------------------------------
+    for_each(toDel_.begin(),toDel_.end(),[this](Figure *f)
+    {
+        delete f;
+        figures_.remove(f);
+    });
+    toDel_.clear();
 }
 void Canvas::Add(Figure *f)
 {
-    cout << f->GetMass() << endl;
     figures_.push_back(f);
 }
 void Canvas::Remove(int i)
@@ -122,18 +88,12 @@ void Canvas::Remove(Figure *f)
             return;
         }
     });
-    /*for(list<Figure *>::iterator it = figures_.begin(); it != figures_.end();++it) {
-        if ((*it) == f) {
-            toDel_.push_back((*it)); // Look up big comment before Canvas::Remove
-            return;
-        }
-    }*/
 }
 
 void Canvas::CountIfTest() {
     cout << "Figure in the upper part of the screen: " << count_if(figures_.begin(),figures_.end(),[](Figure *f)
     {
-        return f->GetY() < Preferences::Instance()->GetScreen().getHeight() / 2;
+        return f->GetY() <= Preferences::Instance()->GetScreen().getHeight() / 2;
     }) << endl;
     cout << "Figure in the lower part of the screen: " << count_if(figures_.begin(),figures_.end(),[](Figure *f)
     {
@@ -143,6 +103,11 @@ void Canvas::CountIfTest() {
 
 void Canvas::AccumulateTest() {
     cout << "Total area of all figures: " << accumulate(figures_.begin(),figures_.end(),0.0, Figure::SumArea) << endl;
+}
+
+void Canvas::ClearMemory() {
+    for_each(figures_.begin(),figures_.end(),[](Figure *f) {delete f;});
+    figures_.clear();
 }
 
 

@@ -25,6 +25,8 @@ public:
 
     void CountIfTest();
     void AccumulateTest();
+
+    void ClearMemory();
 };
 
 #endif // CANVAS_H
