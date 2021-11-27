@@ -52,7 +52,7 @@ double Square::DistanceToEdgeFacingPoint(double x0, double y0) {
     return (dToPoint > dToEdge ? dToEdge : dToPoint);
 }
 
-string Square::ToString() {
+string Square::ToString() const {
     string s = Figure::ToString();
     s = s.substr(s.find(':'));
     s = "Square"+s+",a="+ to_string(a_);

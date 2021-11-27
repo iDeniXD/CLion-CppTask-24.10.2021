@@ -1,3 +1,4 @@
+#include <fstream>
 #include "Canvas.hpp"
 #include "AllegroBase.hpp"
 
@@ -108,6 +109,56 @@ void Canvas::AccumulateTest() {
 void Canvas::ClearMemory() {
     for_each(figures_.begin(),figures_.end(),[](Figure *f) {delete f;});
     figures_.clear();
+}
+
+ostream & operator << (ostream &os, const Figure *f)
+{
+    os << f->ToString() << endl;
+    return os;
+}
+istream & operator >> (istream &is, Figure *f)
+{
+    string s;
+    is >> s;
+    if (s == "")
+        return is;
+    f = FigureFactory::FigureOutOfType(FigureFactory::ParseType(s));
+    f->FromString(s);
+    return is;
+}
+
+void Canvas::SaveFigures() {
+    cout << "Saving figures..." << endl;
+
+    fstream file("figures.txt",fstream::out);
+    for_each(figures_.begin(),figures_.end(),[&file](Figure *f)
+    {
+        file << f;
+    });
+    file.close();
+}
+
+void Canvas::LoadFigures() {
+    fstream file("figures.txt",fstream::in);
+    if (!file)
+    {
+        cout << "Error!" << endl;
+        return;
+    }
+    Figure *f;
+    string s;
+    while (file >> s)
+    {
+        f = FigureFactory::FigureOutOfType(FigureFactory::ParseType(s));
+        f->FromString(s);
+        Add(f);
+    }
+//    Figure *f;
+//    while (file >> f)
+//    {
+//        cout << f->ToString() << endl;
+//        Add(f);
+//    }
 }
 
 

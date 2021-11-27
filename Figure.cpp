@@ -71,7 +71,7 @@ void Figure::SetDY(double dy0) {
     dy_ = dy0;
 }
 
-string Figure::ToString()
+string Figure::ToString() const
 {
     return "Figure:x="+to_string(x_)+",y="+to_string(y_)+",dx="+to_string(dx_)+",dy="+to_string(dy_)+",mass="+to_string(mass_)+",color="+to_string(color_);
 }

@@ -18,6 +18,12 @@ public:
     };
 
     static Figure *Create(Type type);
+
+    static Figure *FigureOutOfInput(string basicString);
+
+    static string ParseType(string basicString);
+
+    static Figure *FigureOutOfType(string s);
 };
 
 #endif //TASK0_FIGUREFACTORY_H

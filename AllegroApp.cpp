@@ -13,9 +13,9 @@ AllegroApp::AllegroApp() :
     moveableSquare = new MovableSquare(30);
     Canvas::Instance().Add(moveableSquare);
 
-    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
-    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomSquare));
-    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
+//    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
+//    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomSquare));
+//    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
 
 //    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::Input));
 // Input - figure from sting
@@ -57,6 +57,16 @@ void AllegroApp::OnKeyDown(const ALLEGRO_KEYBOARD_EVENT &keyboard) {
         case ALLEGRO_KEY_G:
             Canvas::Instance().AccumulateTest();
             break;
+        case ALLEGRO_KEY_S:
+            Canvas::Instance().SaveFigures();
+            break;
+        case ALLEGRO_KEY_L:
+            Canvas::Instance().LoadFigures();
+            break;
+
+//        default:
+//            cout << keyboard.keycode << endl;
+//            break;
     }
 }
 

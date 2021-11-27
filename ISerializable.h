@@ -12,7 +12,7 @@ class ISerializable
 {
 public:
     virtual ~ISerializable();
-    virtual string ToString()=0;
+    virtual string ToString() const=0;
     virtual void FromString(string &s)=0;
 };
 

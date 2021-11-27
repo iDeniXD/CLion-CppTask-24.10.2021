@@ -41,7 +41,7 @@ double Circle::DistanceToEdgeFacingPoint(double x0, double y0) {
     return (dToPoint > r_ ? r_ : dToPoint);
 }
 
-string Circle::ToString() {
+string Circle::ToString() const {
     string s = Figure::ToString();
     s = s.substr(s.find(':'));
     s = "Circle"+s+",r="+ to_string(r_);

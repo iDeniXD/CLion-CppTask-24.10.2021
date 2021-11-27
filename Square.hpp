@@ -14,7 +14,7 @@ public:
     virtual void Move();
     virtual double DistanceToEdgeFacingPoint(double x0, double y0);
 
-    virtual string ToString();
+    virtual string ToString() const;
     virtual void FromString(string &s);
 
 

@@ -3,6 +3,7 @@
 
 #include "ISerializable.h"
 
+
 class Figure : public ISerializable
 {
 protected:
@@ -30,7 +31,7 @@ public:
     virtual void SetDY(double dy0);
     double GetMass();
 
-    virtual string ToString();
+    virtual string ToString() const;
     virtual void FromString(string &s);
 
     static float SumArea(float acc, const Figure *f);

@@ -14,7 +14,7 @@
 using namespace std;
 
 MovableSquare::MovableSquare(double a, int health) :
-        Square(a, 1),
+        Square(a, 255),
         health_(health)
 {
     dx_ = 0;

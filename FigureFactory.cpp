@@ -24,24 +24,46 @@ Figure *FigureFactory::Create(Type type)
 //        case MovableSquare:
 //            return new MovableSquare(30,255);
         case Input:
-            Figure *f;
             string s;
             cout << "Input your own figure:" << endl;
             getline(cin, s);
-            string t = s.substr(0,s.find(':'));
-            if (t == "Circle") {
-                f = new Circle();
-                f->FromString(s);
-            }
-            else if (t == "Square") // If incorrect type then throw exception
-            {
-                f = new Square();
-                f->FromString(s);
-            } else {
-                f = FigureFactory::Create(FigureFactory::RandomCircle);
-            }
-            return f;
+            return FigureOutOfInput(s);
+
 
     }
     return nullptr;
+}
+
+Figure *FigureFactory::FigureOutOfInput(string s) {
+    Figure *f;
+    string t = ParseType(s);
+    if (t == "Circle") {
+        f = new Circle();
+        f->FromString(s);
+    }
+    else if (t == "Square")
+    {
+        f = new Square();
+        f->FromString(s);
+    } else {
+        throw exception();
+    }
+    return f;
+}
+
+string FigureFactory::ParseType(string s) {
+    return s.substr(0,s.find(':'));
+}
+
+Figure *FigureFactory::FigureOutOfType(string s)
+{
+    if (s == "Circle") {
+        return new Circle();
+    }
+    else if (s == "Square")
+    {
+        return new Square();
+    } else {
+        throw exception();
+    }
 }

@@ -27,6 +27,9 @@ public:
     void AccumulateTest();
 
     void ClearMemory();
+
+    void SaveFigures();
+    void LoadFigures();
 };
 
 #endif // CANVAS_H
