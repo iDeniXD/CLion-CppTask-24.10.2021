@@ -12,32 +12,31 @@ Circle::Circle(double r, unsigned char color) :
 Circle::~Circle(){}
 void Circle::Draw()
 {
-    al_draw_filled_circle( x_, y_, r_, al_map_rgb( 0, color_, 0 ) );
+    al_draw_filled_circle( GetX(), GetY(), r_, al_map_rgb( 0, color_, 0 ) );
 }
 void Circle::Move()
 {
     Figure::Move();
 
-    if (x_ - r_ < 1.0 || x_ + r_ > Preferences::Instance()->GetScreen().getWidth())
+    if (GetX() - r_ < 1.0 || GetX() + r_ > Preferences::Instance()->GetScreen().getWidth())
     {
         dx_ = -dx_;
-        if (x_ - r_ < 1.0)
-            x_ = 1.0 + r_;
+        if (GetX() - r_ < 1.0)
+            GetX() = 1.0 + r_;
         else
-            x_ = Preferences::Instance()->GetScreen().getWidth() - r_;
+            GetX() = Preferences::Instance()->GetScreen().getWidth() - r_;
     }
-    if (y_ - r_ < 1.0 || y_ + r_ > Preferences::Instance()->GetScreen().getHeight())
+    if (GetY() - r_ < 1.0 || GetY() + r_ > Preferences::Instance()->GetScreen().getHeight())
     {
         dy_ = -dy_;
-        if (y_ - r_ < 1.0)
-            y_ = 1.0 + r_;
+        if (GetY() - r_ < 1.0)
+            GetY() = 1.0 + r_;
         else
-            y_ = Preferences::Instance()->GetScreen().getHeight() - r_;
+            GetY() = Preferences::Instance()->GetScreen().getHeight() - r_;
     }
 }
-
-double Circle::DistanceToEdgeFacingPoint(double x0, double y0) {
-    double dToPoint = math2D::DistanceBetweenTwoPoints(x_,y_,x0,y0);
+double Circle::DistanceToEdgeFacingPoint(Point coords0) {
+    double dToPoint = math2D::DistanceBetweenTwoPoints(coords, coords0);
     return (dToPoint > r_ ? r_ : dToPoint);
 }
 

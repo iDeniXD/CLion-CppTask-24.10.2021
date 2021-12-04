@@ -2,29 +2,32 @@
 #define FIGURE_H
 
 #include "ISerializable.h"
+#include "Point.h"
 
 
 class Figure : public ISerializable
 {
 protected:
-    double x_, y_, dx_, dy_;
+    Point coords;
+    double dx_, dy_;
     double mass_;
     unsigned char color_;
 
-    static double newVelocity(double v1,double v2,double m1,double m2);
 public:
     Figure(unsigned char color = 1);
     ~Figure();
     virtual void Bounce();
-    virtual void Bounce(Figure *pFigure);
     virtual void Collapsed(Figure *f);
     virtual void Draw() = 0;
     virtual void Move();
 
-    virtual double DistanceToEdgeFacingPoint(double x0, double y0) = 0;
+    virtual double DistanceToEdgeFacingPoint(Point coords0) = 0;
 
-    virtual double GetX();
-    virtual double GetY();
+    virtual double &GetX();
+    virtual double &GetY();
+    virtual double GetX() const;
+    virtual double GetY() const;
+    virtual Point GetCoords();
     virtual double GetDX();
     virtual void SetDX(double dx0);
     virtual double GetDY();
@@ -36,11 +39,16 @@ public:
 
     static float SumArea(float acc, const Figure *f);
 
+    friend ostream & operator << (ostream &os, const Figure *f);
+    friend istream & operator >> (istream &is, Figure *&f);
+
 protected:
     static bool SetParameter(string &s, double &param, const string& field);
+    static bool SetParameter(string &s, int &param, const string& field);
     static bool SetParameter(string &s, unsigned char &param, const string& field);
 
 private:
     static string GetParameter(string &s, const string &field);
 };
+
 #endif // FIGURE_H

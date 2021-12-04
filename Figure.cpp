@@ -3,13 +3,14 @@
 #include <stdlib.h>
 #include <time.h>
 #include "math.h"
+#include "FigureFactory.h"
 
 
 Figure::Figure(unsigned char color):
     color_(color)
 {
-    x_ = rand() % (Preferences::Instance()->GetScreen().getWidth() - 201) + 100;
-    y_ = rand() % (Preferences::Instance()->GetScreen().getHeight() - 201) + 100;
+    coords = Point(rand() % (Preferences::Instance()->GetScreen().getWidth() - 201) + 100,
+                   rand() % (Preferences::Instance()->GetScreen().getHeight() - 201) + 100);
     dx_ = 10.0 - rand() % 21;
     dy_ = 10.0 - rand() % 21;
 }
@@ -19,37 +20,29 @@ void Figure::Bounce()
     dx_ = -dx_;
     dy_ = -dy_;
 }
-void Figure::Bounce(Figure *pFigure) {
-    double dxTMP = dx_, dyTMP = dy_;
 
-    double dx0 = pFigure->GetDX();
-    double dy0 = pFigure->GetDY();
-    double mass0 = pFigure->GetMass();
-    dx_ = Figure::newVelocity(dx_, dx0, mass_, mass0);
-    dx0 = Figure::newVelocity(dx0, dxTMP, mass0, mass_);
-    dy_ = Figure::newVelocity(dy_, dy0, mass_, mass0);
-    dy0 = Figure::newVelocity(dy0, dyTMP, mass0, mass_);
-
-    pFigure->SetDX(dx0);
-    pFigure->SetDY(dy0);
-}
-void Figure::Collapsed(Figure *f) {}
-double Figure::newVelocity(double v1, double v2, double m1, double m2) {
-    return ((m1-m2)*v1 + 2*m2*v2)/(m1+m2);
+void Figure::Collapsed(Figure *f) {
 }
 void Figure::Move()
 {
-    x_ += dx_;
-    y_ += dy_;
+    coords += Point(dx_, dy_);
 }
 
-double Figure::GetX()
+double &Figure::GetX()
 {
-    return x_;
+    return coords.GetX();
 }
-double Figure::GetY()
+double &Figure::GetY()
 {
-    return y_;
+    return coords.GetY();
+}
+double Figure::GetX() const
+{
+    return coords.GetX();
+}
+double Figure::GetY() const
+{
+    return coords.GetY();
 }
 
 double Figure::GetDX() {
@@ -57,6 +50,9 @@ double Figure::GetDX() {
 }
 double Figure::GetDY() {
     return dy_;
+}
+Point Figure::GetCoords() {
+    return coords;
 }
 
 double Figure::GetMass() {
@@ -73,7 +69,7 @@ void Figure::SetDY(double dy0) {
 
 string Figure::ToString() const
 {
-    return "Figure:x="+to_string(x_)+",y="+to_string(y_)+",dx="+to_string(dx_)+",dy="+to_string(dy_)+",mass="+to_string(mass_)+",color="+to_string(color_);
+    return "Figure:x="+to_string(GetX())+",y="+to_string(GetY())+",dx="+to_string(dx_)+",dy="+to_string(dy_)+",mass="+to_string(mass_)+",color="+to_string(color_);
 }
 
 string Figure::GetParameter(string &s, const string &field)
@@ -95,12 +91,22 @@ string Figure::GetParameter(string &s, const string &field)
 }
 
 bool Figure::SetParameter(string &s, double &param, const string& field) {
-    // s = "Figure:x=23;"
+    // s = "Figure:x=23.5;"
     if(s.find(','+field+'=') == string::npos && s.find(':'+field+'=') == string::npos)
     {
         return false;
     }
     param = stod(GetParameter(s,field));
+    return true;
+}
+
+bool Figure::SetParameter(string &s, int &param, const string &field) {
+    // s = "Figure:health=23;"
+    if(s.find(','+field+'=') == string::npos && s.find(':'+field+'=') == string::npos)
+    {
+        return false;
+    }
+    param = stoi(GetParameter(s,field));
     return true;
 }
 bool Figure::SetParameter(string &s, unsigned char &param, const string& field) {
@@ -116,8 +122,8 @@ void Figure::FromString(string &s)
 {
     if (s.substr(0,s.find(':')) == "Figure")
     {
-        SetParameter(s, this->x_, "x");
-        SetParameter(s, this->y_, "y");
+        SetParameter(s, this->coords.GetX(), "x");
+        SetParameter(s, this->coords.GetY(), "y");
         SetParameter(s, this->dx_, "dx");
         SetParameter(s, this->dy_, "dy");
         SetParameter(s, this->mass_, "mass");
@@ -131,6 +137,22 @@ void Figure::FromString(string &s)
 
 float Figure::SumArea(float acc, const Figure *f) {
     return acc+(f->mass_);
+}
+
+ostream & operator << (ostream &os, const Figure *f)
+{
+    os << f->ToString() << endl;
+    return os;
+}
+istream & operator >> (istream &is, Figure *&f)
+{
+    string s;
+    is >> s;
+    if (s == "")
+        return is;
+    f = FigureFactory::FigureOutOfType(FigureFactory::ParseType(s));
+    f->FromString(s);
+    return is;
 }
 
 

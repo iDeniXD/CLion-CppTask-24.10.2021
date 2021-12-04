@@ -3,7 +3,6 @@
 
 
 int main(int argc, char **argv) {
-
     srand( time(0) );
     AllegroApp app;
     if ( !app.Init( Preferences::Instance()->GetScreen().getWidth(),

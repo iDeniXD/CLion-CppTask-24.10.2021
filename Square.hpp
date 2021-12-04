@@ -12,7 +12,7 @@ public:
     ~Square();
     virtual void Draw();
     virtual void Move();
-    virtual double DistanceToEdgeFacingPoint(double x0, double y0);
+    virtual double DistanceToEdgeFacingPoint(Point coords0);
 
     virtual string ToString() const;
     virtual void FromString(string &s);

@@ -60,9 +60,12 @@ Figure *FigureFactory::FigureOutOfType(string s)
     if (s == "Circle") {
         return new Circle();
     }
-    else if (s == "Square")
-    {
+    else if (s == "Square") {
         return new Square();
+    }
+    else if (s == "MovableSquare")
+    {
+        return new MovableSquare();
     } else {
         throw exception();
     }

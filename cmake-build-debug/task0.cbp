@@ -130,6 +130,12 @@
 		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h">
 			<Option target="task0"/>
 		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h">
+			<Option target="task0"/>
+		</Unit>
 		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.cpp">
 			<Option target="task0"/>
 		</Unit>

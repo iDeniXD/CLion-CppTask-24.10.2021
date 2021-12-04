@@ -14,8 +14,8 @@ void Square::Draw()
 {
     double half = a_ / 2;
     al_draw_filled_rectangle(
-                            x_ - half, y_ - half,
-                            x_ + half, y_ + half,
+                            GetX() - half, GetY() - half,
+                            GetX() + half, GetY() + half,
                             al_map_rgb( color_, 0, 0 )
                             );
 }
@@ -23,32 +23,31 @@ void Square::Move()
 {
     Figure::Move();
 
-    if (x_ - a_/2 < 1.0 || x_ + a_/2 > Preferences::Instance()->GetScreen().getWidth())
+    if (GetX() - a_/2 < 1.0 || GetX() + a_/2 > Preferences::Instance()->GetScreen().getWidth())
     {
         dx_ = -dx_;
-        if (x_ - a_/2 < 1.0)
-            x_ = 1.0 + a_/2;
+        if (GetX() - a_/2 < 1.0)
+            GetX() = 1.0 + a_/2;
         else
-            x_ = Preferences::Instance()->GetScreen().getWidth() - a_/2;
+            GetX() = Preferences::Instance()->GetScreen().getWidth() - a_/2;
 
     }
-    if (y_ - a_/2 < 1.0 || y_ + a_/2 > Preferences::Instance()->GetScreen().getHeight())
+    if (GetY() - a_/2 < 1.0 || GetY() + a_/2 > Preferences::Instance()->GetScreen().getHeight())
     {
         dy_ = -dy_;
-        if (y_ - a_/2 < 1.0)
-            y_ = 1.0 + a_/2;
+        if (GetY() - a_/2 < 1.0)
+            GetY() = 1.0 + a_/2;
         else
-            y_ = Preferences::Instance()->GetScreen().getHeight() - a_/2;
+            GetY() = Preferences::Instance()->GetScreen().getHeight() - a_/2;
     }
 }
-
-double Square::DistanceToEdgeFacingPoint(double x0, double y0) {
-    double dToPoint = math2D::DistanceBetweenTwoPoints(x_,y_,x0,y0);
+double Square::DistanceToEdgeFacingPoint(Point coords0) {
+    double dToPoint = math2D::DistanceBetweenTwoPoints(coords,coords0);
     double dToEdge;
-    if (abs(x0-x_) > abs(y0-y_))
-        dToEdge = a_/2/abs(x0-x_)*dToPoint;
+    if (abs(coords0.GetX()-coords.GetX()) > abs(coords0.GetY()-coords.GetY()))
+        dToEdge = a_/2/abs(coords0.GetX()-coords.GetX())*dToPoint;
     else
-        dToEdge = a_/2/abs(y0-y_)*dToPoint;
+        dToEdge = a_/2/abs(coords0.GetY()-coords.GetY())*dToPoint;
     return (dToPoint > dToEdge ? dToEdge : dToPoint);
 }
 

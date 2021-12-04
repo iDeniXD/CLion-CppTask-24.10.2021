@@ -39,16 +39,14 @@ void Canvas::NextFrame()
             {
                 if (
                         math2D::DistanceBetweenTwoPoints(
-                                f->GetX(),f->GetY(),
-                                f2->GetX(),f2->GetY())
+                                f->GetCoords(),
+                                f2->GetCoords())
                         <
                         f->DistanceToEdgeFacingPoint(
-                                f2->GetX(),
-                                f2->GetY())
+                                f2->GetCoords())
                         +
                         f2->DistanceToEdgeFacingPoint(
-                                f->GetX(),
-                                f->GetY())
+                                f->GetCoords())
                         )
                     math2D::CollapseTwoFigures(f, f2);
             });
@@ -110,23 +108,6 @@ void Canvas::ClearMemory() {
     for_each(figures_.begin(),figures_.end(),[](Figure *f) {delete f;});
     figures_.clear();
 }
-
-ostream & operator << (ostream &os, const Figure *f)
-{
-    os << f->ToString() << endl;
-    return os;
-}
-istream & operator >> (istream &is, Figure *f)
-{
-    string s;
-    is >> s;
-    if (s == "")
-        return is;
-    f = FigureFactory::FigureOutOfType(FigureFactory::ParseType(s));
-    f->FromString(s);
-    return is;
-}
-
 void Canvas::SaveFigures() {
     cout << "Saving figures..." << endl;
 
@@ -145,20 +126,9 @@ void Canvas::LoadFigures() {
         cout << "Error!" << endl;
         return;
     }
-    Figure *f;
-    string s;
-    while (file >> s)
-    {
-        f = FigureFactory::FigureOutOfType(FigureFactory::ParseType(s));
-        f->FromString(s);
+    Figure *f = 0;
+    while (file >> f)
         Add(f);
-    }
-//    Figure *f;
-//    while (file >> f)
-//    {
-//        cout << f->ToString() << endl;
-//        Add(f);
-//    }
 }
 
 

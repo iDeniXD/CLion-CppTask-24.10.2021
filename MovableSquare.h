@@ -16,7 +16,6 @@ public:
     ~MovableSquare();
 
     virtual void Draw();
-    virtual void Bounce(Figure *pFigure);
     virtual void Collapsed(Figure *f);
 
     void Up();
@@ -27,6 +26,7 @@ public:
 
     void SetHealth(int health);
 
+    virtual string ToString() const;
     virtual void FromString(string &s);
 
 

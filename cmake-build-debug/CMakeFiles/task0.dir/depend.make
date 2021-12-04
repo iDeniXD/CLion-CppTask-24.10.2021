@@ -11,6 +11,7 @@ CMakeFiles/task0.dir/AllegroApp.cpp.obj: \
  ../FigureFactory.h \
  ../ISerializable.h \
  ../MovableSquare.h \
+ ../Point.h \
  ../Square.hpp \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h \
@@ -140,6 +141,7 @@ CMakeFiles/task0.dir/Canvas.cpp.obj: \
  ../Figure.hpp \
  ../FigureFactory.h \
  ../ISerializable.h \
+ ../Point.h \
  ../Preferences.h \
  ../Screen.h \
  ../math2D.h \
@@ -207,6 +209,7 @@ CMakeFiles/task0.dir/Circle.cpp.obj: \
  ../Circle.hpp \
  ../Figure.hpp \
  ../ISerializable.h \
+ ../Point.h \
  ../Preferences.h \
  ../Screen.h \
  ../math2D.h \
@@ -271,7 +274,9 @@ CMakeFiles/task0.dir/Circle.cpp.obj: \
 CMakeFiles/task0.dir/Figure.cpp.obj: \
  ../Figure.cpp \
  ../Figure.hpp \
+ ../FigureFactory.h \
  ../ISerializable.h \
+ ../Point.h \
  ../Preferences.h \
  ../Screen.h
 CMakeFiles/task0.dir/FigureFactory.cpp.obj: \
@@ -282,6 +287,7 @@ CMakeFiles/task0.dir/FigureFactory.cpp.obj: \
  ../FigureFactory.h \
  ../ISerializable.h \
  ../MovableSquare.h \
+ ../Point.h \
  ../Square.hpp
 CMakeFiles/task0.dir/ISerializable.cpp.obj: \
  ../ISerializable.cpp \
@@ -293,6 +299,7 @@ CMakeFiles/task0.dir/MovableSquare.cpp.obj: \
  ../ISerializable.h \
  ../MovableSquare.cpp \
  ../MovableSquare.h \
+ ../Point.h \
  ../Square.hpp \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h \
@@ -352,6 +359,9 @@ CMakeFiles/task0.dir/MovableSquare.cpp.obj: \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/touch_input.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/transformations.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/utf8.h
+CMakeFiles/task0.dir/Point.cpp.obj: \
+ ../Point.cpp \
+ ../Point.h
 CMakeFiles/task0.dir/Preferences.cpp.obj: \
  ../Preferences.cpp \
  ../Preferences.h \
@@ -363,6 +373,7 @@ CMakeFiles/task0.dir/Square.cpp.obj: \
  ../AllegroBase.hpp \
  ../Figure.hpp \
  ../ISerializable.h \
+ ../Point.h \
  ../Preferences.h \
  ../Screen.h \
  ../Square.cpp \
@@ -432,6 +443,7 @@ CMakeFiles/task0.dir/main.cpp.obj: \
  ../Canvas.hpp \
  ../Figure.hpp \
  ../ISerializable.h \
+ ../Point.h \
  ../Preferences.h \
  ../Screen.h \
  ../main.cpp \
@@ -496,5 +508,6 @@ CMakeFiles/task0.dir/main.cpp.obj: \
 CMakeFiles/task0.dir/math2D.cpp.obj: \
  ../Figure.hpp \
  ../ISerializable.h \
+ ../Point.h \
  ../math2D.cpp \
  ../math2D.h

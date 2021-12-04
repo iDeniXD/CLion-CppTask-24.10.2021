@@ -56,20 +56,6 @@ void MovableSquare::SetHealth(int health)
         Canvas::Instance().Remove(this);
 }
 
-void MovableSquare::FromString(string &s) {
-    if (s.substr(0,s.find(':')) == "MovableSquare")
-    {
-        Square::FromString(s.replace(0, 13, "Square"));
-    }
-    else
-    {
-        cout << "Error occurred! This is info is not for movable square" << endl;
-    }
-}
-
-void MovableSquare::Bounce(Figure *pFigure) {
-    Figure::Bounce(pFigure);
-}
 void MovableSquare::Collapsed(Figure *f) {
     Figure::Collapsed(f);
 
@@ -79,16 +65,35 @@ void MovableSquare::Collapsed(Figure *f) {
 void MovableSquare::Draw() {
     double half = a_ / 2;
     al_draw_filled_rectangle(
-            x_ - half, y_ - half,
-            x_ + half, y_ + half,
+            GetX() - half, GetY() - half,
+            GetX() + half, GetY() + half,
             al_map_rgb( 255 - (health_*255/maxHealth_), health_*255/maxHealth_, 0 )
     );
 
     al_draw_filled_rectangle(
-            x_ - half, y_ - half-10,
-            x_ - half + (health_*a_/maxHealth_), y_ - half-5,
+            GetX() - half, GetY() - half-10,
+            GetX() - half + (health_*a_/maxHealth_), GetY() - half-5,
             al_map_rgb( 255, 255, 255 )
     );
+}
+
+string MovableSquare::ToString() const {
+    string s = Square::ToString();
+    s = s.substr(s.find(':'));
+    s = "MovableSquare"+s+"maxhealth="+ to_string(maxHealth_)+"health="+to_string(health_);
+    return s;
+}
+void MovableSquare::FromString(string &s) {
+    if (s.substr(0,s.find(':')) == "MovableSquare")
+    {
+        Square::FromString(s.replace(0, 13, "Square"));
+        Figure::SetParameter(s, this->maxHealth_, "maxhealth");
+        Figure::SetParameter(s, this->health_, "health");
+    }
+    else
+    {
+        cout << "Error occurred! This is info is not for movable square" << endl;
+    }
 }
 
 

@@ -320,6 +320,30 @@ MovableSquare.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/MovableSquare.cpp.s
 .PHONY : MovableSquare.cpp.s
 
+Point.obj: Point.cpp.obj
+.PHONY : Point.obj
+
+# target to build an object file
+Point.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Point.cpp.obj
+.PHONY : Point.cpp.obj
+
+Point.i: Point.cpp.i
+.PHONY : Point.i
+
+# target to preprocess a source file
+Point.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Point.cpp.i
+.PHONY : Point.cpp.i
+
+Point.s: Point.cpp.s
+.PHONY : Point.s
+
+# target to generate assembly for a file
+Point.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Point.cpp.s
+.PHONY : Point.cpp.s
+
 Preferences.obj: Preferences.cpp.obj
 .PHONY : Preferences.obj
 
@@ -473,6 +497,9 @@ help:
 	@echo ... MovableSquare.obj
 	@echo ... MovableSquare.i
 	@echo ... MovableSquare.s
+	@echo ... Point.obj
+	@echo ... Point.i
+	@echo ... Point.s
 	@echo ... Preferences.obj
 	@echo ... Preferences.i
 	@echo ... Preferences.s
