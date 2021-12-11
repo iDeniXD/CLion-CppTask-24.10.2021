@@ -10,6 +10,9 @@ Square::Square(double a, unsigned char color) :
     mass_ = a * a;
 }
 Square::~Square(){}
+
+
+
 void Square::Draw()
 {
     double half = a_ / 2;
@@ -41,6 +44,9 @@ void Square::Move()
             SetY(Preferences::Instance()->GetScreen().getHeight() - a_/2);
     }
 }
+
+
+
 double Square::DistanceToEdgeFacingPoint(Point coords0) {
     double dToPoint = math2D::DistanceBetweenTwoPoints(coords,coords0);
     double dToEdge;
@@ -54,13 +60,14 @@ double Square::DistanceToEdgeFacingPoint(Point coords0) {
     return (dToPoint > dToEdge ? dToEdge : dToPoint);
 }
 
+
+
 string Square::ToString() const {
     string s = Figure::ToString();
     s = s.substr(s.find(':'));
     s = "Square"+s+",a="+ to_string(a_);
     return s;
 }
-
 void Square::FromString(string &s) {
     if (s.substr(0,s.find(':')) != "Square")
         throw std::invalid_argument("Cannot convert string for class "+s.substr(0,s.find(':'))+" to Square");

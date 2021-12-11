@@ -24,6 +24,8 @@ public:
     void Right();
     void SpeedUp();
 
+    void CheckPressedKeys();
+
     void SetHealth(int health);
 
     virtual string ToString() const;

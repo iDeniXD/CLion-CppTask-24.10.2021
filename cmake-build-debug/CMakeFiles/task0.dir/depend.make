@@ -6,7 +6,6 @@ CMakeFiles/task0.dir/AllegroApp.cpp.obj: \
  ../AllegroApp.hpp \
  ../AllegroBase.hpp \
  ../Canvas.hpp \
- ../Circle.hpp \
  ../Figure.hpp \
  ../FigureFactory.h \
  ../ISerializable.h \
@@ -142,9 +141,11 @@ CMakeFiles/task0.dir/Canvas.cpp.obj: \
  ../Figure.hpp \
  ../FigureFactory.h \
  ../ISerializable.h \
+ ../MovableSquare.h \
  ../Point.h \
  ../Preferences.h \
  ../Screen.h \
+ ../Square.hpp \
  ../math2D.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h \
@@ -289,11 +290,30 @@ CMakeFiles/task0.dir/FigureFactory.cpp.obj: \
  ../ISerializable.h \
  ../MovableSquare.h \
  ../Point.h \
- ../Square.hpp
+ ../Square.hpp \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/altime.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/base.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/events.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/alconfig.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alandroidcfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/albcc32.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/aliphonecfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/allegro_sdl_config.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/almngw32.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/almsvc.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alosxcfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alplatf.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alraspberrypicfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alucfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alunix.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alwatcom.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/astdbool.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/astdint.h
 CMakeFiles/task0.dir/ISerializable.cpp.obj: \
  ../ISerializable.cpp \
  ../ISerializable.h
 CMakeFiles/task0.dir/MovableSquare.cpp.obj: \
+ ../AllegroApp.hpp \
  ../AllegroBase.hpp \
  ../Canvas.hpp \
  ../Figure.hpp \
@@ -444,9 +464,11 @@ CMakeFiles/task0.dir/main.cpp.obj: \
  ../Canvas.hpp \
  ../Figure.hpp \
  ../ISerializable.h \
+ ../MovableSquare.h \
  ../Point.h \
  ../Preferences.h \
  ../Screen.h \
+ ../Square.hpp \
  ../main.cpp \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h \
@@ -509,6 +531,8 @@ CMakeFiles/task0.dir/main.cpp.obj: \
 CMakeFiles/task0.dir/math2D.cpp.obj: \
  ../Figure.hpp \
  ../ISerializable.h \
+ ../MovableSquare.h \
  ../Point.h \
+ ../Square.hpp \
  ../math2D.cpp \
  ../math2D.h

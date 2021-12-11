@@ -10,8 +10,10 @@ protected:
 public:
     Circle(double r = 10, unsigned char color = 1);
     ~Circle();
+
     virtual void Draw();
     virtual void Move();
+
     virtual double DistanceToEdgeFacingPoint(Point coords0);
 
     virtual string ToString() const;

@@ -11,6 +11,7 @@ class Preferences
 {
 public:
     static Preferences *Instance();
+
     Screen GetScreen();
 private:
     Preferences();

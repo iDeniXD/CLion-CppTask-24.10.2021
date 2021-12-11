@@ -10,6 +10,9 @@ Circle::Circle(double r, unsigned char color) :
     mass_ = 3.14*r*r;
 }
 Circle::~Circle(){}
+
+
+
 void Circle::Draw()
 {
     al_draw_filled_circle( (float)GetX(), (float)GetY(), (float)r_, al_map_rgb( 0, color_, 0 ) );
@@ -35,10 +38,15 @@ void Circle::Move()
             SetY(Preferences::Instance()->GetScreen().getHeight() - r_);
     }
 }
+
+
+
 double Circle::DistanceToEdgeFacingPoint(Point coords0) {
     double dToPoint = math2D::DistanceBetweenTwoPoints(coords, coords0);
     return (dToPoint > r_ ? r_ : dToPoint);
 }
+
+
 
 string Circle::ToString() const {
     string s = Figure::ToString();
@@ -46,7 +54,6 @@ string Circle::ToString() const {
     s = "Circle"+s+",r="+ to_string(r_);
     return s;
 }
-
 void Circle::FromString(string &s) {
     if (s.substr(0,s.find(':')) != "Circle")
         throw std::invalid_argument("Cannot convert string for class "+s.substr(0,s.find(':'))+" to Circle");

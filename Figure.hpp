@@ -16,9 +16,9 @@ protected:
 public:
     Figure(unsigned char color = 1);
     ~Figure();
+
     virtual void Draw() = 0;
     virtual void Move();
-    virtual void Collapsed(Figure *f); // TODO remove this method, leaving it only in MovableSquare and using it using cast
 
     virtual double DistanceToEdgeFacingPoint(Point coords0) = 0;
 

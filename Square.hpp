@@ -10,13 +10,13 @@ protected:
 public:
     Square(double a = 10, unsigned char color = 1);
     ~Square();
+
     virtual void Draw();
     virtual void Move();
+
     virtual double DistanceToEdgeFacingPoint(Point coords0);
 
     virtual string ToString() const;
     virtual void FromString(string &s);
-
-
 };
 #endif // SQUARE_H

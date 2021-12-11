@@ -16,12 +16,14 @@ Figure::Figure(unsigned char color):
 }
 Figure::~Figure(){}
 
+
+
 void Figure::Move()
 {
     coords += velocity;
 }
-void Figure::Collapsed(Figure *f) {
-}
+
+
 
 Point Figure::GetCoords() {
     return coords;
@@ -33,6 +35,8 @@ void Figure::SetCoords(Point newCoords) {
     coords = newCoords;
 }
 
+
+
 Point Figure::GetVelocity() {
     return velocity;
 }
@@ -42,6 +46,8 @@ void Figure::SetVelocity(double dx, double dy) {
 void Figure::SetVelocity(Point newVelocity) {
     velocity = newVelocity;
 }
+
+
 
 double Figure::GetX() const
 {
@@ -59,6 +65,7 @@ void Figure::SetY(double y) {
 }
 
 
+
 double Figure::GetdX() const {
     return velocity.GetX();
 }
@@ -68,14 +75,17 @@ double Figure::GetdY() const {
 void Figure::SetdX(double dx0) {
     velocity.SetX(dx0);
 }
-
 void Figure::SetdY(double dy0) {
     velocity.SetY(dy0);
 }
 
+
+
 double Figure::GetMass() {
     return mass_;
 }
+
+
 
 string Figure::ToString() const
 {
@@ -97,9 +107,13 @@ void Figure::FromString(string &s)
     this->color_ = GetParameterUnsChar(s,"color");
 }
 
+
+
 float Figure::SumArea(float acc, const Figure *f) {
     return acc+(float)(f->mass_);
 }
+
+
 
 ostream & operator << (ostream &os, const Figure *f)
 {
@@ -117,24 +131,7 @@ istream & operator >> (istream &is, Figure *&f)
     return is;
 }
 
-string Figure::GetParameter(string &s, const string &field) {
-    int start = s.find(','+field+'=');
-    if (start == string::npos)
-        start = s.find(':' + field + '=');
-    if (start == string::npos)
-        throw std::invalid_argument("The field '"+field+"' does not exist!");
-    start++;
 
-    string tmp = s.substr(start+field.length()+1);
-    // tmp = "23;"
-
-    int end = tmp.find(',');
-    // end = 2
-
-    tmp = tmp.substr(0,end);
-    // tmp = 23
-    return tmp;
-}
 
 double Figure::GetParameterDouble(string &s, const string &field) {
     // "Figure:x=23.5;"
@@ -168,6 +165,25 @@ unsigned char Figure::GetParameterUnsChar(string &s, const string &field) {
 }
 
 
+
+string Figure::GetParameter(string &s, const string &field) {
+    int start = s.find(','+field+'=');
+    if (start == string::npos)
+        start = s.find(':' + field + '=');
+    if (start == string::npos)
+        throw std::invalid_argument("The field '"+field+"' does not exist!");
+    start++;
+
+    string tmp = s.substr(start+field.length()+1);
+    // tmp = "23;"
+
+    int end = tmp.find(',');
+    // end = 2
+
+    tmp = tmp.substr(0,end);
+    // tmp = 23
+    return tmp;
+}
 
 
 

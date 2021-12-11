@@ -12,11 +12,12 @@ Preferences *Preferences::Instance() {
     }
     return instance;
 }
-
 Preferences::Preferences() :
         screen(60,640,480)
 {
 }
+
+
 
 Screen Preferences::GetScreen() {
     return screen;

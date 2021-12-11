@@ -19,10 +19,8 @@ Figure *FigureFactory::Create(Type type)
             return new Circle(rand() % 15 + 15, rand() % 100 + 70);
         case RandomSquare:
             return new Square(rand() % 30 + 30, rand() % 100 + 70);
-//        case RandomMovable:
-//            return new MovableSquare(rand() % 30 + 30);
-//        case MovableSquare:
-//            return new MovableSquare(30,255);
+        case RandomMovable:
+            return new MovableSquare(rand() % 30 + 30);
         case Input:
             string s;
             cout << "Input your own figure:" << endl;
@@ -44,9 +42,13 @@ Figure *FigureFactory::FigureOutOfInput(string s) {
     else if (t == "Square") {
         f = new Square();
         f->FromString(s);
-    //else if (t == "MovableSquare") // TODO add this
+    }
+    else if (t == "MovableSquare")
+    {
+        f = new MovableSquare();
+        f->FromString(s);
     } else {
-        throw exception();
+        throw std::invalid_argument("Unknown figure "+t);
     }
     return f;
 }
@@ -67,6 +69,6 @@ Figure *FigureFactory::FigureOutOfType(string s)
     {
         return new MovableSquare();
     } else {
-        throw exception();
+        throw std::invalid_argument("Unknown figure "+s);
     }
 }

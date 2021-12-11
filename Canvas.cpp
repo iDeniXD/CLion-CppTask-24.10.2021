@@ -22,21 +22,33 @@ Canvas &Canvas::Instance() {
     static Canvas instance;
     return instance;
 }
+
+
 void Canvas::Draw()
 {
-    al_clear_to_color( al_map_rgb( 0, 0, 0 ) ); // Clear creen
-    for(list<Figure *>::iterator it = figures_.begin(); it != figures_.end(); ++it) {
+    al_clear_to_color( al_map_rgb( 0, 0, 0 ) ); // Clear screen
+    for(list<SPFigure>::iterator it = figures_.begin(); it != figures_.end(); ++it) {
         (*it)->Draw();
     }
 }
 void Canvas::NextFrame()
 {
-    for_each(figures_.begin(),figures_.end(),[](Figure *f){f->Move();});
-    for_each(figures_.begin(),figures_.end(),[this](Figure *f)
+    MoveFigures();
+    ClearDeleted();
+}
+void Canvas::MoveFigures() {
+    for_each(figures_.begin(),figures_.end(),[](SPFigure &f){
+        f->Move();
+        MovableSquare *movableSquare = dynamic_cast<MovableSquare *>(&*f);
+        if (movableSquare)
+            movableSquare->CheckPressedKeys();
+
+    });
+    for_each(figures_.begin(),figures_.end(),[this](SPFigure &f)
     {
         if (*prev(figures_.end()) != f)
         {
-            for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[&f](Figure *f2)
+            for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[f](SPFigure &f2)
             {
                 if (
                         math2D::DistanceBetweenTwoPoints(
@@ -49,24 +61,28 @@ void Canvas::NextFrame()
                         f2->DistanceToEdgeFacingPoint(
                                 f->GetCoords())
                         )
-                    math2D::CollapseTwoFigures(f, f2);
+                    math2D::CollapseTwoFigures(&*f, &*f2);
             });
         }
     });
-    for_each(toDel_.begin(),toDel_.end(),[this](Figure *f)
+}
+void Canvas::ClearDeleted() {
+    for_each(toDel_.begin(),toDel_.end(),[this](const SPFigure& f)
     {
-        delete f;
         figures_.remove(f);
     });
     toDel_.clear();
 }
+
+
+
 void Canvas::Add(Figure *f)
 {
-    figures_.push_back(f);
+    figures_.push_back(SPFigure(f));
 }
 void Canvas::Remove(int i)
 {
-    list<Figure *>::iterator it = figures_.begin();
+    list<SPFigure>::iterator it = figures_.begin();
     advance(it,i);
     toDel_.push_back((*it));
 // The reason the figure has to be added to toDel list is following:
@@ -81,45 +97,50 @@ void Canvas::Remove(int i)
 }
 void Canvas::Remove(Figure *f)
 {
-    for_each(figures_.begin(),figures_.end(),[this, &f](Figure *f1)
+    for_each(figures_.begin(),figures_.end(),[this, &f](SPFigure &f1)
     {
-        if (f1==f) {
-            toDel_.push_back(f); // Look up big comment before Canvas::Remove
+        if (&*f1==f) {
+            toDel_.push_back(f1); // Look up big comment before Canvas::Remove
             return;
         }
     });
 }
 
+
+
 void Canvas::CountIfTest() {
-    cout << "Figure in the upper part of the screen: " << count_if(figures_.begin(),figures_.end(),[](Figure *f)
+    cout << "Figure in the upper part of the screen: " << count_if(figures_.begin(),figures_.end(),[](SPFigure &f)
     {
         return f->GetY() <= Preferences::Instance()->GetScreen().getHeight() / 2;
     }) << endl;
-    cout << "Figure in the lower part of the screen: " << count_if(figures_.begin(),figures_.end(),[](Figure *f)
+    cout << "Figure in the lower part of the screen: " << count_if(figures_.begin(),figures_.end(),[](SPFigure &f)
     {
         return f->GetY() > Preferences::Instance()->GetScreen().getHeight() / 2;
     }) << endl;
 }
-
 void Canvas::AccumulateTest() {
-    cout << "Total area of all figures: " << accumulate(figures_.begin(),figures_.end(),0.0, Figure::SumArea) << endl;
+//    cout << "Total area of all figures: " << accumulate(figures_.begin(),figures_.end(),0.0, Figure::SumArea) << endl;
 }
+
+
 
 void Canvas::ClearMemory() {
-    for_each(figures_.begin(),figures_.end(),[](Figure *f) {delete f;});
+    toDel_.clear();
     figures_.clear();
 }
+
+
+
 void Canvas::SaveFigures() {
     cout << "Saving figures..." << endl;
 
     fstream file("figures.txt",fstream::out);
-    for_each(figures_.begin(),figures_.end(),[&file](Figure *f)
+    for_each(figures_.begin(),figures_.end(),[&file](SPFigure &f)
     {
         file << f;
     });
     file.close();
 }
-
 void Canvas::LoadFigures() {
     fstream file("figures.txt",fstream::in);
     if (!file)
@@ -133,3 +154,20 @@ void Canvas::LoadFigures() {
 }
 
 
+
+void Canvas::OnKeyDown(const ALLEGRO_KEYBOARD_EVENT &event) {
+    switch (event.keycode) {
+        case ALLEGRO_KEY_F:
+            CountIfTest();
+            break;
+        case ALLEGRO_KEY_G:
+            AccumulateTest();
+            break;
+        case ALLEGRO_KEY_S:
+            SaveFigures();
+            break;
+        case ALLEGRO_KEY_L:
+            LoadFigures();
+            break;
+    }
+}
