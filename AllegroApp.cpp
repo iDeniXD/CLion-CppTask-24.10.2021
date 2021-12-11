@@ -1,12 +1,8 @@
 #include "AllegroApp.hpp"
 #include "FigureFactory.h"
 
-AllegroApp* AllegroApp::instance = nullptr;
-AllegroApp *AllegroApp::Instance() {
-    if (instance == nullptr)
-    {
-        instance = new AllegroApp();
-    }
+AllegroApp &AllegroApp::Instance() {
+    static AllegroApp instance;
     return instance;
 }
 

@@ -71,23 +71,23 @@ void MovableSquare::SpeedUp() {
 
 
 void MovableSquare::CheckPressedKeys() {
-    if ( AllegroApp::Instance()->IsPressed( ALLEGRO_KEY_UP ) )
+    if ( AllegroApp::Instance().IsPressed( ALLEGRO_KEY_UP ) )
     {
         Up();
     }
-    if ( AllegroApp::Instance()->IsPressed( ALLEGRO_KEY_DOWN ) )
+    if ( AllegroApp::Instance().IsPressed( ALLEGRO_KEY_DOWN ) )
     {
         Down();
     }
-    if ( AllegroApp::Instance()->IsPressed( ALLEGRO_KEY_LEFT ) )
+    if ( AllegroApp::Instance().IsPressed( ALLEGRO_KEY_LEFT ) )
     {
         Left();
     }
-    if ( AllegroApp::Instance()->IsPressed( ALLEGRO_KEY_RIGHT ) )
+    if ( AllegroApp::Instance().IsPressed( ALLEGRO_KEY_RIGHT ) )
     {
         Right();
     }
-    if ( AllegroApp::Instance()->IsPressed( ALLEGRO_KEY_LSHIFT ) )
+    if ( AllegroApp::Instance().IsPressed( ALLEGRO_KEY_LSHIFT ) )
     {
         SpeedUp();
     }

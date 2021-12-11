@@ -9,7 +9,7 @@
 class AllegroApp : public AllegroBase
 {
 public:
-    static AllegroApp *Instance();
+    static AllegroApp &Instance();
 
     virtual void Fps();
     virtual void Draw();
