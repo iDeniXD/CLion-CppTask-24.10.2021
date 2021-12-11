@@ -17,6 +17,7 @@ public:
     void Stop();
 private:
     AllegroApp();
+    ~AllegroApp();
     static AllegroApp *instance;
 
 };

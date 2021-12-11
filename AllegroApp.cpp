@@ -5,7 +5,6 @@ AllegroApp &AllegroApp::Instance() {
     static AllegroApp instance;
     return instance;
 }
-
 AllegroApp::AllegroApp() :
     AllegroBase()
 {
@@ -15,6 +14,10 @@ AllegroApp::AllegroApp() :
 //    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
 //    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::Input));
 }
+AllegroApp::~AllegroApp(){}
+
+
+
 void AllegroApp::Fps()
 {
     Canvas::Instance().NextFrame();
@@ -24,9 +27,13 @@ void AllegroApp::Draw()
     Canvas::Instance().Draw();
 }
 
+
+
 void AllegroApp::OnKeyDown(const ALLEGRO_KEYBOARD_EVENT &keyboard) {
     Canvas::Instance().OnKeyDown(keyboard);
 }
+
+
 
 void AllegroApp::Stop() {
     Canvas::Instance().ClearMemory();
