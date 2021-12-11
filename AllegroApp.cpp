@@ -10,11 +10,11 @@ static MovableSquare *moveableSquare;
 AllegroApp::AllegroApp() :
     AllegroBase()
 {
-    moveableSquare = new MovableSquare(30);
+    moveableSquare = new MovableSquare(30); // TODO fix this
     Canvas::Instance().Add(moveableSquare);
 
-    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
-    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomSquare));
+//    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
+//    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomSquare));
 //    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
 //    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::Input));
 }

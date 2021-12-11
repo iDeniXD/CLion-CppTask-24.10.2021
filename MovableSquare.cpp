@@ -80,7 +80,7 @@ void MovableSquare::Draw() {
 string MovableSquare::ToString() const {
     string s = Square::ToString();
     s = s.substr(s.find(':'));
-    s = "MovableSquare"+s+"maxhealth="+ to_string(maxHealth_)+"health="+to_string(health_);
+    s = "MovableSquare"+s+",maxhealth="+ to_string(maxHealth_)+",health="+to_string(health_);
     return s;
 }
 void MovableSquare::FromString(string &s) {

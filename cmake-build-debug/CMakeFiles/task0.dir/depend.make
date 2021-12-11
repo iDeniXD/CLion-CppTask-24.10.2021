@@ -134,6 +134,7 @@ CMakeFiles/task0.dir/AllegroBase.cpp.obj: \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/transformations.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/utf8.h
 CMakeFiles/task0.dir/Canvas.cpp.obj: \
+ ../AllegroApp.hpp \
  ../AllegroBase.hpp \
  ../Canvas.cpp \
  ../Canvas.hpp \
