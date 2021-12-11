@@ -11,31 +11,38 @@ Figure::Figure(unsigned char color):
 {
     coords = Point(rand() % (Preferences::Instance()->GetScreen().getWidth() - 201) + 100,
                    rand() % (Preferences::Instance()->GetScreen().getHeight() - 201) + 100);
-    dx_ = 10.0 - rand() % 21;
-    dy_ = 10.0 - rand() % 21;
+    velocity = Point(10.0 - rand() % 21,
+                     10.0 - rand() % 21);
 }
 Figure::~Figure(){}
-void Figure::Bounce()
-{
-    dx_ = -dx_;
-    dy_ = -dy_;
-}
 
-void Figure::Collapsed(Figure *f) {
-}
 void Figure::Move()
 {
-    coords += Point(dx_, dy_);
+    coords += velocity;
+}
+void Figure::Collapsed(Figure *f) {
 }
 
-double &Figure::GetX()
-{
-    return coords.GetX();
+Point Figure::GetCoords() {
+    return coords;
 }
-double &Figure::GetY()
-{
-    return coords.GetY();
+void Figure::SetCoords(double x, double y) {
+    SetCoords(Point(x,y));
 }
+void Figure::SetCoords(Point newCoords) {
+    coords = newCoords;
+}
+
+Point Figure::GetVelocity() {
+    return velocity;
+}
+void Figure::SetVelocity(double dx, double dy) {
+    SetVelocity(Point(dx,dy));
+}
+void Figure::SetVelocity(Point newVelocity) {
+    velocity = newVelocity;
+}
+
 double Figure::GetX() const
 {
     return coords.GetX();
@@ -44,39 +51,78 @@ double Figure::GetY() const
 {
     return coords.GetY();
 }
+void Figure::SetX(double x) {
+    coords.SetX(x);
+}
+void Figure::SetY(double y) {
+    coords.SetY(y);
+}
 
-double Figure::GetDX() {
-    return dx_;
+
+double Figure::GetdX() const {
+    return velocity.GetX();
 }
-double Figure::GetDY() {
-    return dy_;
+double Figure::GetdY() const {
+    return velocity.GetY();
 }
-Point Figure::GetCoords() {
-    return coords;
+void Figure::SetdX(double dx0) {
+    velocity.SetX(dx0);
+}
+
+void Figure::SetdY(double dy0) {
+    velocity.SetY(dy0);
 }
 
 double Figure::GetMass() {
     return mass_;
 }
 
-void Figure::SetDX(double dx0) {
-    dx_ = dx0;
-}
-
-void Figure::SetDY(double dy0) {
-    dy_ = dy0;
-}
-
 string Figure::ToString() const
 {
-    return "Figure:x="+to_string(GetX())+",y="+to_string(GetY())+",dx="+to_string(dx_)+",dy="+to_string(dy_)+",mass="+to_string(mass_)+",color="+to_string(color_);
+    return "Figure:x="+to_string(GetX())+",y="+to_string(GetY())+",dx="+to_string(GetdX())+",dy="+to_string(GetdY())+",mass="+to_string(mass_)+",color="+to_string(color_);
+}
+void Figure::FromString(string &s)
+{
+    if (s.substr(0,s.find(':')) != "Figure")
+        throw std::invalid_argument("Cannot convert string for class "+s.substr(0,s.find(':'))+" to Figure");
+
+    this->SetX(GetParameterDouble(s,"x"));
+    this->SetY(GetParameterDouble(s,"y"));
+
+    this->SetdX(GetParameterDouble(s,"dx"));
+    this->SetdY(GetParameterDouble(s,"dy"));
+
+    this->mass_ = GetParameterDouble(s,"mass");
+
+    this->color_ = GetParameterUnsChar(s,"color");
 }
 
-string Figure::GetParameter(string &s, const string &field)
+float Figure::SumArea(float acc, const Figure *f) {
+    return acc+(float)(f->mass_);
+}
+
+ostream & operator << (ostream &os, const Figure *f)
 {
+    os << f->ToString() << endl;
+    return os;
+}
+istream & operator >> (istream &is, Figure *&f)
+{
+    string s;
+    is >> s;
+    if (s.empty())
+        return is;
+    f = FigureFactory::FigureOutOfType(FigureFactory::ParseType(s));
+    f->FromString(s);
+    return is;
+}
+
+string Figure::GetParameter(string &s, const string &field) {
     int start = s.find(','+field+'=');
     if (start == string::npos)
         start = s.find(':' + field + '=');
+    if (start == string::npos)
+        throw std::invalid_argument("The field '"+field+"' does not exist!");
     start++;
 
     string tmp = s.substr(start+field.length()+1);
@@ -90,70 +136,40 @@ string Figure::GetParameter(string &s, const string &field)
     return tmp;
 }
 
-bool Figure::SetParameter(string &s, double &param, const string& field) {
-    // s = "Figure:x=23.5;"
-    if(s.find(','+field+'=') == string::npos && s.find(':'+field+'=') == string::npos)
+double Figure::GetParameterDouble(string &s, const string &field) {
+    // "Figure:x=23.5;"
+    double param;
+    try
     {
-        return false;
+        param = stod(GetParameter(s, field));
     }
-    param = stod(GetParameter(s,field));
-    return true;
+    catch (std::exception&) {}
+    return param;
+}
+int Figure::GetParameterInt(string &s, const string &field) {
+    // "Figure:health=23;"
+    int param;
+    try
+    {
+        param = stoi(GetParameter(s, field));
+    }
+    catch (std::exception&) {}
+    return param;
+}
+unsigned char Figure::GetParameterUnsChar(string &s, const string &field) {
+    // "Figure:color=55;"
+    int param;
+    try
+    {
+        param = stoi(GetParameter(s, field));
+    }
+    catch (std::exception&) {}
+    return param;
 }
 
-bool Figure::SetParameter(string &s, int &param, const string &field) {
-    // s = "Figure:health=23;"
-    if(s.find(','+field+'=') == string::npos && s.find(':'+field+'=') == string::npos)
-    {
-        return false;
-    }
-    param = stoi(GetParameter(s,field));
-    return true;
-}
-bool Figure::SetParameter(string &s, unsigned char &param, const string& field) {
-    // s = "Figure:color=55;"
-    if(s.find(','+field+'=') == string::npos && s.find(':'+field+'=') == string::npos)
-    {
-        return false;
-    }
-    param = stoi(GetParameter(s,field));
-    return true;
-}
-void Figure::FromString(string &s)
-{
-    if (s.substr(0,s.find(':')) == "Figure")
-    {
-        SetParameter(s, this->coords.GetX(), "x");
-        SetParameter(s, this->coords.GetY(), "y");
-        SetParameter(s, this->dx_, "dx");
-        SetParameter(s, this->dy_, "dy");
-        SetParameter(s, this->mass_, "mass");
-        SetParameter(s, this->color_, "color");
-    }
-    else
-    {
-        cout << "Error occurred! This info is not for figure" << endl;
-    }
-}
 
-float Figure::SumArea(float acc, const Figure *f) {
-    return acc+(f->mass_);
-}
 
-ostream & operator << (ostream &os, const Figure *f)
-{
-    os << f->ToString() << endl;
-    return os;
-}
-istream & operator >> (istream &is, Figure *&f)
-{
-    string s;
-    is >> s;
-    if (s == "")
-        return is;
-    f = FigureFactory::FigureOutOfType(FigureFactory::ParseType(s));
-    f->FromString(s);
-    return is;
-}
+
 
 
 

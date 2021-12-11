@@ -13,12 +13,10 @@ AllegroApp::AllegroApp() :
     moveableSquare = new MovableSquare(30);
     Canvas::Instance().Add(moveableSquare);
 
+    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
+    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomSquare));
 //    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
-//    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomSquare));
-//    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
-
 //    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::Input));
-// Input - figure from sting
 }
 void AllegroApp::Fps()
 {

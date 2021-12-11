@@ -41,10 +41,10 @@ Figure *FigureFactory::FigureOutOfInput(string s) {
         f = new Circle();
         f->FromString(s);
     }
-    else if (t == "Square")
-    {
+    else if (t == "Square") {
         f = new Square();
         f->FromString(s);
+    //else if (t == "MovableSquare") // TODO add this
     } else {
         throw exception();
     }

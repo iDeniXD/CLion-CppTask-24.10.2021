@@ -17,36 +17,36 @@ MovableSquare::MovableSquare(double a, int health) :
         Square(a, 255),
         health_(health)
 {
-    dx_ = 0;
-    dy_ = 0;
+    SetdX(0);
+    SetdY(0);
 
     maxHealth_ = health_;
 }
 MovableSquare::~MovableSquare(){}
 
 void MovableSquare::Up() {
-    if(dy_ > -10)
-        dy_ = (dy_-1);
+    if(GetdY() > -10)
+        SetdY(GetdY()-1);
 }
 
 void MovableSquare::Down() {
-    if(dy_ < 10)
-        dy_ = (dy_+1);
+    if(GetdY() < 10)
+        SetdY(GetdY()+1);
 }
 
 void MovableSquare::Left() {
-    if(dx_ > -10)
-        dx_ = (dx_-1);
+    if(GetdX() > -10)
+        SetdX(GetdX()-1);
 }
 
 void MovableSquare::Right() {
-    if(dx_ < 10)
-        dx_ = (dx_+1);
+    if(GetdX() < 10)
+        SetdX(GetdX()+1);
 }
 
 void MovableSquare::SpeedUp() {
-    dy_ = (dy_*1.01);
-    dx_ = (dx_*1.01);
+    SetdX(GetdX()*1.01);
+    SetdY(GetdY()*1.01);
 }
 
 void MovableSquare::SetHealth(int health)
@@ -65,14 +65,14 @@ void MovableSquare::Collapsed(Figure *f) {
 void MovableSquare::Draw() {
     double half = a_ / 2;
     al_draw_filled_rectangle(
-            GetX() - half, GetY() - half,
-            GetX() + half, GetY() + half,
+            (float)(GetX() - half), (float)(GetY() - half),
+                    (float)(GetX() + half), (float)(GetY() + half),
             al_map_rgb( 255 - (health_*255/maxHealth_), health_*255/maxHealth_, 0 )
     );
 
     al_draw_filled_rectangle(
-            GetX() - half, GetY() - half-10,
-            GetX() - half + (health_*a_/maxHealth_), GetY() - half-5,
+            (float)(GetX() - half), (float)(GetY() - half-10),
+                    (float)(GetX() - half + (health_*a_/maxHealth_)), (float)(GetY() - half-5),
             al_map_rgb( 255, 255, 255 )
     );
 }
@@ -84,16 +84,13 @@ string MovableSquare::ToString() const {
     return s;
 }
 void MovableSquare::FromString(string &s) {
-    if (s.substr(0,s.find(':')) == "MovableSquare")
-    {
-        Square::FromString(s.replace(0, 13, "Square"));
-        Figure::SetParameter(s, this->maxHealth_, "maxhealth");
-        Figure::SetParameter(s, this->health_, "health");
-    }
-    else
-    {
-        cout << "Error occurred! This is info is not for movable square" << endl;
-    }
+    if (s.substr(0,s.find(':')) != "MovableSquare")
+        throw std::invalid_argument("Cannot convert string for class "+s.substr(0,s.find(':'))+" to MovableSquare");
+
+    Square::FromString(s.replace(0, 13, "Square"));
+
+    this->maxHealth_ = Figure::GetParameterInt(s,"maxhealth");
+    this->health_ = Figure::GetParameterInt(s,"health");
 }
 
 

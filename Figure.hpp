@@ -9,29 +9,37 @@ class Figure : public ISerializable
 {
 protected:
     Point coords;
-    double dx_, dy_;
+    Point velocity;
     double mass_;
     unsigned char color_;
 
 public:
     Figure(unsigned char color = 1);
     ~Figure();
-    virtual void Bounce();
-    virtual void Collapsed(Figure *f);
     virtual void Draw() = 0;
     virtual void Move();
+    virtual void Collapsed(Figure *f); // TODO remove this method, leaving it only in MovableSquare and using it using cast
 
     virtual double DistanceToEdgeFacingPoint(Point coords0) = 0;
 
-    virtual double &GetX();
-    virtual double &GetY();
+    virtual Point GetCoords();
+    virtual void SetCoords(double x, double y);
+    virtual void SetCoords(Point newCoords);
+
+    virtual Point GetVelocity();
+    virtual void SetVelocity(double dx, double dy);
+    virtual void SetVelocity(Point newVelocity);
+
     virtual double GetX() const;
     virtual double GetY() const;
-    virtual Point GetCoords();
-    virtual double GetDX();
-    virtual void SetDX(double dx0);
-    virtual double GetDY();
-    virtual void SetDY(double dy0);
+    virtual void SetX(double x);
+    virtual void SetY(double y);
+
+    virtual double GetdX() const;
+    virtual double GetdY() const;
+    virtual void SetdX(double dx0);
+    virtual void SetdY(double dy0);
+
     double GetMass();
 
     virtual string ToString() const;
@@ -43,9 +51,9 @@ public:
     friend istream & operator >> (istream &is, Figure *&f);
 
 protected:
-    static bool SetParameter(string &s, double &param, const string& field);
-    static bool SetParameter(string &s, int &param, const string& field);
-    static bool SetParameter(string &s, unsigned char &param, const string& field);
+    static double GetParameterDouble(string &s, const string &field);
+    static int GetParameterInt(string &s, const string &field);
+    static unsigned char GetParameterUnsChar(string &s, const string &field);
 
 private:
     static string GetParameter(string &s, const string &field);

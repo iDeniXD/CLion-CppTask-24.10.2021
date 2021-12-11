@@ -9,6 +9,7 @@
 
 #include "algorithm"
 #include "numeric"
+#include "AllegroApp.hpp"
 
 
 Canvas::Canvas()

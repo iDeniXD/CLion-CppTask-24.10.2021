@@ -19,13 +19,7 @@ void Point::operator+=(const Point &p) {
     y_ += p.y_;
 }
 
-double &Point::GetX() {
-    return x_;
-}
 
-double &Point::GetY() {
-    return y_;
-}
 double Point::GetX() const{
     return x_;
 }
@@ -33,10 +27,17 @@ double Point::GetX() const{
 double Point::GetY() const{
     return y_;
 }
+void Point::SetX(double x) {
+    x_ = x;
+}
+void Point::SetY(double y) {
+    y_ = y;
+}
 ostream & operator << (ostream &os, const Point &p)
 {
     os << p.GetX() << ":" << p.GetY() << endl;
     return os;
 }
+
 
 

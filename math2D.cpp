@@ -13,12 +13,12 @@ double math2D::DistanceBetweenTwoPoints(Point coords, Point coords0) {
     return sqrt(pow(coords0.GetX()-coords.GetX(),2) + pow(coords0.GetY()-coords.GetY(),2));
 }
 void math2D::CollapseTwoFigures(Figure *f1, Figure *f2) {
-    double dxTMP = f1->GetDX(), dyTMP = f1->GetDY();
+    double dxTMP = f1->GetdX(), dyTMP = f1->GetdY();
 
-    f1->SetDX(math2D::newVelocity(f1->GetDX(), f2->GetDX(), f1->GetMass(), f2->GetMass()));
-    f1->SetDY(math2D::newVelocity(f1->GetDY(), f2->GetDY(), f1->GetMass(), f2->GetMass()));
-    f2->SetDX(math2D::newVelocity(f2->GetDX(), dxTMP, f2->GetMass(), f1->GetMass()));
-    f2->SetDY(math2D::newVelocity(f2->GetDY(), dyTMP, f2->GetMass(), f1->GetMass()));
+    f1->SetdX(math2D::newVelocity(f1->GetdX(), f2->GetdX(), f1->GetMass(), f2->GetMass()));
+    f1->SetdY(math2D::newVelocity(f1->GetdY(), f2->GetdY(), f1->GetMass(), f2->GetMass()));
+    f2->SetdX(math2D::newVelocity(f2->GetdX(), dxTMP, f2->GetMass(), f1->GetMass()));
+    f2->SetdY(math2D::newVelocity(f2->GetdY(), dyTMP, f2->GetMass(), f1->GetMass()));
 
     f1->Collapsed(f2);
     f2->Collapsed(f1);

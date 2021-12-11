@@ -25,25 +25,28 @@ void Square::Move()
 
     if (GetX() - a_/2 < 1.0 || GetX() + a_/2 > Preferences::Instance()->GetScreen().getWidth())
     {
-        dx_ = -dx_;
+        SetdX(-GetdX());
         if (GetX() - a_/2 < 1.0)
-            GetX() = 1.0 + a_/2;
+            SetX(1.0 + a_/2);
         else
-            GetX() = Preferences::Instance()->GetScreen().getWidth() - a_/2;
+            SetX(Preferences::Instance()->GetScreen().getWidth() - a_/2);
 
     }
     if (GetY() - a_/2 < 1.0 || GetY() + a_/2 > Preferences::Instance()->GetScreen().getHeight())
     {
-        dy_ = -dy_;
+        SetdY(-GetdY());
         if (GetY() - a_/2 < 1.0)
-            GetY() = 1.0 + a_/2;
+            SetY(1.0 + a_/2);
         else
-            GetY() = Preferences::Instance()->GetScreen().getHeight() - a_/2;
+            SetY(Preferences::Instance()->GetScreen().getHeight() - a_/2);
     }
 }
 double Square::DistanceToEdgeFacingPoint(Point coords0) {
     double dToPoint = math2D::DistanceBetweenTwoPoints(coords,coords0);
     double dToEdge;
+
+    // Possible to replace coords.Get.. with simple Get.., but for ease of reading it is done like this
+
     if (abs(coords0.GetX()-coords.GetX()) > abs(coords0.GetY()-coords.GetY()))
         dToEdge = a_/2/abs(coords0.GetX()-coords.GetX())*dToPoint;
     else
@@ -59,14 +62,11 @@ string Square::ToString() const {
 }
 
 void Square::FromString(string &s) {
-    if (s.substr(0,s.find(':')) == "Square")
-    {
-        Figure::FromString(s.replace(0, 6, "Figure"));
-        Figure::SetParameter(s, this->a_, "a");
-        mass_ = a_ * a_;
-    }
-    else
-    {
-        cout << "Error occurred! This is info is not for square" << endl;
-    }
+    if (s.substr(0,s.find(':')) != "Square")
+        throw std::invalid_argument("Cannot convert string for class "+s.substr(0,s.find(':'))+" to Square");
+
+    Figure::FromString(s.replace(0, 6, "Figure"));
+
+    this->a_ = Figure::GetParameterDouble(s,"a");
+    mass_ = Figure::GetParameterDouble(s,"mass");
 }
