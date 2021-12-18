@@ -5,7 +5,22 @@
 #include "math2D.h"
 #include "math.h"
 #include "MovableSquare.h"
+#include "Exceptions/EFigureCollision.h"
 
+void math2D::CheckCollision(Figure *f1, Figure *f2) {
+    if (
+            math2D::DistanceBetweenTwoPoints(
+                    f1->GetCoords(),
+                    f2->GetCoords())
+            <
+            f1->DistanceToEdgeFacingPoint(
+                    f2->GetCoords())
+            +
+            f2->DistanceToEdgeFacingPoint(
+                    f1->GetCoords())
+            )
+        throw EFigureCollision();
+}
 double math2D::DistanceBetweenTwoPoints(double x1, double y1, double x2, double y2)
 {
     return sqrt(pow(x2-x1,2) + pow(y2-y1,2));
@@ -31,5 +46,6 @@ void math2D::CollapseTwoFigures(Figure *f1, Figure *f2) {
 double math2D::newVelocity(double v1, double v2, double m1, double m2) {
     return ((m1-m2)*v1 + 2*m2*v2)/(m1+m2);
 }
+
 
 

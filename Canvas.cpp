@@ -10,7 +10,7 @@
 #include "algorithm"
 #include "numeric"
 #include "AllegroApp.hpp"
-
+#include "Exceptions/EFigureCollision.h"
 
 
 Canvas::Canvas()
@@ -51,18 +51,14 @@ void Canvas::MoveFigures() {
         {
             for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[f](SPFigure &f2)
             {
-                if (
-                        math2D::DistanceBetweenTwoPoints(
-                                f->GetCoords(),
-                                f2->GetCoords())
-                        <
-                        f->DistanceToEdgeFacingPoint(
-                                f2->GetCoords())
-                        +
-                        f2->DistanceToEdgeFacingPoint(
-                                f->GetCoords())
-                        )
-                    math2D::CollapseTwoFigures(&*f, &*f2); // TODO throw EFigureCollision
+                try
+                {
+                    math2D::CheckCollision(&*f,&*f2);
+                }
+                catch (const EFigureCollision& e)
+                {
+                    math2D::CollapseTwoFigures(&*f, &*f2);
+                }
                     // TODO throw EHit
             });
         }

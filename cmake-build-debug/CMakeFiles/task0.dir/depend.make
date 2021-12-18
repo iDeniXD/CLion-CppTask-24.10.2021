@@ -138,6 +138,8 @@ CMakeFiles/task0.dir/Canvas.cpp.obj: \
  ../Canvas.cpp \
  ../Canvas.hpp \
  ../Circle.hpp \
+ ../Exceptions/EApp.h \
+ ../Exceptions/EFigureCollision.h \
  ../Figure.hpp \
  ../FigureFactory.h \
  ../ISerializable.h \
@@ -554,6 +556,8 @@ CMakeFiles/task0.dir/main.cpp.obj: \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/transformations.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/utf8.h
 CMakeFiles/task0.dir/math2D.cpp.obj: \
+ ../Exceptions/EApp.h \
+ ../Exceptions/EFigureCollision.h \
  ../Figure.hpp \
  ../ISerializable.h \
  ../MovableSquare.h \

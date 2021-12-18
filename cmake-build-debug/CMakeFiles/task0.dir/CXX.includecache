@@ -41,6 +41,8 @@ numeric
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/numeric
 AllegroApp.hpp
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroApp.hpp
+Exceptions/EFigureCollision.h
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureCollision.h
 
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.hpp
 Figure.hpp
@@ -66,63 +68,15 @@ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Circle.hpp
 Figure.hpp
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
 
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.cpp
-EApp.h
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.h
-
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.h
 iostream
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/iostream
 
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EBorderCollision.cpp
-EBorderCollision.h
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EBorderCollision.h
-
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EBorderCollision.h
-EApp.h
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.h
-
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EDivide.cpp
-EDivide.h
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EDivide.h
-
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EDivide.h
-EApp.h
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.h
-../Figure.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
-
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureCollision.cpp
-EFigureCollision.h
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureCollision.h
-
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureCollision.h
 EApp.h
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.h
 ../Figure.hpp
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
-
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EHit.cpp
-EHit.h
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EHit.h
-
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EHit.h
-EApp.h
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.h
-
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.cpp
-Figure.hpp
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
-Preferences.h
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h
-stdlib.h
--
-time.h
--
-math.h
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math.h
-FigureFactory.h
-E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory.h
 
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
 ISerializable.h
@@ -152,9 +106,29 @@ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.h
 
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.h
 
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.cpp
+Square.hpp
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
+AllegroBase.hpp
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroBase.hpp
+Preferences.h
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h
+math2D.h
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math2D.h
+
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
 Figure.hpp
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
+
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math2D.cpp
+math2D.h
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math2D.h
+math.h
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math.h
+MovableSquare.h
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h
+Exceptions/EFigureCollision.h
+E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureCollision.h
 
 E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math2D.h
 Figure.hpp

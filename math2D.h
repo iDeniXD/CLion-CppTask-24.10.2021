@@ -10,6 +10,7 @@
 class math2D
 {
 public:
+    static void CheckCollision(Figure *f1, Figure *f2);
     static double DistanceBetweenTwoPoints(double x1, double y1, double x2, double y2);
     static double DistanceBetweenTwoPoints(Point coords, Point coords0);
     static void CollapseTwoFigures(Figure *f1, Figure *f2);
