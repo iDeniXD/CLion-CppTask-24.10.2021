@@ -106,6 +106,36 @@
 		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Circle.hpp">
 			<Option target="task0"/>
 		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.h">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EBorderCollision.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EBorderCollision.h">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EDivide.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EDivide.h">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureCollision.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureCollision.h">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EHit.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EHit.h">
+			<Option target="task0"/>
+		</Unit>
 		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.cpp">
 			<Option target="task0"/>
 		</Unit>

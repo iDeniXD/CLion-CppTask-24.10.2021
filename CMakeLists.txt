@@ -13,11 +13,13 @@ file(GLOB LIBRARIES "E:/installed_CodeBlocks20/CodeBlocks20/MinGW/lib/liballegro
 file(GLOB SOURCES
         "*.hpp"
         "*.h"
-        "*.cpp")
+        "*.cpp"
+        "Exceptions/*.hpp"
+        "Exceptions/*.cpp")
 message("SOURCES = ${SOURCES}")
 
 
-add_executable(task0 ${SOURCES})
+add_executable(task0 ${SOURCES} Exceptions/EDivide.cpp Exceptions/EDivide.h Exceptions/EHit.cpp Exceptions/EHit.h)
 
 
 message("LIBRARIES = ${LIBRARIES}")

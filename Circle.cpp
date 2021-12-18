@@ -20,7 +20,7 @@ void Circle::Draw()
 void Circle::Move()
 {
     Figure::Move();
-
+    // TODO throw EBorderCollision
     if (GetX() - r_ < 1.0 || GetX() + r_ > Preferences::Instance()->GetScreen().getWidth())
     {
         SetdX(-GetdX());

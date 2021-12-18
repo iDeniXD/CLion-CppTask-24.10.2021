@@ -12,6 +12,7 @@
 #include "AllegroApp.hpp"
 
 
+
 Canvas::Canvas()
 {
 }
@@ -61,7 +62,8 @@ void Canvas::MoveFigures() {
                         f2->DistanceToEdgeFacingPoint(
                                 f->GetCoords())
                         )
-                    math2D::CollapseTwoFigures(&*f, &*f2);
+                    math2D::CollapseTwoFigures(&*f, &*f2); // TODO throw EFigureCollision
+                    // TODO throw EHit
             });
         }
     });
@@ -168,6 +170,9 @@ void Canvas::OnKeyDown(const ALLEGRO_KEYBOARD_EVENT &event) {
             break;
         case ALLEGRO_KEY_L:
             LoadFigures();
+            break;
+        case ALLEGRO_KEY_ESCAPE:
+            AllegroApp::Instance().Exit();
             break;
     }
 }

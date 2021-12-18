@@ -224,6 +224,126 @@ Circle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Circle.cpp.s
 .PHONY : Circle.cpp.s
 
+Exceptions/EApp.obj: Exceptions/EApp.cpp.obj
+.PHONY : Exceptions/EApp.obj
+
+# target to build an object file
+Exceptions/EApp.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EApp.cpp.obj
+.PHONY : Exceptions/EApp.cpp.obj
+
+Exceptions/EApp.i: Exceptions/EApp.cpp.i
+.PHONY : Exceptions/EApp.i
+
+# target to preprocess a source file
+Exceptions/EApp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EApp.cpp.i
+.PHONY : Exceptions/EApp.cpp.i
+
+Exceptions/EApp.s: Exceptions/EApp.cpp.s
+.PHONY : Exceptions/EApp.s
+
+# target to generate assembly for a file
+Exceptions/EApp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EApp.cpp.s
+.PHONY : Exceptions/EApp.cpp.s
+
+Exceptions/EBorderCollision.obj: Exceptions/EBorderCollision.cpp.obj
+.PHONY : Exceptions/EBorderCollision.obj
+
+# target to build an object file
+Exceptions/EBorderCollision.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EBorderCollision.cpp.obj
+.PHONY : Exceptions/EBorderCollision.cpp.obj
+
+Exceptions/EBorderCollision.i: Exceptions/EBorderCollision.cpp.i
+.PHONY : Exceptions/EBorderCollision.i
+
+# target to preprocess a source file
+Exceptions/EBorderCollision.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EBorderCollision.cpp.i
+.PHONY : Exceptions/EBorderCollision.cpp.i
+
+Exceptions/EBorderCollision.s: Exceptions/EBorderCollision.cpp.s
+.PHONY : Exceptions/EBorderCollision.s
+
+# target to generate assembly for a file
+Exceptions/EBorderCollision.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EBorderCollision.cpp.s
+.PHONY : Exceptions/EBorderCollision.cpp.s
+
+Exceptions/EDivide.obj: Exceptions/EDivide.cpp.obj
+.PHONY : Exceptions/EDivide.obj
+
+# target to build an object file
+Exceptions/EDivide.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EDivide.cpp.obj
+.PHONY : Exceptions/EDivide.cpp.obj
+
+Exceptions/EDivide.i: Exceptions/EDivide.cpp.i
+.PHONY : Exceptions/EDivide.i
+
+# target to preprocess a source file
+Exceptions/EDivide.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EDivide.cpp.i
+.PHONY : Exceptions/EDivide.cpp.i
+
+Exceptions/EDivide.s: Exceptions/EDivide.cpp.s
+.PHONY : Exceptions/EDivide.s
+
+# target to generate assembly for a file
+Exceptions/EDivide.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EDivide.cpp.s
+.PHONY : Exceptions/EDivide.cpp.s
+
+Exceptions/EFigureCollision.obj: Exceptions/EFigureCollision.cpp.obj
+.PHONY : Exceptions/EFigureCollision.obj
+
+# target to build an object file
+Exceptions/EFigureCollision.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj
+.PHONY : Exceptions/EFigureCollision.cpp.obj
+
+Exceptions/EFigureCollision.i: Exceptions/EFigureCollision.cpp.i
+.PHONY : Exceptions/EFigureCollision.i
+
+# target to preprocess a source file
+Exceptions/EFigureCollision.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.i
+.PHONY : Exceptions/EFigureCollision.cpp.i
+
+Exceptions/EFigureCollision.s: Exceptions/EFigureCollision.cpp.s
+.PHONY : Exceptions/EFigureCollision.s
+
+# target to generate assembly for a file
+Exceptions/EFigureCollision.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.s
+.PHONY : Exceptions/EFigureCollision.cpp.s
+
+Exceptions/EHit.obj: Exceptions/EHit.cpp.obj
+.PHONY : Exceptions/EHit.obj
+
+# target to build an object file
+Exceptions/EHit.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj
+.PHONY : Exceptions/EHit.cpp.obj
+
+Exceptions/EHit.i: Exceptions/EHit.cpp.i
+.PHONY : Exceptions/EHit.i
+
+# target to preprocess a source file
+Exceptions/EHit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EHit.cpp.i
+.PHONY : Exceptions/EHit.cpp.i
+
+Exceptions/EHit.s: Exceptions/EHit.cpp.s
+.PHONY : Exceptions/EHit.s
+
+# target to generate assembly for a file
+Exceptions/EHit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EHit.cpp.s
+.PHONY : Exceptions/EHit.cpp.s
+
 Figure.obj: Figure.cpp.obj
 .PHONY : Figure.obj
 
@@ -485,6 +605,21 @@ help:
 	@echo ... Circle.obj
 	@echo ... Circle.i
 	@echo ... Circle.s
+	@echo ... Exceptions/EApp.obj
+	@echo ... Exceptions/EApp.i
+	@echo ... Exceptions/EApp.s
+	@echo ... Exceptions/EBorderCollision.obj
+	@echo ... Exceptions/EBorderCollision.i
+	@echo ... Exceptions/EBorderCollision.s
+	@echo ... Exceptions/EDivide.obj
+	@echo ... Exceptions/EDivide.i
+	@echo ... Exceptions/EDivide.s
+	@echo ... Exceptions/EFigureCollision.obj
+	@echo ... Exceptions/EFigureCollision.i
+	@echo ... Exceptions/EFigureCollision.s
+	@echo ... Exceptions/EHit.obj
+	@echo ... Exceptions/EHit.i
+	@echo ... Exceptions/EHit.s
 	@echo ... Figure.obj
 	@echo ... Figure.i
 	@echo ... Figure.s

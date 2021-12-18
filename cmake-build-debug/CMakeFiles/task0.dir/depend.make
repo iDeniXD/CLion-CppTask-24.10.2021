@@ -273,6 +273,31 @@ CMakeFiles/task0.dir/Circle.cpp.obj: \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/touch_input.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/transformations.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/utf8.h
+CMakeFiles/task0.dir/Exceptions/EApp.cpp.obj: \
+ ../Exceptions/EApp.cpp \
+ ../Exceptions/EApp.h
+CMakeFiles/task0.dir/Exceptions/EBorderCollision.cpp.obj: \
+ ../Exceptions/EApp.h \
+ ../Exceptions/EBorderCollision.cpp \
+ ../Exceptions/EBorderCollision.h
+CMakeFiles/task0.dir/Exceptions/EDivide.cpp.obj: \
+ ../Exceptions/EApp.h \
+ ../Exceptions/EDivide.cpp \
+ ../Exceptions/EDivide.h \
+ ../Figure.hpp \
+ ../ISerializable.h \
+ ../Point.h
+CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj: \
+ ../Exceptions/EApp.h \
+ ../Exceptions/EFigureCollision.cpp \
+ ../Exceptions/EFigureCollision.h \
+ ../Figure.hpp \
+ ../ISerializable.h \
+ ../Point.h
+CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj: \
+ ../Exceptions/EApp.h \
+ ../Exceptions/EHit.cpp \
+ ../Exceptions/EHit.h
 CMakeFiles/task0.dir/Figure.cpp.obj: \
  ../Figure.cpp \
  ../Figure.hpp \

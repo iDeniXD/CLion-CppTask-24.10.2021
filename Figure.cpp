@@ -20,7 +20,7 @@ Figure::~Figure(){}
 
 void Figure::Move()
 {
-    coords += velocity;
+    coords += velocity; // TODO throw EDivide exception
 }
 
 

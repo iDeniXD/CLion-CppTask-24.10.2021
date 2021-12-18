@@ -37,4 +37,5 @@ void AllegroApp::OnKeyDown(const ALLEGRO_KEYBOARD_EVENT &keyboard) {
 
 void AllegroApp::Stop() {
     Canvas::Instance().ClearMemory();
+    Instance().Destroy();
 }
