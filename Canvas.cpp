@@ -11,6 +11,7 @@
 #include "numeric"
 #include "AllegroApp.hpp"
 #include "Exceptions/EFigureCollision.h"
+#include "Exceptions/EHit.h"
 
 
 Canvas::Canvas()
@@ -57,9 +58,15 @@ void Canvas::MoveFigures() {
                 }
                 catch (const EFigureCollision& e)
                 {
-                    math2D::CollapseTwoFigures(&*f, &*f2);
+                    try
+                    {
+                        math2D::CollapseTwoFigures(&*f, &*f2);
+                    }
+                    catch (const EHit& e)
+                    {
+                        e.ms->Collapsed(e.f);
+                    }
                 }
-                    // TODO throw EHit
             });
         }
     });

@@ -140,6 +140,7 @@ CMakeFiles/task0.dir/Canvas.cpp.obj: \
  ../Circle.hpp \
  ../Exceptions/EApp.h \
  ../Exceptions/EFigureCollision.h \
+ ../Exceptions/EHit.h \
  ../Figure.hpp \
  ../FigureFactory.h \
  ../ISerializable.h \
@@ -299,7 +300,12 @@ CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj: \
 CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj: \
  ../Exceptions/EApp.h \
  ../Exceptions/EHit.cpp \
- ../Exceptions/EHit.h
+ ../Exceptions/EHit.h \
+ ../Figure.hpp \
+ ../ISerializable.h \
+ ../MovableSquare.h \
+ ../Point.h \
+ ../Square.hpp
 CMakeFiles/task0.dir/Figure.cpp.obj: \
  ../Figure.cpp \
  ../Figure.hpp \
@@ -558,6 +564,7 @@ CMakeFiles/task0.dir/main.cpp.obj: \
 CMakeFiles/task0.dir/math2D.cpp.obj: \
  ../Exceptions/EApp.h \
  ../Exceptions/EFigureCollision.h \
+ ../Exceptions/EHit.h \
  ../Figure.hpp \
  ../ISerializable.h \
  ../MovableSquare.h \

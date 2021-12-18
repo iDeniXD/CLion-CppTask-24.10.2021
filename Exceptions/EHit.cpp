@@ -9,3 +9,8 @@ EHit::~EHit() {}
 const char *EHit::what() const {
     return "MovableFigure is hit";
 }
+
+EHit::EHit(MovableSquare *ms, Figure *f):
+    ms(ms),
+    f(f)
+{}

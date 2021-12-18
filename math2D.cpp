@@ -6,6 +6,7 @@
 #include "math.h"
 #include "MovableSquare.h"
 #include "Exceptions/EFigureCollision.h"
+#include "Exceptions/EHit.h"
 
 void math2D::CheckCollision(Figure *f1, Figure *f2) {
     if (
@@ -38,10 +39,10 @@ void math2D::CollapseTwoFigures(Figure *f1, Figure *f2) {
 
     MovableSquare *ms = dynamic_cast<MovableSquare *>(f1);
     if (ms)
-        ms->Collapsed(f2);
+        throw EHit(ms, f2);
     ms = dynamic_cast<MovableSquare *>(f2);
     if (ms)
-        ms->Collapsed(f1);
+        throw EHit(ms, f1);
 }
 double math2D::newVelocity(double v1, double v2, double m1, double m2) {
     return ((m1-m2)*v1 + 2*m2*v2)/(m1+m2);
