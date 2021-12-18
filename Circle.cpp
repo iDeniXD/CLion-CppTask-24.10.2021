@@ -63,4 +63,14 @@ void Circle::FromString(string &s) {
     this->mass_ = Figure::GetParameterDouble(s,"mass");
 }
 
+Figure *Circle::Divide() {
+    Circle *newFigure = new Circle(r_, color_);
+    newFigure->SetdX(-GetdX());
+    newFigure->SetdY(-GetdY());
+    newFigure->SetX(GetX()+(GetdX() > 0 ? -r_*2 : r_*2));
+    newFigure->SetY(GetY()+(GetdY() > 0 ? -r_*2 : r_*2));
+
+    return newFigure;
+}
+
 

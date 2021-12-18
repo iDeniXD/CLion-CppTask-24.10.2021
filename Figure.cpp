@@ -4,6 +4,7 @@
 #include <time.h>
 #include "math.h"
 #include "FigureFactory.h"
+#include "Exceptions/EDivide.h"
 
 
 Figure::Figure(unsigned char color):
@@ -20,7 +21,9 @@ Figure::~Figure(){}
 
 void Figure::Move()
 {
-    coords += velocity; // TODO throw EDivide exception
+    coords += velocity;
+    if (rand() % 1000 == 1)
+        throw EDivide();
 }
 void Figure::Bounce(Border border, double side) {
     switch (border)
@@ -221,6 +224,7 @@ string Figure::GetParameter(string &s, const string &field) {
     // tmp = 23
     return tmp;
 }
+
 
 
 

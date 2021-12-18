@@ -142,6 +142,7 @@ CMakeFiles/task0.dir/Canvas.cpp.obj: \
  ../Circle.hpp \
  ../Exceptions/EApp.h \
  ../Exceptions/EBorderCollision.h \
+ ../Exceptions/EDivide.h \
  ../Exceptions/EFigureCollision.h \
  ../Exceptions/EHit.h \
  ../Figure.hpp \
@@ -317,6 +318,7 @@ CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj: \
 CMakeFiles/task0.dir/Figure.cpp.obj: \
  ../Exceptions/EApp.h \
  ../Exceptions/EBorderCollision.h \
+ ../Exceptions/EDivide.h \
  ../Figure.cpp \
  ../Figure.hpp \
  ../FigureFactory.h \
@@ -580,6 +582,7 @@ CMakeFiles/task0.dir/main.cpp.obj: \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/transformations.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/utf8.h
 CMakeFiles/task0.dir/math2D.cpp.obj: \
+ ../Canvas.hpp \
  ../Exceptions/EApp.h \
  ../Exceptions/EBorderCollision.h \
  ../Exceptions/EFigureCollision.h \
@@ -590,4 +593,22 @@ CMakeFiles/task0.dir/math2D.cpp.obj: \
  ../Point.h \
  ../Square.hpp \
  ../math2D.cpp \
- ../math2D.h
+ ../math2D.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/altime.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/base.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/events.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/alconfig.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alandroidcfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/albcc32.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/aliphonecfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/allegro_sdl_config.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/almngw32.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/almsvc.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alosxcfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alplatf.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alraspberrypicfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alucfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alunix.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alwatcom.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/astdbool.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/astdint.h

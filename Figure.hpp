@@ -50,6 +50,7 @@ public:
     virtual string ToString() const;
     virtual void FromString(string &s);
 
+    virtual Figure* Divide() = 0;
     static float SumArea(float acc, const Figure *f);
 
     friend ostream & operator << (ostream &os, const Figure *f);

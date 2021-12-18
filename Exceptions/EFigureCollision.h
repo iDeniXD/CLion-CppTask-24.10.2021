@@ -10,9 +10,13 @@
 
 struct EFigureCollision : EApp
 {
+
     Figure *f1;
     Figure *f2;
+
+    EFigureCollision(Figure *f1, Figure *f2);
     virtual ~EFigureCollision();
+
     virtual const char* what() const;
 };
 

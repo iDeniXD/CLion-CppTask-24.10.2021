@@ -10,8 +10,6 @@
 
 struct EDivide : EApp
 {
-    Figure *f;
-
     virtual ~EDivide();
     virtual const char* what() const;
 };

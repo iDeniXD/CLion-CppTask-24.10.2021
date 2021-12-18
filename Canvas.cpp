@@ -12,6 +12,7 @@
 #include "AllegroApp.hpp"
 #include "Exceptions/EFigureCollision.h"
 #include "Exceptions/EHit.h"
+#include "Exceptions/EDivide.h"
 
 
 Canvas::Canvas()
@@ -39,8 +40,14 @@ void Canvas::NextFrame()
     ClearDeleted();
 }
 void Canvas::MoveFigures() {
-    for_each(figures_.begin(),figures_.end(),[](SPFigure &f){
-        f->Move();
+    for_each(figures_.begin(),figures_.end(),[this](SPFigure &f){
+        try {
+            f->Move();
+        }
+        catch (const EDivide& e)
+        {
+            Add(f->Divide());
+        }
         MovableSquare *movableSquare = dynamic_cast<MovableSquare *>(&*f);
         if (movableSquare)
             movableSquare->CheckPressedKeys();
@@ -60,7 +67,7 @@ void Canvas::MoveFigures() {
                 {
                     try
                     {
-                        math2D::CollapseTwoFigures(&*f, &*f2);
+                        math2D::CollapseTwoFigures(e.f1,e.f2);
                     }
                     catch (const EHit& e)
                     {

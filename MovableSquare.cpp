@@ -122,5 +122,7 @@ void MovableSquare::FromString(string &s) {
     this->health_ = Figure::GetParameterInt(s,"health");
 }
 
+Figure *MovableSquare::Divide() {}
+
 
 

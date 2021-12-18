@@ -18,5 +18,7 @@ public:
 
     virtual string ToString() const;
     virtual void FromString(string &s);
+
+    virtual Figure* Divide();
 };
 #endif // SQUARE_H

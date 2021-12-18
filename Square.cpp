@@ -75,3 +75,15 @@ void Square::FromString(string &s) {
     this->a_ = Figure::GetParameterDouble(s,"a");
     mass_ = Figure::GetParameterDouble(s,"mass");
 }
+
+
+
+Figure* Square::Divide() {
+    Square *newFigure = new Square(a_, color_);
+    newFigure->SetdX(-GetdX());
+    newFigure->SetdY(-GetdY());
+    newFigure->SetX(GetX()+(GetdX() > 0 ? -a_*2 : a_*2));
+    newFigure->SetY(GetY()+(GetdY() > 0 ? -a_*2 : a_*2));
+
+    return newFigure;
+}

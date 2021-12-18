@@ -31,6 +31,8 @@ public:
     virtual string ToString() const;
     virtual void FromString(string &s);
 
+    virtual Figure* Divide();
+
 
 };
 
