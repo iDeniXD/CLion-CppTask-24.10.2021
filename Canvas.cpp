@@ -186,3 +186,4 @@ void Canvas::OnKeyDown(const ALLEGRO_KEYBOARD_EVENT &event) {
             break;
     }
 }
+
