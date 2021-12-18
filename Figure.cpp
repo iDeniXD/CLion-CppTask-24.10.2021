@@ -22,6 +22,43 @@ void Figure::Move()
 {
     coords += velocity; // TODO throw EDivide exception
 }
+void Figure::Bounce(Border border, double side) {
+    switch (border)
+    {
+        case Border::BOTTOM:
+            SetdY(-GetdY());
+            SetY(Preferences::Instance()->GetScreen().getHeight() - side/2);
+
+            break;
+        case Border::TOP:
+            SetdY(-GetdY());
+            SetY(1.0 + side/2);
+
+            break;
+        case Border::LEFT:
+            SetdX(-GetdX());
+            SetX(1.0 + side/2);
+
+        break;
+        case Border::RIGHT:
+            SetdX(-GetdX());
+            SetX(Preferences::Instance()->GetScreen().getWidth() - side/2);
+
+            break;
+    }
+}
+void Figure::CheckMoveX(double side) {
+    if (GetX() - side/2 < 1.0)
+        throw EBorderCollision(Border::LEFT);
+    if (GetX() + side/2 > Preferences::Instance()->GetScreen().getWidth())
+        throw EBorderCollision(Border::RIGHT);
+}
+void Figure::CheckMoveY(double side) {
+    if (GetY() - side/2 < 1.0)
+        throw EBorderCollision(Border::TOP);
+    if (GetY() + side/2 > Preferences::Instance()->GetScreen().getHeight())
+        throw EBorderCollision(Border::BOTTOM);
+}
 
 
 
@@ -184,6 +221,7 @@ string Figure::GetParameter(string &s, const string &field) {
     // tmp = 23
     return tmp;
 }
+
 
 
 

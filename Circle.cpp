@@ -20,22 +20,21 @@ void Circle::Draw()
 void Circle::Move()
 {
     Figure::Move();
-    // TODO throw EBorderCollision
-    if (GetX() - r_ < 1.0 || GetX() + r_ > Preferences::Instance()->GetScreen().getWidth())
+    try
     {
-        SetdX(-GetdX());
-        if (GetX() - r_ < 1.0)
-            SetX(1.0 + r_);
-        else
-            SetX(Preferences::Instance()->GetScreen().getWidth() - r_);
+        Figure::CheckMoveX(r_);
     }
-    if (GetY() - r_ < 1.0 || GetY() + r_ > Preferences::Instance()->GetScreen().getHeight())
+    catch (const EBorderCollision& e)
     {
-        SetdY(-GetdY());
-        if (GetY() - r_ < 1.0)
-            SetY(1.0 + r_);
-        else
-            SetY(Preferences::Instance()->GetScreen().getHeight() - r_);
+        Figure::Bounce(e.border,r_);
+    }
+    try
+    {
+        Figure::CheckMoveY(r_);
+    }
+    catch (const EBorderCollision& e)
+    {
+        Figure::Bounce(e.border,r_);
     }
 }
 

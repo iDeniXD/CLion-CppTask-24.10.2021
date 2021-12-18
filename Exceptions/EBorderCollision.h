@@ -9,8 +9,6 @@
 
 struct EBorderCollision : EApp
 {
-    ~EBorderCollision();
-
     enum Border
     {
         TOP,
@@ -18,6 +16,10 @@ struct EBorderCollision : EApp
         LEFT,
         RIGHT
     };
+
+    EBorderCollision(Border border);
+    ~EBorderCollision();
+
     Border border;
     virtual const char* what() const;
     virtual const Border &GetBorder();

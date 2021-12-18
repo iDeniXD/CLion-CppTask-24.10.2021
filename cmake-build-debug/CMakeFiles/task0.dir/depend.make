@@ -6,6 +6,8 @@ CMakeFiles/task0.dir/AllegroApp.cpp.obj: \
  ../AllegroApp.hpp \
  ../AllegroBase.hpp \
  ../Canvas.hpp \
+ ../Exceptions/EApp.h \
+ ../Exceptions/EBorderCollision.h \
  ../Figure.hpp \
  ../FigureFactory.h \
  ../ISerializable.h \
@@ -139,6 +141,7 @@ CMakeFiles/task0.dir/Canvas.cpp.obj: \
  ../Canvas.hpp \
  ../Circle.hpp \
  ../Exceptions/EApp.h \
+ ../Exceptions/EBorderCollision.h \
  ../Exceptions/EFigureCollision.h \
  ../Exceptions/EHit.h \
  ../Figure.hpp \
@@ -212,6 +215,8 @@ CMakeFiles/task0.dir/Circle.cpp.obj: \
  ../AllegroBase.hpp \
  ../Circle.cpp \
  ../Circle.hpp \
+ ../Exceptions/EApp.h \
+ ../Exceptions/EBorderCollision.h \
  ../Figure.hpp \
  ../ISerializable.h \
  ../Point.h \
@@ -285,6 +290,7 @@ CMakeFiles/task0.dir/Exceptions/EBorderCollision.cpp.obj: \
  ../Exceptions/EBorderCollision.h
 CMakeFiles/task0.dir/Exceptions/EDivide.cpp.obj: \
  ../Exceptions/EApp.h \
+ ../Exceptions/EBorderCollision.h \
  ../Exceptions/EDivide.cpp \
  ../Exceptions/EDivide.h \
  ../Figure.hpp \
@@ -292,6 +298,7 @@ CMakeFiles/task0.dir/Exceptions/EDivide.cpp.obj: \
  ../Point.h
 CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj: \
  ../Exceptions/EApp.h \
+ ../Exceptions/EBorderCollision.h \
  ../Exceptions/EFigureCollision.cpp \
  ../Exceptions/EFigureCollision.h \
  ../Figure.hpp \
@@ -299,6 +306,7 @@ CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj: \
  ../Point.h
 CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj: \
  ../Exceptions/EApp.h \
+ ../Exceptions/EBorderCollision.h \
  ../Exceptions/EHit.cpp \
  ../Exceptions/EHit.h \
  ../Figure.hpp \
@@ -307,6 +315,8 @@ CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj: \
  ../Point.h \
  ../Square.hpp
 CMakeFiles/task0.dir/Figure.cpp.obj: \
+ ../Exceptions/EApp.h \
+ ../Exceptions/EBorderCollision.h \
  ../Figure.cpp \
  ../Figure.hpp \
  ../FigureFactory.h \
@@ -317,6 +327,8 @@ CMakeFiles/task0.dir/Figure.cpp.obj: \
 CMakeFiles/task0.dir/FigureFactory.cpp.obj: \
  ../Canvas.hpp \
  ../Circle.hpp \
+ ../Exceptions/EApp.h \
+ ../Exceptions/EBorderCollision.h \
  ../Figure.hpp \
  ../FigureFactory.cpp \
  ../FigureFactory.h \
@@ -349,6 +361,8 @@ CMakeFiles/task0.dir/MovableSquare.cpp.obj: \
  ../AllegroApp.hpp \
  ../AllegroBase.hpp \
  ../Canvas.hpp \
+ ../Exceptions/EApp.h \
+ ../Exceptions/EBorderCollision.h \
  ../Figure.hpp \
  ../ISerializable.h \
  ../MovableSquare.cpp \
@@ -425,6 +439,8 @@ CMakeFiles/task0.dir/Screen.cpp.obj: \
  ../Screen.h
 CMakeFiles/task0.dir/Square.cpp.obj: \
  ../AllegroBase.hpp \
+ ../Exceptions/EApp.h \
+ ../Exceptions/EBorderCollision.h \
  ../Figure.hpp \
  ../ISerializable.h \
  ../Point.h \
@@ -495,6 +511,8 @@ CMakeFiles/task0.dir/main.cpp.obj: \
  ../AllegroApp.hpp \
  ../AllegroBase.hpp \
  ../Canvas.hpp \
+ ../Exceptions/EApp.h \
+ ../Exceptions/EBorderCollision.h \
  ../Figure.hpp \
  ../ISerializable.h \
  ../MovableSquare.h \
@@ -563,6 +581,7 @@ CMakeFiles/task0.dir/main.cpp.obj: \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/utf8.h
 CMakeFiles/task0.dir/math2D.cpp.obj: \
  ../Exceptions/EApp.h \
+ ../Exceptions/EBorderCollision.h \
  ../Exceptions/EFigureCollision.h \
  ../Exceptions/EHit.h \
  ../Figure.hpp \

@@ -4,6 +4,9 @@
 
 #include "EBorderCollision.h"
 
+EBorderCollision::EBorderCollision(EBorderCollision::Border border) :
+    border(border)
+{}
 EBorderCollision::~EBorderCollision() {}
 
 const char* EBorderCollision::what() const {
@@ -13,3 +16,4 @@ const char* EBorderCollision::what() const {
 const EBorderCollision::Border &EBorderCollision::GetBorder() {
     return border;
 }
+

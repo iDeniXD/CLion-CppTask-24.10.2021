@@ -25,23 +25,21 @@ void Square::Draw()
 void Square::Move()
 {
     Figure::Move();
-
-    if (GetX() - a_/2 < 1.0 || GetX() + a_/2 > Preferences::Instance()->GetScreen().getWidth())
+    try
     {
-        SetdX(-GetdX());
-        if (GetX() - a_/2 < 1.0)
-            SetX(1.0 + a_/2);
-        else
-            SetX(Preferences::Instance()->GetScreen().getWidth() - a_/2);
-
+        Figure::CheckMoveX(a_);
     }
-    if (GetY() - a_/2 < 1.0 || GetY() + a_/2 > Preferences::Instance()->GetScreen().getHeight())
+    catch (const EBorderCollision& e)
     {
-        SetdY(-GetdY());
-        if (GetY() - a_/2 < 1.0)
-            SetY(1.0 + a_/2);
-        else
-            SetY(Preferences::Instance()->GetScreen().getHeight() - a_/2);
+        Figure::Bounce(e.border,a_);
+    }
+    try
+    {
+        Figure::CheckMoveY(a_);
+    }
+    catch (const EBorderCollision& e)
+    {
+        Figure::Bounce(e.border,a_);
     }
 }
 

@@ -3,6 +3,7 @@
 
 #include "ISerializable.h"
 #include "Point.h"
+#include "Exceptions/EBorderCollision.h"
 
 
 class Figure : public ISerializable
@@ -19,6 +20,10 @@ public:
 
     virtual void Draw() = 0;
     virtual void Move();
+    typedef EBorderCollision::Border Border;
+    virtual void Bounce(Border border, double side = 0);
+    virtual void CheckMoveX(double side = 0);
+    virtual void CheckMoveY(double side = 0);
 
     virtual double DistanceToEdgeFacingPoint(Point coords0) = 0;
 
