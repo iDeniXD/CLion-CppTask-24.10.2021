@@ -18,6 +18,13 @@ private:
     static Preferences *instance;
 
     Screen screen;
+
+    enum Constants
+    {
+        FPS = 60,
+        WIDTH = 640,
+        HEIGHT = 480
+    };
 };
 
 #endif //TASK0_PREFERENCES_H

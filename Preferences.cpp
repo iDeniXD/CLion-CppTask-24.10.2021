@@ -13,7 +13,7 @@ Preferences *Preferences::Instance() {
     return instance;
 }
 Preferences::Preferences() :
-        screen(60,640,480)
+        screen(Constants::FPS,Constants::WIDTH,Constants::HEIGHT)
 {
 }
 
