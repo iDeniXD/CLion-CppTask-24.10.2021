@@ -14,5 +14,6 @@ int main(int argc, char **argv) {
     }
     AllegroApp::Instance().Run();
     AllegroApp::Instance().Stop();
+    cout << "end" << endl;
     return 0;
 }
