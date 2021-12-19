@@ -3,6 +3,7 @@
 
 
 int main(int argc, char **argv) {
+    cout << "start" << endl;
     srand( time(0) );
 
     if ( !AllegroApp::Instance().Init( Preferences::Instance()->GetScreen().getWidth(),
