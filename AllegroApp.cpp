@@ -9,8 +9,8 @@ AllegroApp::AllegroApp() :
     AllegroBase()
 {
     Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomMovable));
-    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
-    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomSquare));
+//    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomCircle));
+//    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::RandomSquare));
 //    Canvas::Instance().Add(FigureFactory::Create(FigureFactory::Input));
 }
 AllegroApp::~AllegroApp(){}

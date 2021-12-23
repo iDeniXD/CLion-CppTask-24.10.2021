@@ -40,7 +40,7 @@ void Circle::Move()
 
 
 
-double Circle::DistanceToEdgeFacingPoint(Point coords0) {
+double Circle::DistanceToEdgeFacingPoint(PointImpl<> coords0) {
     double dToPoint = math2D::DistanceBetweenTwoPoints(coords, coords0);
     return (dToPoint > r_ ? r_ : dToPoint);
 }

@@ -13,6 +13,7 @@
 #include "Exceptions/EFigureCollision.h"
 #include "Exceptions/EHit.h"
 #include "Exceptions/EDivide.h"
+#include "Exceptions/EHitBoth.h"
 
 
 Canvas::Canvas()
@@ -37,6 +38,7 @@ void Canvas::Draw()
 void Canvas::NextFrame()
 {
     MoveFigures();
+    AddNew();
     ClearDeleted();
 }
 void Canvas::MoveFigures() {
@@ -46,7 +48,7 @@ void Canvas::MoveFigures() {
         }
         catch (const EDivide& e)
         {
-            Add(f->Divide());
+            newFigures.push_back(SPFigure(f->Divide()));
         }
         MovableSquare *movableSquare = dynamic_cast<MovableSquare *>(&*f);
         if (movableSquare)
@@ -69,6 +71,11 @@ void Canvas::MoveFigures() {
                     {
                         math2D::CollapseTwoFigures(e.f1,e.f2);
                     }
+                    catch (const EHitBoth& e)
+                    {
+                        e.ms1->Collapsed(e.ms2);
+                        e.ms2->Collapsed(e.ms1);
+                    }
                     catch (const EHit& e)
                     {
                         e.ms->Collapsed(e.f);
@@ -77,6 +84,13 @@ void Canvas::MoveFigures() {
             });
         }
     });
+}
+void Canvas::AddNew() {
+    for_each(newFigures.begin(),newFigures.end(),[this](const SPFigure& f)
+    {
+        figures_.push_back(f);
+    });
+    newFigures.clear();
 }
 void Canvas::ClearDeleted() {
     for_each(toDel_.begin(),toDel_.end(),[this](const SPFigure& f)
@@ -186,4 +200,5 @@ void Canvas::OnKeyDown(const ALLEGRO_KEYBOARD_EVENT &event) {
             break;
     }
 }
+
 

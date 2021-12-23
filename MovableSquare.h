@@ -15,6 +15,7 @@ public:
     MovableSquare(double a = 10, int health = 100);
     ~MovableSquare();
 
+    virtual bool MbyDivide();
     virtual void Draw();
     virtual void Collapsed(Figure *f);
 

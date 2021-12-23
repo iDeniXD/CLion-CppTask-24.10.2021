@@ -19,7 +19,7 @@ file(GLOB SOURCES
 message("SOURCES = ${SOURCES}")
 
 
-add_executable(task0 ${SOURCES} Exceptions/EDivide.cpp Exceptions/EDivide.h Exceptions/EHit.cpp Exceptions/EHit.h)
+add_executable(task0 ${SOURCES} Exceptions/EDivide.cpp Exceptions/EDivide.h Exceptions/EHit.cpp Exceptions/EHit.h Exceptions/EHitBoth.cpp Exceptions/EHitBoth.h PointImpl.h)
 
 
 message("LIBRARIES = ${LIBRARIES}")

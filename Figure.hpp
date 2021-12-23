@@ -3,14 +3,15 @@
 
 #include "ISerializable.h"
 #include "Point.h"
+#include "PointImpl.h"
 #include "Exceptions/EBorderCollision.h"
 
 
 class Figure : public ISerializable
 {
 protected:
-    Point coords;
-    Point velocity;
+    PointImpl<> coords;
+    PointImpl<> velocity;
     double mass_;
     unsigned char color_;
 
@@ -19,21 +20,22 @@ public:
     ~Figure();
 
     virtual void Draw() = 0;
+    virtual bool MbyDivide();
     virtual void Move();
     typedef EBorderCollision::Border Border;
     virtual void Bounce(Border border, double side = 0);
     virtual void CheckMoveX(double side = 0);
     virtual void CheckMoveY(double side = 0);
 
-    virtual double DistanceToEdgeFacingPoint(Point coords0) = 0;
+    virtual double DistanceToEdgeFacingPoint(PointImpl<> coords0) = 0;
 
-    virtual Point GetCoords();
+    virtual PointImpl<> GetCoords();
     virtual void SetCoords(double x, double y);
-    virtual void SetCoords(Point newCoords);
+    virtual void SetCoords(PointImpl<> newCoords);
 
-    virtual Point GetVelocity();
+    virtual PointImpl<> GetVelocity();
     virtual void SetVelocity(double dx, double dy);
-    virtual void SetVelocity(Point newVelocity);
+    virtual void SetVelocity(PointImpl<> newVelocity);
 
     virtual double GetX() const;
     virtual double GetY() const;
@@ -63,6 +65,7 @@ protected:
 
 private:
     static string GetParameter(string &s, const string &field);
+
 };
 
 #endif // FIGURE_H

@@ -18,12 +18,14 @@ private:
 
     list<SPFigure> figures_;
     list<SPFigure> toDel_;
+    list<SPFigure> newFigures;
 public:
     static Canvas &Instance();
 
     void Draw();
     void NextFrame();
     void MoveFigures();
+    void AddNew();
     void ClearDeleted();
 
     void Add(Figure *f);
@@ -39,6 +41,7 @@ public:
     void LoadFigures();
 
     void OnKeyDown(const ALLEGRO_KEYBOARD_EVENT &event);
+
 };
 
 #endif // CANVAS_H

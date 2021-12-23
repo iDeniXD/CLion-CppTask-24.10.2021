@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/task0.dir/Exceptions/EDivide.cpp.obj"
   "CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj"
   "CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj"
+  "CMakeFiles/task0.dir/Exceptions/EHitBoth.cpp.obj"
   "CMakeFiles/task0.dir/Figure.cpp.obj"
   "CMakeFiles/task0.dir/FigureFactory.cpp.obj"
   "CMakeFiles/task0.dir/ISerializable.cpp.obj"

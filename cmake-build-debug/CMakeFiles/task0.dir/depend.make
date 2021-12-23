@@ -13,6 +13,7 @@ CMakeFiles/task0.dir/AllegroApp.cpp.obj: \
  ../ISerializable.h \
  ../MovableSquare.h \
  ../Point.h \
+ ../PointImpl.h \
  ../Square.hpp \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h \
@@ -145,11 +146,13 @@ CMakeFiles/task0.dir/Canvas.cpp.obj: \
  ../Exceptions/EDivide.h \
  ../Exceptions/EFigureCollision.h \
  ../Exceptions/EHit.h \
+ ../Exceptions/EHitBoth.h \
  ../Figure.hpp \
  ../FigureFactory.h \
  ../ISerializable.h \
  ../MovableSquare.h \
  ../Point.h \
+ ../PointImpl.h \
  ../Preferences.h \
  ../Screen.h \
  ../Square.hpp \
@@ -221,6 +224,7 @@ CMakeFiles/task0.dir/Circle.cpp.obj: \
  ../Figure.hpp \
  ../ISerializable.h \
  ../Point.h \
+ ../PointImpl.h \
  ../Preferences.h \
  ../Screen.h \
  ../math2D.h \
@@ -296,7 +300,8 @@ CMakeFiles/task0.dir/Exceptions/EDivide.cpp.obj: \
  ../Exceptions/EDivide.h \
  ../Figure.hpp \
  ../ISerializable.h \
- ../Point.h
+ ../Point.h \
+ ../PointImpl.h
 CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj: \
  ../Exceptions/EApp.h \
  ../Exceptions/EBorderCollision.h \
@@ -304,7 +309,8 @@ CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj: \
  ../Exceptions/EFigureCollision.h \
  ../Figure.hpp \
  ../ISerializable.h \
- ../Point.h
+ ../Point.h \
+ ../PointImpl.h
 CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj: \
  ../Exceptions/EApp.h \
  ../Exceptions/EBorderCollision.h \
@@ -314,6 +320,18 @@ CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj: \
  ../ISerializable.h \
  ../MovableSquare.h \
  ../Point.h \
+ ../PointImpl.h \
+ ../Square.hpp
+CMakeFiles/task0.dir/Exceptions/EHitBoth.cpp.obj: \
+ ../Exceptions/EApp.h \
+ ../Exceptions/EBorderCollision.h \
+ ../Exceptions/EHitBoth.cpp \
+ ../Exceptions/EHitBoth.h \
+ ../Figure.hpp \
+ ../ISerializable.h \
+ ../MovableSquare.h \
+ ../Point.h \
+ ../PointImpl.h \
  ../Square.hpp
 CMakeFiles/task0.dir/Figure.cpp.obj: \
  ../Exceptions/EApp.h \
@@ -324,6 +342,7 @@ CMakeFiles/task0.dir/Figure.cpp.obj: \
  ../FigureFactory.h \
  ../ISerializable.h \
  ../Point.h \
+ ../PointImpl.h \
  ../Preferences.h \
  ../Screen.h
 CMakeFiles/task0.dir/FigureFactory.cpp.obj: \
@@ -337,6 +356,7 @@ CMakeFiles/task0.dir/FigureFactory.cpp.obj: \
  ../ISerializable.h \
  ../MovableSquare.h \
  ../Point.h \
+ ../PointImpl.h \
  ../Square.hpp \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/altime.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/base.h \
@@ -365,11 +385,13 @@ CMakeFiles/task0.dir/MovableSquare.cpp.obj: \
  ../Canvas.hpp \
  ../Exceptions/EApp.h \
  ../Exceptions/EBorderCollision.h \
+ ../Exceptions/EDivide.h \
  ../Figure.hpp \
  ../ISerializable.h \
  ../MovableSquare.cpp \
  ../MovableSquare.h \
  ../Point.h \
+ ../PointImpl.h \
  ../Square.hpp \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h \
@@ -446,6 +468,7 @@ CMakeFiles/task0.dir/Square.cpp.obj: \
  ../Figure.hpp \
  ../ISerializable.h \
  ../Point.h \
+ ../PointImpl.h \
  ../Preferences.h \
  ../Screen.h \
  ../Square.cpp \
@@ -519,6 +542,7 @@ CMakeFiles/task0.dir/main.cpp.obj: \
  ../ISerializable.h \
  ../MovableSquare.h \
  ../Point.h \
+ ../PointImpl.h \
  ../Preferences.h \
  ../Screen.h \
  ../Square.hpp \
@@ -587,10 +611,12 @@ CMakeFiles/task0.dir/math2D.cpp.obj: \
  ../Exceptions/EBorderCollision.h \
  ../Exceptions/EFigureCollision.h \
  ../Exceptions/EHit.h \
+ ../Exceptions/EHitBoth.h \
  ../Figure.hpp \
  ../ISerializable.h \
  ../MovableSquare.h \
  ../Point.h \
+ ../PointImpl.h \
  ../Square.hpp \
  ../math2D.cpp \
  ../math2D.h \

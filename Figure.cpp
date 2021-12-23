@@ -8,13 +8,12 @@
 
 
 Figure::Figure(unsigned char color):
-    color_(color)
-{
-    coords = Point(rand() % (Preferences::Instance()->GetScreen().getWidth() - 201) + 100,
-                   rand() % (Preferences::Instance()->GetScreen().getHeight() - 201) + 100);
-    velocity = Point(10.0 - rand() % 21,
-                     10.0 - rand() % 21);
-}
+    color_(color),
+    coords(rand() % (Preferences::Instance()->GetScreen().getWidth() - 201) + 100,
+           rand() % (Preferences::Instance()->GetScreen().getHeight() - 201) + 100),
+    velocity(10.0 - rand() % 21,
+             10.0 - rand() % 21)
+{}
 Figure::~Figure(){}
 
 
@@ -22,8 +21,11 @@ Figure::~Figure(){}
 void Figure::Move()
 {
     coords += velocity;
-    if (rand() % 1000 == 1)
+    if (MbyDivide())
         throw EDivide();
+}
+bool Figure::MbyDivide() {
+    return rand() % 1000 == 1;
 }
 void Figure::Bounce(Border border, double side) {
     switch (border)
@@ -65,25 +67,25 @@ void Figure::CheckMoveY(double side) {
 
 
 
-Point Figure::GetCoords() {
+PointImpl<> Figure::GetCoords() {
     return coords;
 }
 void Figure::SetCoords(double x, double y) {
-    SetCoords(Point(x,y));
+    SetCoords(PointImpl<>(x,y));
 }
-void Figure::SetCoords(Point newCoords) {
+void Figure::SetCoords(PointImpl<> newCoords) {
     coords = newCoords;
 }
 
 
 
-Point Figure::GetVelocity() {
+PointImpl<> Figure::GetVelocity() {
     return velocity;
 }
 void Figure::SetVelocity(double dx, double dy) {
-    SetVelocity(Point(dx,dy));
+    SetVelocity(PointImpl<>(dx,dy));
 }
-void Figure::SetVelocity(Point newVelocity) {
+void Figure::SetVelocity(PointImpl<> newVelocity) {
     velocity = newVelocity;
 }
 
@@ -224,6 +226,7 @@ string Figure::GetParameter(string &s, const string &field) {
     // tmp = 23
     return tmp;
 }
+
 
 
 

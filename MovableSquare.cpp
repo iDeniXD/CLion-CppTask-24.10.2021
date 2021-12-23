@@ -8,6 +8,7 @@
 #include "AllegroBase.hpp"
 #include "Canvas.hpp"
 #include "AllegroApp.hpp"
+#include "Exceptions/EDivide.h"
 #include <windows.h>
 #include <cstdlib>
 #include <cstdio>
@@ -27,6 +28,9 @@ MovableSquare::~MovableSquare(){}
 
 
 
+bool MovableSquare::MbyDivide() {
+    return false;
+}
 void MovableSquare::Draw() {
     double half = a_ / 2;
     al_draw_filled_rectangle(
@@ -122,7 +126,8 @@ void MovableSquare::FromString(string &s) {
     this->health_ = Figure::GetParameterInt(s,"health");
 }
 
-Figure *MovableSquare::Divide() {}
-
-
+Figure *MovableSquare::Divide()
+{
+    return nullptr;
+}
 

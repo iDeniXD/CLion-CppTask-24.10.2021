@@ -344,6 +344,30 @@ Exceptions/EHit.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EHit.cpp.s
 .PHONY : Exceptions/EHit.cpp.s
 
+Exceptions/EHitBoth.obj: Exceptions/EHitBoth.cpp.obj
+.PHONY : Exceptions/EHitBoth.obj
+
+# target to build an object file
+Exceptions/EHitBoth.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EHitBoth.cpp.obj
+.PHONY : Exceptions/EHitBoth.cpp.obj
+
+Exceptions/EHitBoth.i: Exceptions/EHitBoth.cpp.i
+.PHONY : Exceptions/EHitBoth.i
+
+# target to preprocess a source file
+Exceptions/EHitBoth.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EHitBoth.cpp.i
+.PHONY : Exceptions/EHitBoth.cpp.i
+
+Exceptions/EHitBoth.s: Exceptions/EHitBoth.cpp.s
+.PHONY : Exceptions/EHitBoth.s
+
+# target to generate assembly for a file
+Exceptions/EHitBoth.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EHitBoth.cpp.s
+.PHONY : Exceptions/EHitBoth.cpp.s
+
 Figure.obj: Figure.cpp.obj
 .PHONY : Figure.obj
 
@@ -620,6 +644,9 @@ help:
 	@echo ... Exceptions/EHit.obj
 	@echo ... Exceptions/EHit.i
 	@echo ... Exceptions/EHit.s
+	@echo ... Exceptions/EHitBoth.obj
+	@echo ... Exceptions/EHitBoth.i
+	@echo ... Exceptions/EHitBoth.s
 	@echo ... Figure.obj
 	@echo ... Figure.i
 	@echo ... Figure.s
