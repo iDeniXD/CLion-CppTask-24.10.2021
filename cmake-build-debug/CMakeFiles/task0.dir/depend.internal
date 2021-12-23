@@ -13,7 +13,6 @@ CMakeFiles/task0.dir/AllegroApp.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/PointImpl.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h
@@ -152,7 +151,6 @@ CMakeFiles/task0.dir/Canvas.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/PointImpl.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
@@ -224,7 +222,6 @@ CMakeFiles/task0.dir/Circle.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/PointImpl.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math2D.h
@@ -301,7 +298,6 @@ CMakeFiles/task0.dir/Exceptions/EDivide.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/PointImpl.h
 CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EBorderCollision.h
@@ -310,7 +306,6 @@ CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/PointImpl.h
 CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EBorderCollision.h
@@ -320,7 +315,6 @@ CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/PointImpl.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
 CMakeFiles/task0.dir/Exceptions/EHitBoth.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.h
@@ -331,7 +325,6 @@ CMakeFiles/task0.dir/Exceptions/EHitBoth.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/PointImpl.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
 CMakeFiles/task0.dir/Figure.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.h
@@ -342,7 +335,6 @@ CMakeFiles/task0.dir/Figure.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/PointImpl.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.h
 CMakeFiles/task0.dir/FigureFactory.cpp.obj
@@ -356,7 +348,6 @@ CMakeFiles/task0.dir/FigureFactory.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/PointImpl.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/altime.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/base.h
@@ -391,7 +382,6 @@ CMakeFiles/task0.dir/MovableSquare.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.cpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/PointImpl.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/alcompat.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/allegro.h
@@ -451,9 +441,6 @@ CMakeFiles/task0.dir/MovableSquare.cpp.obj
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/touch_input.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/transformations.h
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/utf8.h
-CMakeFiles/task0.dir/Point.cpp.obj
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.cpp
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
 CMakeFiles/task0.dir/Preferences.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.cpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h
@@ -468,7 +455,6 @@ CMakeFiles/task0.dir/Square.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/PointImpl.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.cpp
@@ -542,7 +528,6 @@ CMakeFiles/task0.dir/main.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/PointImpl.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
@@ -616,7 +601,6 @@ CMakeFiles/task0.dir/math2D.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/PointImpl.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math2D.cpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/math2D.h

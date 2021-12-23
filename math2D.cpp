@@ -28,7 +28,7 @@ double math2D::DistanceBetweenTwoPoints(double x1, double y1, double x2, double 
 {
     return sqrt(pow(x2-x1,2) + pow(y2-y1,2));
 }
-double math2D::DistanceBetweenTwoPoints(PointImpl<> coords, PointImpl<> coords0) {
+double math2D::DistanceBetweenTwoPoints(Point coords, Point coords0) {
     return DistanceBetweenTwoPoints(coords.GetX(),coords.GetY(),coords0.GetX(),coords0.GetY());
 }
 void math2D::CollapseTwoFigures(Figure *f1, Figure *f2) {

@@ -67,25 +67,25 @@ void Figure::CheckMoveY(double side) {
 
 
 
-PointImpl<> Figure::GetCoords() {
+Point Figure::GetCoords() {
     return coords;
 }
 void Figure::SetCoords(double x, double y) {
-    SetCoords(PointImpl<>(x,y));
+    SetCoords(Point(x,y));
 }
-void Figure::SetCoords(PointImpl<> newCoords) {
+void Figure::SetCoords(Point newCoords) {
     coords = newCoords;
 }
 
 
 
-PointImpl<> Figure::GetVelocity() {
+Point Figure::GetVelocity() {
     return velocity;
 }
 void Figure::SetVelocity(double dx, double dy) {
-    SetVelocity(PointImpl<>(dx,dy));
+    SetVelocity(Point(dx,dy));
 }
-void Figure::SetVelocity(PointImpl<> newVelocity) {
+void Figure::SetVelocity(Point newVelocity) {
     velocity = newVelocity;
 }
 

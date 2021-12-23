@@ -68,8 +68,7 @@ void MovableSquare::Right() {
         SetdX(GetdX()+1);
 }
 void MovableSquare::SpeedUp() {
-    SetdX(GetdX()*1.01);
-    SetdY(GetdY()*1.01);
+    SetVelocity(GetVelocity()*1.01);
 }
 
 

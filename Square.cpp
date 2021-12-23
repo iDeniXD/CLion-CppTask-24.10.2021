@@ -45,7 +45,7 @@ void Square::Move()
 
 
 
-double Square::DistanceToEdgeFacingPoint(PointImpl<> coords0) {
+double Square::DistanceToEdgeFacingPoint(Point coords0) {
     double dToPoint = math2D::DistanceBetweenTwoPoints(coords,coords0);
     double dToEdge;
 
