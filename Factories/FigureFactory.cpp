@@ -4,10 +4,10 @@
 
 #include "FigureFactory.h"
 
-#include "Square.hpp"
-#include "Circle.hpp"
-#include "MovableSquare.h"
-#include "Canvas.hpp"
+#include "../Figures/Square.hpp"
+#include "../Figures/Circle.hpp"
+#include "../Figures/MovableSquare.h"
+#include "../Canvas.hpp"
 #include <stdlib.h>
 #include <time.h>
 

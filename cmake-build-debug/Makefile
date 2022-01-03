@@ -128,53 +128,53 @@ task0/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/build
 .PHONY : task0/fast
 
-AllegroApp.obj: AllegroApp.cpp.obj
-.PHONY : AllegroApp.obj
+Allegro/AllegroApp.obj: Allegro/AllegroApp.cpp.obj
+.PHONY : Allegro/AllegroApp.obj
 
 # target to build an object file
-AllegroApp.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/AllegroApp.cpp.obj
-.PHONY : AllegroApp.cpp.obj
+Allegro/AllegroApp.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Allegro/AllegroApp.cpp.obj
+.PHONY : Allegro/AllegroApp.cpp.obj
 
-AllegroApp.i: AllegroApp.cpp.i
-.PHONY : AllegroApp.i
+Allegro/AllegroApp.i: Allegro/AllegroApp.cpp.i
+.PHONY : Allegro/AllegroApp.i
 
 # target to preprocess a source file
-AllegroApp.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/AllegroApp.cpp.i
-.PHONY : AllegroApp.cpp.i
+Allegro/AllegroApp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Allegro/AllegroApp.cpp.i
+.PHONY : Allegro/AllegroApp.cpp.i
 
-AllegroApp.s: AllegroApp.cpp.s
-.PHONY : AllegroApp.s
+Allegro/AllegroApp.s: Allegro/AllegroApp.cpp.s
+.PHONY : Allegro/AllegroApp.s
 
 # target to generate assembly for a file
-AllegroApp.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/AllegroApp.cpp.s
-.PHONY : AllegroApp.cpp.s
+Allegro/AllegroApp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Allegro/AllegroApp.cpp.s
+.PHONY : Allegro/AllegroApp.cpp.s
 
-AllegroBase.obj: AllegroBase.cpp.obj
-.PHONY : AllegroBase.obj
+Allegro/AllegroBase.obj: Allegro/AllegroBase.cpp.obj
+.PHONY : Allegro/AllegroBase.obj
 
 # target to build an object file
-AllegroBase.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/AllegroBase.cpp.obj
-.PHONY : AllegroBase.cpp.obj
+Allegro/AllegroBase.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Allegro/AllegroBase.cpp.obj
+.PHONY : Allegro/AllegroBase.cpp.obj
 
-AllegroBase.i: AllegroBase.cpp.i
-.PHONY : AllegroBase.i
+Allegro/AllegroBase.i: Allegro/AllegroBase.cpp.i
+.PHONY : Allegro/AllegroBase.i
 
 # target to preprocess a source file
-AllegroBase.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/AllegroBase.cpp.i
-.PHONY : AllegroBase.cpp.i
+Allegro/AllegroBase.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Allegro/AllegroBase.cpp.i
+.PHONY : Allegro/AllegroBase.cpp.i
 
-AllegroBase.s: AllegroBase.cpp.s
-.PHONY : AllegroBase.s
+Allegro/AllegroBase.s: Allegro/AllegroBase.cpp.s
+.PHONY : Allegro/AllegroBase.s
 
 # target to generate assembly for a file
-AllegroBase.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/AllegroBase.cpp.s
-.PHONY : AllegroBase.cpp.s
+Allegro/AllegroBase.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Allegro/AllegroBase.cpp.s
+.PHONY : Allegro/AllegroBase.cpp.s
 
 Canvas.obj: Canvas.cpp.obj
 .PHONY : Canvas.obj
@@ -199,30 +199,6 @@ Canvas.s: Canvas.cpp.s
 Canvas.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Canvas.cpp.s
 .PHONY : Canvas.cpp.s
-
-Circle.obj: Circle.cpp.obj
-.PHONY : Circle.obj
-
-# target to build an object file
-Circle.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Circle.cpp.obj
-.PHONY : Circle.cpp.obj
-
-Circle.i: Circle.cpp.i
-.PHONY : Circle.i
-
-# target to preprocess a source file
-Circle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Circle.cpp.i
-.PHONY : Circle.cpp.i
-
-Circle.s: Circle.cpp.s
-.PHONY : Circle.s
-
-# target to generate assembly for a file
-Circle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Circle.cpp.s
-.PHONY : Circle.cpp.s
 
 Exceptions/EApp.obj: Exceptions/EApp.cpp.obj
 .PHONY : Exceptions/EApp.obj
@@ -320,6 +296,30 @@ Exceptions/EFigureCollision.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.s
 .PHONY : Exceptions/EFigureCollision.cpp.s
 
+Exceptions/EFigureDeath.obj: Exceptions/EFigureDeath.cpp.obj
+.PHONY : Exceptions/EFigureDeath.obj
+
+# target to build an object file
+Exceptions/EFigureDeath.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EFigureDeath.cpp.obj
+.PHONY : Exceptions/EFigureDeath.cpp.obj
+
+Exceptions/EFigureDeath.i: Exceptions/EFigureDeath.cpp.i
+.PHONY : Exceptions/EFigureDeath.i
+
+# target to preprocess a source file
+Exceptions/EFigureDeath.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EFigureDeath.cpp.i
+.PHONY : Exceptions/EFigureDeath.cpp.i
+
+Exceptions/EFigureDeath.s: Exceptions/EFigureDeath.cpp.s
+.PHONY : Exceptions/EFigureDeath.s
+
+# target to generate assembly for a file
+Exceptions/EFigureDeath.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EFigureDeath.cpp.s
+.PHONY : Exceptions/EFigureDeath.cpp.s
+
 Exceptions/EHit.obj: Exceptions/EHit.cpp.obj
 .PHONY : Exceptions/EHit.obj
 
@@ -368,101 +368,149 @@ Exceptions/EHitBoth.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EHitBoth.cpp.s
 .PHONY : Exceptions/EHitBoth.cpp.s
 
-Figure.obj: Figure.cpp.obj
-.PHONY : Figure.obj
+Factories/FigureFactory.obj: Factories/FigureFactory.cpp.obj
+.PHONY : Factories/FigureFactory.obj
 
 # target to build an object file
-Figure.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Figure.cpp.obj
-.PHONY : Figure.cpp.obj
+Factories/FigureFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Factories/FigureFactory.cpp.obj
+.PHONY : Factories/FigureFactory.cpp.obj
 
-Figure.i: Figure.cpp.i
-.PHONY : Figure.i
+Factories/FigureFactory.i: Factories/FigureFactory.cpp.i
+.PHONY : Factories/FigureFactory.i
 
 # target to preprocess a source file
-Figure.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Figure.cpp.i
-.PHONY : Figure.cpp.i
+Factories/FigureFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Factories/FigureFactory.cpp.i
+.PHONY : Factories/FigureFactory.cpp.i
 
-Figure.s: Figure.cpp.s
-.PHONY : Figure.s
+Factories/FigureFactory.s: Factories/FigureFactory.cpp.s
+.PHONY : Factories/FigureFactory.s
 
 # target to generate assembly for a file
-Figure.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Figure.cpp.s
-.PHONY : Figure.cpp.s
+Factories/FigureFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Factories/FigureFactory.cpp.s
+.PHONY : Factories/FigureFactory.cpp.s
 
-FigureFactory.obj: FigureFactory.cpp.obj
-.PHONY : FigureFactory.obj
+Figures/Circle.obj: Figures/Circle.cpp.obj
+.PHONY : Figures/Circle.obj
 
 # target to build an object file
-FigureFactory.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/FigureFactory.cpp.obj
-.PHONY : FigureFactory.cpp.obj
+Figures/Circle.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Figures/Circle.cpp.obj
+.PHONY : Figures/Circle.cpp.obj
 
-FigureFactory.i: FigureFactory.cpp.i
-.PHONY : FigureFactory.i
+Figures/Circle.i: Figures/Circle.cpp.i
+.PHONY : Figures/Circle.i
 
 # target to preprocess a source file
-FigureFactory.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/FigureFactory.cpp.i
-.PHONY : FigureFactory.cpp.i
+Figures/Circle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Figures/Circle.cpp.i
+.PHONY : Figures/Circle.cpp.i
 
-FigureFactory.s: FigureFactory.cpp.s
-.PHONY : FigureFactory.s
+Figures/Circle.s: Figures/Circle.cpp.s
+.PHONY : Figures/Circle.s
 
 # target to generate assembly for a file
-FigureFactory.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/FigureFactory.cpp.s
-.PHONY : FigureFactory.cpp.s
+Figures/Circle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Figures/Circle.cpp.s
+.PHONY : Figures/Circle.cpp.s
 
-ISerializable.obj: ISerializable.cpp.obj
-.PHONY : ISerializable.obj
+Figures/Figure.obj: Figures/Figure.cpp.obj
+.PHONY : Figures/Figure.obj
 
 # target to build an object file
-ISerializable.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/ISerializable.cpp.obj
-.PHONY : ISerializable.cpp.obj
+Figures/Figure.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Figures/Figure.cpp.obj
+.PHONY : Figures/Figure.cpp.obj
 
-ISerializable.i: ISerializable.cpp.i
-.PHONY : ISerializable.i
+Figures/Figure.i: Figures/Figure.cpp.i
+.PHONY : Figures/Figure.i
 
 # target to preprocess a source file
-ISerializable.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/ISerializable.cpp.i
-.PHONY : ISerializable.cpp.i
+Figures/Figure.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Figures/Figure.cpp.i
+.PHONY : Figures/Figure.cpp.i
 
-ISerializable.s: ISerializable.cpp.s
-.PHONY : ISerializable.s
+Figures/Figure.s: Figures/Figure.cpp.s
+.PHONY : Figures/Figure.s
 
 # target to generate assembly for a file
-ISerializable.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/ISerializable.cpp.s
-.PHONY : ISerializable.cpp.s
+Figures/Figure.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Figures/Figure.cpp.s
+.PHONY : Figures/Figure.cpp.s
 
-MovableSquare.obj: MovableSquare.cpp.obj
-.PHONY : MovableSquare.obj
+Figures/MovableSquare.obj: Figures/MovableSquare.cpp.obj
+.PHONY : Figures/MovableSquare.obj
 
 # target to build an object file
-MovableSquare.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/MovableSquare.cpp.obj
-.PHONY : MovableSquare.cpp.obj
+Figures/MovableSquare.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Figures/MovableSquare.cpp.obj
+.PHONY : Figures/MovableSquare.cpp.obj
 
-MovableSquare.i: MovableSquare.cpp.i
-.PHONY : MovableSquare.i
+Figures/MovableSquare.i: Figures/MovableSquare.cpp.i
+.PHONY : Figures/MovableSquare.i
 
 # target to preprocess a source file
-MovableSquare.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/MovableSquare.cpp.i
-.PHONY : MovableSquare.cpp.i
+Figures/MovableSquare.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Figures/MovableSquare.cpp.i
+.PHONY : Figures/MovableSquare.cpp.i
 
-MovableSquare.s: MovableSquare.cpp.s
-.PHONY : MovableSquare.s
+Figures/MovableSquare.s: Figures/MovableSquare.cpp.s
+.PHONY : Figures/MovableSquare.s
 
 # target to generate assembly for a file
-MovableSquare.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/MovableSquare.cpp.s
-.PHONY : MovableSquare.cpp.s
+Figures/MovableSquare.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Figures/MovableSquare.cpp.s
+.PHONY : Figures/MovableSquare.cpp.s
+
+Figures/Square.obj: Figures/Square.cpp.obj
+.PHONY : Figures/Square.obj
+
+# target to build an object file
+Figures/Square.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Figures/Square.cpp.obj
+.PHONY : Figures/Square.cpp.obj
+
+Figures/Square.i: Figures/Square.cpp.i
+.PHONY : Figures/Square.i
+
+# target to preprocess a source file
+Figures/Square.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Figures/Square.cpp.i
+.PHONY : Figures/Square.cpp.i
+
+Figures/Square.s: Figures/Square.cpp.s
+.PHONY : Figures/Square.s
+
+# target to generate assembly for a file
+Figures/Square.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Figures/Square.cpp.s
+.PHONY : Figures/Square.cpp.s
+
+Interfaces/ISerializable.obj: Interfaces/ISerializable.cpp.obj
+.PHONY : Interfaces/ISerializable.obj
+
+# target to build an object file
+Interfaces/ISerializable.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Interfaces/ISerializable.cpp.obj
+.PHONY : Interfaces/ISerializable.cpp.obj
+
+Interfaces/ISerializable.i: Interfaces/ISerializable.cpp.i
+.PHONY : Interfaces/ISerializable.i
+
+# target to preprocess a source file
+Interfaces/ISerializable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Interfaces/ISerializable.cpp.i
+.PHONY : Interfaces/ISerializable.cpp.i
+
+Interfaces/ISerializable.s: Interfaces/ISerializable.cpp.s
+.PHONY : Interfaces/ISerializable.s
+
+# target to generate assembly for a file
+Interfaces/ISerializable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Interfaces/ISerializable.cpp.s
+.PHONY : Interfaces/ISerializable.cpp.s
 
 Preferences.obj: Preferences.cpp.obj
 .PHONY : Preferences.obj
@@ -511,30 +559,6 @@ Screen.s: Screen.cpp.s
 Screen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Screen.cpp.s
 .PHONY : Screen.cpp.s
-
-Square.obj: Square.cpp.obj
-.PHONY : Square.obj
-
-# target to build an object file
-Square.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Square.cpp.obj
-.PHONY : Square.cpp.obj
-
-Square.i: Square.cpp.i
-.PHONY : Square.i
-
-# target to preprocess a source file
-Square.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Square.cpp.i
-.PHONY : Square.cpp.i
-
-Square.s: Square.cpp.s
-.PHONY : Square.s
-
-# target to generate assembly for a file
-Square.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Square.cpp.s
-.PHONY : Square.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -593,18 +617,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... task0
-	@echo ... AllegroApp.obj
-	@echo ... AllegroApp.i
-	@echo ... AllegroApp.s
-	@echo ... AllegroBase.obj
-	@echo ... AllegroBase.i
-	@echo ... AllegroBase.s
+	@echo ... Allegro/AllegroApp.obj
+	@echo ... Allegro/AllegroApp.i
+	@echo ... Allegro/AllegroApp.s
+	@echo ... Allegro/AllegroBase.obj
+	@echo ... Allegro/AllegroBase.i
+	@echo ... Allegro/AllegroBase.s
 	@echo ... Canvas.obj
 	@echo ... Canvas.i
 	@echo ... Canvas.s
-	@echo ... Circle.obj
-	@echo ... Circle.i
-	@echo ... Circle.s
 	@echo ... Exceptions/EApp.obj
 	@echo ... Exceptions/EApp.i
 	@echo ... Exceptions/EApp.s
@@ -617,33 +638,39 @@ help:
 	@echo ... Exceptions/EFigureCollision.obj
 	@echo ... Exceptions/EFigureCollision.i
 	@echo ... Exceptions/EFigureCollision.s
+	@echo ... Exceptions/EFigureDeath.obj
+	@echo ... Exceptions/EFigureDeath.i
+	@echo ... Exceptions/EFigureDeath.s
 	@echo ... Exceptions/EHit.obj
 	@echo ... Exceptions/EHit.i
 	@echo ... Exceptions/EHit.s
 	@echo ... Exceptions/EHitBoth.obj
 	@echo ... Exceptions/EHitBoth.i
 	@echo ... Exceptions/EHitBoth.s
-	@echo ... Figure.obj
-	@echo ... Figure.i
-	@echo ... Figure.s
-	@echo ... FigureFactory.obj
-	@echo ... FigureFactory.i
-	@echo ... FigureFactory.s
-	@echo ... ISerializable.obj
-	@echo ... ISerializable.i
-	@echo ... ISerializable.s
-	@echo ... MovableSquare.obj
-	@echo ... MovableSquare.i
-	@echo ... MovableSquare.s
+	@echo ... Factories/FigureFactory.obj
+	@echo ... Factories/FigureFactory.i
+	@echo ... Factories/FigureFactory.s
+	@echo ... Figures/Circle.obj
+	@echo ... Figures/Circle.i
+	@echo ... Figures/Circle.s
+	@echo ... Figures/Figure.obj
+	@echo ... Figures/Figure.i
+	@echo ... Figures/Figure.s
+	@echo ... Figures/MovableSquare.obj
+	@echo ... Figures/MovableSquare.i
+	@echo ... Figures/MovableSquare.s
+	@echo ... Figures/Square.obj
+	@echo ... Figures/Square.i
+	@echo ... Figures/Square.s
+	@echo ... Interfaces/ISerializable.obj
+	@echo ... Interfaces/ISerializable.i
+	@echo ... Interfaces/ISerializable.s
 	@echo ... Preferences.obj
 	@echo ... Preferences.i
 	@echo ... Preferences.s
 	@echo ... Screen.obj
 	@echo ... Screen.i
 	@echo ... Screen.s
-	@echo ... Square.obj
-	@echo ... Square.i
-	@echo ... Square.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

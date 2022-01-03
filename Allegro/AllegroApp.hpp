@@ -2,8 +2,8 @@
 #define ALLEGROAPP_H
 
 #include "AllegroBase.hpp"
-#include "Canvas.hpp"
-#include "MovableSquare.h"
+#include "../Canvas.hpp"
+#include "../Figures/MovableSquare.h"
 
 
 class AllegroApp : public AllegroBase
@@ -18,7 +18,7 @@ public:
 private:
     AllegroApp();
     ~AllegroApp();
-    static AllegroApp *instance;
+    Canvas canvas;
 
 };
 #endif // AllegroApp_H

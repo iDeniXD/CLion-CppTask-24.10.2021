@@ -5,10 +5,11 @@
 #include "MovableSquare.h"
 
 #include <iostream>
-#include "AllegroBase.hpp"
-#include "Canvas.hpp"
-#include "AllegroApp.hpp"
-#include "Exceptions/EDivide.h"
+#include "../Allegro/AllegroBase.hpp"
+#include "../Canvas.hpp"
+#include "../Allegro/AllegroApp.hpp"
+#include "../Exceptions/EDivide.h"
+#include "../Exceptions/EFigureDeath.h"
 #include <windows.h>
 #include <cstdlib>
 #include <cstdio>
@@ -24,7 +25,7 @@ MovableSquare::MovableSquare(double a, int health) :
 
     maxHealth_ = health_;
 }
-MovableSquare::~MovableSquare(){}
+MovableSquare::~MovableSquare(){ cout << "MovableSquare" << endl;}
 
 
 
@@ -102,7 +103,7 @@ void MovableSquare::SetHealth(int health)
 {
     this->health_ = health;
     if (health_ < 1)
-        Canvas::Instance().Remove(this);
+        throw EFigureDeath(this);
 }
 
 

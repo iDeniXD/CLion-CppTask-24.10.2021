@@ -5,7 +5,7 @@
 #ifndef TASK0_FIGUREFACTORY_H
 #define TASK0_FIGUREFACTORY_H
 
-#include "Figure.hpp"
+#include "../Figures/Figure.hpp"
 
 class FigureFactory
 {

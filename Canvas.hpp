@@ -1,7 +1,7 @@
 #ifndef CANVAS_H
 #define CANVAS_H
 
-#include "Figure.hpp"
+#include "Figures/Figure.hpp"
 
 using namespace std;
 #include <list>
@@ -13,14 +13,12 @@ typedef shared_ptr<Figure> SPFigure;
 class Canvas
 {
 private:
-    Canvas();
-    ~Canvas();
-
     list<SPFigure> figures_;
     list<SPFigure> toDel_;
     list<SPFigure> newFigures;
 public:
-    static Canvas &Instance();
+    Canvas();
+    ~Canvas();
 
     void Draw();
     void NextFrame();

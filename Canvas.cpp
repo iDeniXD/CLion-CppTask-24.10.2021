@@ -1,33 +1,24 @@
 #include <fstream>
 #include "Canvas.hpp"
-#include "AllegroBase.hpp"
+#include "Allegro/AllegroBase.hpp"
 
 #include "math2D.h"
-#include "FigureFactory.h"
-#include "Circle.hpp"
+#include "Factories/FigureFactory.h"
+#include "Figures/Circle.hpp"
 #include "Preferences.h"
 
 #include "algorithm"
 #include "numeric"
-#include "AllegroApp.hpp"
+#include "Allegro/AllegroApp.hpp"
 #include "Exceptions/EFigureCollision.h"
 #include "Exceptions/EHit.h"
 #include "Exceptions/EDivide.h"
 #include "Exceptions/EHitBoth.h"
+#include "Exceptions/EFigureDeath.h"
 
 
-Canvas::Canvas()
-{
-}
-Canvas::~Canvas()
-{
-}
-Canvas &Canvas::Instance() {
-    static Canvas instance;
-    return instance;
-}
-
-
+Canvas::Canvas(){}
+Canvas::~Canvas(){}
 void Canvas::Draw()
 {
     al_clear_to_color( al_map_rgb( 0, 0, 0 ) ); // Clear screen
@@ -42,48 +33,121 @@ void Canvas::NextFrame()
     ClearDeleted();
 }
 void Canvas::MoveFigures() {
-    for_each(figures_.begin(),figures_.end(),[this](SPFigure &f){
-        try {
+    for_each(figures_.begin(),figures_.end(),[this](SPFigure &f)
+    {
+        try
+        {
+            if (*prev(figures_.end()) != f)
+                for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[f](SPFigure &f2)
+                {
+                    math2D::CheckCollision(&*f,&*f2);
+                });
             f->Move();
+        }
+        catch (const EFigureCollision& e)
+        {
+            try
+            {
+                math2D::CollapseTwoFigures(e.f1,e.f2);
+            }
+            catch (const EFigureDeath& ed)
+            {
+                toDel_.push_back(SPFigure(e.f1));
+//                if (e.f2)
+//                    toDel_.push_back(SPFigure(e.f2));
+            }
         }
         catch (const EDivide& e)
         {
             newFigures.push_back(SPFigure(f->Divide()));
         }
+
         MovableSquare *movableSquare = dynamic_cast<MovableSquare *>(&*f);
         if (movableSquare)
             movableSquare->CheckPressedKeys();
+    });
 
-    });
-    for_each(figures_.begin(),figures_.end(),[this](SPFigure &f)
-    {
-        if (*prev(figures_.end()) != f)
-        {
-            for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[f](SPFigure &f2)
-            {
-                try
-                {
-                    math2D::CheckCollision(&*f,&*f2);
-                }
-                catch (const EFigureCollision& e)
-                {
-                    try
-                    {
-                        math2D::CollapseTwoFigures(e.f1,e.f2);
-                    }
-                    catch (const EHitBoth& e)
-                    {
-                        e.ms1->Collapsed(e.ms2);
-                        e.ms2->Collapsed(e.ms1);
-                    }
-                    catch (const EHit& e)
-                    {
-                        e.ms->Collapsed(e.f);
-                    }
-                }
-            });
-        }
-    });
+
+
+
+    // NOTTODO
+    //  try Move()
+    //  catch Collision - try f.Collapsed(e.f)
+    //                    catch Death - remove(e.f0) - remove (e.f1)
+    //  catch divide - Divide()
+    // TODO this won't work since figures need to be moved first and then checked on collision
+//    for_each(figures_.begin(),figures_.end(),[this](SPFigure &f){
+//        try
+//        {
+//            try {
+//                f->Move();
+//            }
+//            catch (const EDivide& e)
+//            {
+//                newFigures.push_back(SPFigure(f->Divide()));
+//            }
+//
+//            if (*prev(figures_.end()) != f)
+//                for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[f](SPFigure &f2)
+//                {
+//                    math2D::CheckCollision(&*f,&*f2);
+//                });
+//        }
+//        catch (const EFigureCollision& e)
+//        {
+//            try {
+//                f->Collapsed(e.f2);
+//            }
+//            catch (const EFigureDeath& e) {
+//                toDel_.push_back(SPFigure(e.f1));
+//                toDel_.push_back(SPFigure(e.f2));
+//            }
+//        }
+//
+//    });
+//
+//    for_each(figures_.begin(),figures_.end(),[this](SPFigure &f){
+//        try {
+//            f->Move();
+//        }
+//        catch (const EDivide& e)
+//        {
+//            newFigures.push_back(SPFigure(f->Divide()));
+//        }
+//        MovableSquare *movableSquare = dynamic_cast<MovableSquare *>(&*f);
+//        if (movableSquare)
+//            movableSquare->CheckPressedKeys();
+//
+//    });
+//    for_each(figures_.begin(),figures_.end(),[this](SPFigure &f)
+//    {
+//        if (*prev(figures_.end()) != f)
+//        {
+//            for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[f](SPFigure &f2)
+//            {
+//                try
+//                {
+//                    math2D::CheckCollision(&*f,&*f2);
+//                }
+//                catch (const EFigureCollision& e)
+//                {
+//                    try
+//                    {
+//                        math2D::CollapseTwoFigures(e.f1,e.f2); // TODO rename to collide
+//                    }
+//                    catch (const EHitBoth& e)
+//                    {
+//                        e.ms1->Collapsed(e.ms2);
+//                        e.ms2->Collapsed(e.ms1);
+//                    }
+//                    catch (const EHit& e)
+//                    {
+//                        e.ms->Collapsed(e.f);
+//                    }
+//                }
+//            });
+//        }
+//    });
 }
 void Canvas::AddNew() {
     for_each(newFigures.begin(),newFigures.end(),[this](const SPFigure& f)
@@ -92,7 +156,15 @@ void Canvas::AddNew() {
     });
     newFigures.clear();
 }
-void Canvas::ClearDeleted() {
+void Canvas::ClearDeleted() { // TODO stopped here. Problem: for some reason toDel.Clear() throws error
+    for_each(toDel_.begin(),toDel_.end(),[this](const SPFigure& f)
+    {
+        cout << &f << endl;
+    });
+    for_each(figures_.begin(),figures_.end(),[this](const SPFigure& f)
+    {
+        cout << &f << endl;
+    });
     for_each(toDel_.begin(),toDel_.end(),[this](const SPFigure& f)
     {
         figures_.remove(f);

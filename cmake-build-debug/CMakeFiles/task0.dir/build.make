@@ -65,33 +65,33 @@ include CMakeFiles/task0.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/task0.dir/flags.make
 
-CMakeFiles/task0.dir/AllegroApp.cpp.obj: CMakeFiles/task0.dir/flags.make
-CMakeFiles/task0.dir/AllegroApp.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
-CMakeFiles/task0.dir/AllegroApp.cpp.obj: ../AllegroApp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/task0.dir/AllegroApp.cpp.obj"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\AllegroApp.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\AllegroApp.cpp"
+CMakeFiles/task0.dir/Allegro/AllegroApp.cpp.obj: CMakeFiles/task0.dir/flags.make
+CMakeFiles/task0.dir/Allegro/AllegroApp.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
+CMakeFiles/task0.dir/Allegro/AllegroApp.cpp.obj: ../Allegro/AllegroApp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/task0.dir/Allegro/AllegroApp.cpp.obj"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Allegro\AllegroApp.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Allegro\AllegroApp.cpp"
 
-CMakeFiles/task0.dir/AllegroApp.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task0.dir/AllegroApp.cpp.i"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\AllegroApp.cpp" > CMakeFiles\task0.dir\AllegroApp.cpp.i
+CMakeFiles/task0.dir/Allegro/AllegroApp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task0.dir/Allegro/AllegroApp.cpp.i"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Allegro\AllegroApp.cpp" > CMakeFiles\task0.dir\Allegro\AllegroApp.cpp.i
 
-CMakeFiles/task0.dir/AllegroApp.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/AllegroApp.cpp.s"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\AllegroApp.cpp" -o CMakeFiles\task0.dir\AllegroApp.cpp.s
+CMakeFiles/task0.dir/Allegro/AllegroApp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/Allegro/AllegroApp.cpp.s"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Allegro\AllegroApp.cpp" -o CMakeFiles\task0.dir\Allegro\AllegroApp.cpp.s
 
-CMakeFiles/task0.dir/AllegroBase.cpp.obj: CMakeFiles/task0.dir/flags.make
-CMakeFiles/task0.dir/AllegroBase.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
-CMakeFiles/task0.dir/AllegroBase.cpp.obj: ../AllegroBase.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/task0.dir/AllegroBase.cpp.obj"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\AllegroBase.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\AllegroBase.cpp"
+CMakeFiles/task0.dir/Allegro/AllegroBase.cpp.obj: CMakeFiles/task0.dir/flags.make
+CMakeFiles/task0.dir/Allegro/AllegroBase.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
+CMakeFiles/task0.dir/Allegro/AllegroBase.cpp.obj: ../Allegro/AllegroBase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/task0.dir/Allegro/AllegroBase.cpp.obj"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Allegro\AllegroBase.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Allegro\AllegroBase.cpp"
 
-CMakeFiles/task0.dir/AllegroBase.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task0.dir/AllegroBase.cpp.i"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\AllegroBase.cpp" > CMakeFiles\task0.dir\AllegroBase.cpp.i
+CMakeFiles/task0.dir/Allegro/AllegroBase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task0.dir/Allegro/AllegroBase.cpp.i"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Allegro\AllegroBase.cpp" > CMakeFiles\task0.dir\Allegro\AllegroBase.cpp.i
 
-CMakeFiles/task0.dir/AllegroBase.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/AllegroBase.cpp.s"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\AllegroBase.cpp" -o CMakeFiles\task0.dir\AllegroBase.cpp.s
+CMakeFiles/task0.dir/Allegro/AllegroBase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/Allegro/AllegroBase.cpp.s"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Allegro\AllegroBase.cpp" -o CMakeFiles\task0.dir\Allegro\AllegroBase.cpp.s
 
 CMakeFiles/task0.dir/Canvas.cpp.obj: CMakeFiles/task0.dir/flags.make
 CMakeFiles/task0.dir/Canvas.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
@@ -107,24 +107,10 @@ CMakeFiles/task0.dir/Canvas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/Canvas.cpp.s"
 	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Canvas.cpp" -o CMakeFiles\task0.dir\Canvas.cpp.s
 
-CMakeFiles/task0.dir/Circle.cpp.obj: CMakeFiles/task0.dir/flags.make
-CMakeFiles/task0.dir/Circle.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
-CMakeFiles/task0.dir/Circle.cpp.obj: ../Circle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/task0.dir/Circle.cpp.obj"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Circle.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Circle.cpp"
-
-CMakeFiles/task0.dir/Circle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task0.dir/Circle.cpp.i"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Circle.cpp" > CMakeFiles\task0.dir\Circle.cpp.i
-
-CMakeFiles/task0.dir/Circle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/Circle.cpp.s"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Circle.cpp" -o CMakeFiles\task0.dir\Circle.cpp.s
-
 CMakeFiles/task0.dir/Exceptions/EApp.cpp.obj: CMakeFiles/task0.dir/flags.make
 CMakeFiles/task0.dir/Exceptions/EApp.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
 CMakeFiles/task0.dir/Exceptions/EApp.cpp.obj: ../Exceptions/EApp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/task0.dir/Exceptions/EApp.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/task0.dir/Exceptions/EApp.cpp.obj"
 	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Exceptions\EApp.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Exceptions\EApp.cpp"
 
 CMakeFiles/task0.dir/Exceptions/EApp.cpp.i: cmake_force
@@ -138,7 +124,7 @@ CMakeFiles/task0.dir/Exceptions/EApp.cpp.s: cmake_force
 CMakeFiles/task0.dir/Exceptions/EBorderCollision.cpp.obj: CMakeFiles/task0.dir/flags.make
 CMakeFiles/task0.dir/Exceptions/EBorderCollision.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
 CMakeFiles/task0.dir/Exceptions/EBorderCollision.cpp.obj: ../Exceptions/EBorderCollision.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/task0.dir/Exceptions/EBorderCollision.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/task0.dir/Exceptions/EBorderCollision.cpp.obj"
 	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Exceptions\EBorderCollision.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Exceptions\EBorderCollision.cpp"
 
 CMakeFiles/task0.dir/Exceptions/EBorderCollision.cpp.i: cmake_force
@@ -152,7 +138,7 @@ CMakeFiles/task0.dir/Exceptions/EBorderCollision.cpp.s: cmake_force
 CMakeFiles/task0.dir/Exceptions/EDivide.cpp.obj: CMakeFiles/task0.dir/flags.make
 CMakeFiles/task0.dir/Exceptions/EDivide.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
 CMakeFiles/task0.dir/Exceptions/EDivide.cpp.obj: ../Exceptions/EDivide.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/task0.dir/Exceptions/EDivide.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/task0.dir/Exceptions/EDivide.cpp.obj"
 	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Exceptions\EDivide.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Exceptions\EDivide.cpp"
 
 CMakeFiles/task0.dir/Exceptions/EDivide.cpp.i: cmake_force
@@ -166,7 +152,7 @@ CMakeFiles/task0.dir/Exceptions/EDivide.cpp.s: cmake_force
 CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj: CMakeFiles/task0.dir/flags.make
 CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
 CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj: ../Exceptions/EFigureCollision.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj"
 	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Exceptions\EFigureCollision.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Exceptions\EFigureCollision.cpp"
 
 CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.i: cmake_force
@@ -176,6 +162,20 @@ CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.i: cmake_force
 CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.s"
 	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Exceptions\EFigureCollision.cpp" -o CMakeFiles\task0.dir\Exceptions\EFigureCollision.cpp.s
+
+CMakeFiles/task0.dir/Exceptions/EFigureDeath.cpp.obj: CMakeFiles/task0.dir/flags.make
+CMakeFiles/task0.dir/Exceptions/EFigureDeath.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
+CMakeFiles/task0.dir/Exceptions/EFigureDeath.cpp.obj: ../Exceptions/EFigureDeath.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/task0.dir/Exceptions/EFigureDeath.cpp.obj"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Exceptions\EFigureDeath.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Exceptions\EFigureDeath.cpp"
+
+CMakeFiles/task0.dir/Exceptions/EFigureDeath.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task0.dir/Exceptions/EFigureDeath.cpp.i"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Exceptions\EFigureDeath.cpp" > CMakeFiles\task0.dir\Exceptions\EFigureDeath.cpp.i
+
+CMakeFiles/task0.dir/Exceptions/EFigureDeath.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/Exceptions/EFigureDeath.cpp.s"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Exceptions\EFigureDeath.cpp" -o CMakeFiles\task0.dir\Exceptions\EFigureDeath.cpp.s
 
 CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj: CMakeFiles/task0.dir/flags.make
 CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
@@ -205,66 +205,94 @@ CMakeFiles/task0.dir/Exceptions/EHitBoth.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/Exceptions/EHitBoth.cpp.s"
 	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Exceptions\EHitBoth.cpp" -o CMakeFiles\task0.dir\Exceptions\EHitBoth.cpp.s
 
-CMakeFiles/task0.dir/Figure.cpp.obj: CMakeFiles/task0.dir/flags.make
-CMakeFiles/task0.dir/Figure.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
-CMakeFiles/task0.dir/Figure.cpp.obj: ../Figure.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/task0.dir/Figure.cpp.obj"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Figure.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Figure.cpp"
+CMakeFiles/task0.dir/Factories/FigureFactory.cpp.obj: CMakeFiles/task0.dir/flags.make
+CMakeFiles/task0.dir/Factories/FigureFactory.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
+CMakeFiles/task0.dir/Factories/FigureFactory.cpp.obj: ../Factories/FigureFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/task0.dir/Factories/FigureFactory.cpp.obj"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Factories\FigureFactory.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Factories\FigureFactory.cpp"
 
-CMakeFiles/task0.dir/Figure.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task0.dir/Figure.cpp.i"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Figure.cpp" > CMakeFiles\task0.dir\Figure.cpp.i
+CMakeFiles/task0.dir/Factories/FigureFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task0.dir/Factories/FigureFactory.cpp.i"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Factories\FigureFactory.cpp" > CMakeFiles\task0.dir\Factories\FigureFactory.cpp.i
 
-CMakeFiles/task0.dir/Figure.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/Figure.cpp.s"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Figure.cpp" -o CMakeFiles\task0.dir\Figure.cpp.s
+CMakeFiles/task0.dir/Factories/FigureFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/Factories/FigureFactory.cpp.s"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Factories\FigureFactory.cpp" -o CMakeFiles\task0.dir\Factories\FigureFactory.cpp.s
 
-CMakeFiles/task0.dir/FigureFactory.cpp.obj: CMakeFiles/task0.dir/flags.make
-CMakeFiles/task0.dir/FigureFactory.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
-CMakeFiles/task0.dir/FigureFactory.cpp.obj: ../FigureFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/task0.dir/FigureFactory.cpp.obj"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\FigureFactory.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\FigureFactory.cpp"
+CMakeFiles/task0.dir/Figures/Circle.cpp.obj: CMakeFiles/task0.dir/flags.make
+CMakeFiles/task0.dir/Figures/Circle.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
+CMakeFiles/task0.dir/Figures/Circle.cpp.obj: ../Figures/Circle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/task0.dir/Figures/Circle.cpp.obj"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Figures\Circle.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Figures\Circle.cpp"
 
-CMakeFiles/task0.dir/FigureFactory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task0.dir/FigureFactory.cpp.i"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\FigureFactory.cpp" > CMakeFiles\task0.dir\FigureFactory.cpp.i
+CMakeFiles/task0.dir/Figures/Circle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task0.dir/Figures/Circle.cpp.i"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Figures\Circle.cpp" > CMakeFiles\task0.dir\Figures\Circle.cpp.i
 
-CMakeFiles/task0.dir/FigureFactory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/FigureFactory.cpp.s"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\FigureFactory.cpp" -o CMakeFiles\task0.dir\FigureFactory.cpp.s
+CMakeFiles/task0.dir/Figures/Circle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/Figures/Circle.cpp.s"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Figures\Circle.cpp" -o CMakeFiles\task0.dir\Figures\Circle.cpp.s
 
-CMakeFiles/task0.dir/ISerializable.cpp.obj: CMakeFiles/task0.dir/flags.make
-CMakeFiles/task0.dir/ISerializable.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
-CMakeFiles/task0.dir/ISerializable.cpp.obj: ../ISerializable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/task0.dir/ISerializable.cpp.obj"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\ISerializable.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\ISerializable.cpp"
+CMakeFiles/task0.dir/Figures/Figure.cpp.obj: CMakeFiles/task0.dir/flags.make
+CMakeFiles/task0.dir/Figures/Figure.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
+CMakeFiles/task0.dir/Figures/Figure.cpp.obj: ../Figures/Figure.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/task0.dir/Figures/Figure.cpp.obj"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Figures\Figure.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Figures\Figure.cpp"
 
-CMakeFiles/task0.dir/ISerializable.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task0.dir/ISerializable.cpp.i"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\ISerializable.cpp" > CMakeFiles\task0.dir\ISerializable.cpp.i
+CMakeFiles/task0.dir/Figures/Figure.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task0.dir/Figures/Figure.cpp.i"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Figures\Figure.cpp" > CMakeFiles\task0.dir\Figures\Figure.cpp.i
 
-CMakeFiles/task0.dir/ISerializable.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/ISerializable.cpp.s"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\ISerializable.cpp" -o CMakeFiles\task0.dir\ISerializable.cpp.s
+CMakeFiles/task0.dir/Figures/Figure.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/Figures/Figure.cpp.s"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Figures\Figure.cpp" -o CMakeFiles\task0.dir\Figures\Figure.cpp.s
 
-CMakeFiles/task0.dir/MovableSquare.cpp.obj: CMakeFiles/task0.dir/flags.make
-CMakeFiles/task0.dir/MovableSquare.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
-CMakeFiles/task0.dir/MovableSquare.cpp.obj: ../MovableSquare.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/task0.dir/MovableSquare.cpp.obj"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\MovableSquare.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\MovableSquare.cpp"
+CMakeFiles/task0.dir/Figures/MovableSquare.cpp.obj: CMakeFiles/task0.dir/flags.make
+CMakeFiles/task0.dir/Figures/MovableSquare.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
+CMakeFiles/task0.dir/Figures/MovableSquare.cpp.obj: ../Figures/MovableSquare.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/task0.dir/Figures/MovableSquare.cpp.obj"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Figures\MovableSquare.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Figures\MovableSquare.cpp"
 
-CMakeFiles/task0.dir/MovableSquare.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task0.dir/MovableSquare.cpp.i"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\MovableSquare.cpp" > CMakeFiles\task0.dir\MovableSquare.cpp.i
+CMakeFiles/task0.dir/Figures/MovableSquare.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task0.dir/Figures/MovableSquare.cpp.i"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Figures\MovableSquare.cpp" > CMakeFiles\task0.dir\Figures\MovableSquare.cpp.i
 
-CMakeFiles/task0.dir/MovableSquare.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/MovableSquare.cpp.s"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\MovableSquare.cpp" -o CMakeFiles\task0.dir\MovableSquare.cpp.s
+CMakeFiles/task0.dir/Figures/MovableSquare.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/Figures/MovableSquare.cpp.s"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Figures\MovableSquare.cpp" -o CMakeFiles\task0.dir\Figures\MovableSquare.cpp.s
+
+CMakeFiles/task0.dir/Figures/Square.cpp.obj: CMakeFiles/task0.dir/flags.make
+CMakeFiles/task0.dir/Figures/Square.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
+CMakeFiles/task0.dir/Figures/Square.cpp.obj: ../Figures/Square.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/task0.dir/Figures/Square.cpp.obj"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Figures\Square.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Figures\Square.cpp"
+
+CMakeFiles/task0.dir/Figures/Square.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task0.dir/Figures/Square.cpp.i"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Figures\Square.cpp" > CMakeFiles\task0.dir\Figures\Square.cpp.i
+
+CMakeFiles/task0.dir/Figures/Square.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/Figures/Square.cpp.s"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Figures\Square.cpp" -o CMakeFiles\task0.dir\Figures\Square.cpp.s
+
+CMakeFiles/task0.dir/Interfaces/ISerializable.cpp.obj: CMakeFiles/task0.dir/flags.make
+CMakeFiles/task0.dir/Interfaces/ISerializable.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
+CMakeFiles/task0.dir/Interfaces/ISerializable.cpp.obj: ../Interfaces/ISerializable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/task0.dir/Interfaces/ISerializable.cpp.obj"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Interfaces\ISerializable.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Interfaces\ISerializable.cpp"
+
+CMakeFiles/task0.dir/Interfaces/ISerializable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task0.dir/Interfaces/ISerializable.cpp.i"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Interfaces\ISerializable.cpp" > CMakeFiles\task0.dir\Interfaces\ISerializable.cpp.i
+
+CMakeFiles/task0.dir/Interfaces/ISerializable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/Interfaces/ISerializable.cpp.s"
+	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Interfaces\ISerializable.cpp" -o CMakeFiles\task0.dir\Interfaces\ISerializable.cpp.s
 
 CMakeFiles/task0.dir/Preferences.cpp.obj: CMakeFiles/task0.dir/flags.make
 CMakeFiles/task0.dir/Preferences.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
 CMakeFiles/task0.dir/Preferences.cpp.obj: ../Preferences.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/task0.dir/Preferences.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/task0.dir/Preferences.cpp.obj"
 	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Preferences.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Preferences.cpp"
 
 CMakeFiles/task0.dir/Preferences.cpp.i: cmake_force
@@ -278,7 +306,7 @@ CMakeFiles/task0.dir/Preferences.cpp.s: cmake_force
 CMakeFiles/task0.dir/Screen.cpp.obj: CMakeFiles/task0.dir/flags.make
 CMakeFiles/task0.dir/Screen.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
 CMakeFiles/task0.dir/Screen.cpp.obj: ../Screen.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/task0.dir/Screen.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/task0.dir/Screen.cpp.obj"
 	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Screen.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Screen.cpp"
 
 CMakeFiles/task0.dir/Screen.cpp.i: cmake_force
@@ -289,24 +317,10 @@ CMakeFiles/task0.dir/Screen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/Screen.cpp.s"
 	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Screen.cpp" -o CMakeFiles\task0.dir\Screen.cpp.s
 
-CMakeFiles/task0.dir/Square.cpp.obj: CMakeFiles/task0.dir/flags.make
-CMakeFiles/task0.dir/Square.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
-CMakeFiles/task0.dir/Square.cpp.obj: ../Square.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/task0.dir/Square.cpp.obj"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\Square.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Square.cpp"
-
-CMakeFiles/task0.dir/Square.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/task0.dir/Square.cpp.i"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Square.cpp" > CMakeFiles\task0.dir\Square.cpp.i
-
-CMakeFiles/task0.dir/Square.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/task0.dir/Square.cpp.s"
-	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\Square.cpp" -o CMakeFiles\task0.dir\Square.cpp.s
-
 CMakeFiles/task0.dir/main.cpp.obj: CMakeFiles/task0.dir/flags.make
 CMakeFiles/task0.dir/main.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
 CMakeFiles/task0.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/task0.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/task0.dir/main.cpp.obj"
 	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\main.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\main.cpp"
 
 CMakeFiles/task0.dir/main.cpp.i: cmake_force
@@ -320,7 +334,7 @@ CMakeFiles/task0.dir/main.cpp.s: cmake_force
 CMakeFiles/task0.dir/math2D.cpp.obj: CMakeFiles/task0.dir/flags.make
 CMakeFiles/task0.dir/math2D.cpp.obj: CMakeFiles/task0.dir/includes_CXX.rsp
 CMakeFiles/task0.dir/math2D.cpp.obj: ../math2D.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/task0.dir/math2D.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/task0.dir/math2D.cpp.obj"
 	E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\task0.dir\math2D.cpp.obj -c "E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\math2D.cpp"
 
 CMakeFiles/task0.dir/math2D.cpp.i: cmake_force
@@ -333,46 +347,48 @@ CMakeFiles/task0.dir/math2D.cpp.s: cmake_force
 
 # Object files for target task0
 task0_OBJECTS = \
-"CMakeFiles/task0.dir/AllegroApp.cpp.obj" \
-"CMakeFiles/task0.dir/AllegroBase.cpp.obj" \
+"CMakeFiles/task0.dir/Allegro/AllegroApp.cpp.obj" \
+"CMakeFiles/task0.dir/Allegro/AllegroBase.cpp.obj" \
 "CMakeFiles/task0.dir/Canvas.cpp.obj" \
-"CMakeFiles/task0.dir/Circle.cpp.obj" \
 "CMakeFiles/task0.dir/Exceptions/EApp.cpp.obj" \
 "CMakeFiles/task0.dir/Exceptions/EBorderCollision.cpp.obj" \
 "CMakeFiles/task0.dir/Exceptions/EDivide.cpp.obj" \
 "CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj" \
+"CMakeFiles/task0.dir/Exceptions/EFigureDeath.cpp.obj" \
 "CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj" \
 "CMakeFiles/task0.dir/Exceptions/EHitBoth.cpp.obj" \
-"CMakeFiles/task0.dir/Figure.cpp.obj" \
-"CMakeFiles/task0.dir/FigureFactory.cpp.obj" \
-"CMakeFiles/task0.dir/ISerializable.cpp.obj" \
-"CMakeFiles/task0.dir/MovableSquare.cpp.obj" \
+"CMakeFiles/task0.dir/Factories/FigureFactory.cpp.obj" \
+"CMakeFiles/task0.dir/Figures/Circle.cpp.obj" \
+"CMakeFiles/task0.dir/Figures/Figure.cpp.obj" \
+"CMakeFiles/task0.dir/Figures/MovableSquare.cpp.obj" \
+"CMakeFiles/task0.dir/Figures/Square.cpp.obj" \
+"CMakeFiles/task0.dir/Interfaces/ISerializable.cpp.obj" \
 "CMakeFiles/task0.dir/Preferences.cpp.obj" \
 "CMakeFiles/task0.dir/Screen.cpp.obj" \
-"CMakeFiles/task0.dir/Square.cpp.obj" \
 "CMakeFiles/task0.dir/main.cpp.obj" \
 "CMakeFiles/task0.dir/math2D.cpp.obj"
 
 # External object files for target task0
 task0_EXTERNAL_OBJECTS =
 
-task0.exe: CMakeFiles/task0.dir/AllegroApp.cpp.obj
-task0.exe: CMakeFiles/task0.dir/AllegroBase.cpp.obj
+task0.exe: CMakeFiles/task0.dir/Allegro/AllegroApp.cpp.obj
+task0.exe: CMakeFiles/task0.dir/Allegro/AllegroBase.cpp.obj
 task0.exe: CMakeFiles/task0.dir/Canvas.cpp.obj
-task0.exe: CMakeFiles/task0.dir/Circle.cpp.obj
 task0.exe: CMakeFiles/task0.dir/Exceptions/EApp.cpp.obj
 task0.exe: CMakeFiles/task0.dir/Exceptions/EBorderCollision.cpp.obj
 task0.exe: CMakeFiles/task0.dir/Exceptions/EDivide.cpp.obj
 task0.exe: CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj
+task0.exe: CMakeFiles/task0.dir/Exceptions/EFigureDeath.cpp.obj
 task0.exe: CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj
 task0.exe: CMakeFiles/task0.dir/Exceptions/EHitBoth.cpp.obj
-task0.exe: CMakeFiles/task0.dir/Figure.cpp.obj
-task0.exe: CMakeFiles/task0.dir/FigureFactory.cpp.obj
-task0.exe: CMakeFiles/task0.dir/ISerializable.cpp.obj
-task0.exe: CMakeFiles/task0.dir/MovableSquare.cpp.obj
+task0.exe: CMakeFiles/task0.dir/Factories/FigureFactory.cpp.obj
+task0.exe: CMakeFiles/task0.dir/Figures/Circle.cpp.obj
+task0.exe: CMakeFiles/task0.dir/Figures/Figure.cpp.obj
+task0.exe: CMakeFiles/task0.dir/Figures/MovableSquare.cpp.obj
+task0.exe: CMakeFiles/task0.dir/Figures/Square.cpp.obj
+task0.exe: CMakeFiles/task0.dir/Interfaces/ISerializable.cpp.obj
 task0.exe: CMakeFiles/task0.dir/Preferences.cpp.obj
 task0.exe: CMakeFiles/task0.dir/Screen.cpp.obj
-task0.exe: CMakeFiles/task0.dir/Square.cpp.obj
 task0.exe: CMakeFiles/task0.dir/main.cpp.obj
 task0.exe: CMakeFiles/task0.dir/math2D.cpp.obj
 task0.exe: CMakeFiles/task0.dir/build.make
@@ -381,7 +397,7 @@ task0.exe: E:/installed_CodeBlocks20/CodeBlocks20/MinGW/lib/liballegro_primitive
 task0.exe: CMakeFiles/task0.dir/linklibs.rsp
 task0.exe: CMakeFiles/task0.dir/objects1.rsp
 task0.exe: CMakeFiles/task0.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable task0.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="E:\Denis\Documents\DZ\Progmeistars\8 C++\5) 2021.10.24\tasks\task0\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable task0.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\task0.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

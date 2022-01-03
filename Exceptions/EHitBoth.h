@@ -6,10 +6,10 @@
 #define TASK0_EHITBOTH_H
 
 #include "EApp.h"
-#include "../Figure.hpp"
-#include "../MovableSquare.h"
+#include "../Figures/Figure.hpp"
+#include "../Figures/MovableSquare.h"
 
-struct EHitBoth : EApp
+struct EHitBoth : EApp // TODO do smth w name
 {
     MovableSquare *ms1;
     MovableSquare *ms2;

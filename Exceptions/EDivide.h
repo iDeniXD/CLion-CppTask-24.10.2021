@@ -6,7 +6,7 @@
 #define TASK0_EDIVIDE_H
 
 #include "EApp.h"
-#include "../Figure.hpp"
+#include "../Figures/Figure.hpp"
 
 struct EDivide : EApp
 {

@@ -3,12 +3,14 @@
 //
 
 #include "math2D.h"
+#include <algorithm>
 #include "math.h"
-#include "MovableSquare.h"
+#include "Figures/MovableSquare.h"
 #include "Exceptions/EFigureCollision.h"
 #include "Exceptions/EHit.h"
-#include "Canvas.hpp"
 #include "Exceptions/EHitBoth.h"
+#include "Allegro/AllegroApp.hpp"
+#include "Exceptions/EFigureDeath.h"
 
 void math2D::CheckCollision(Figure *f1, Figure *f2) {
     if (
@@ -44,18 +46,45 @@ void math2D::CollapseTwoFigures(Figure *f1, Figure *f2) {
     MovableSquare *ms2 = dynamic_cast<MovableSquare *>(f2);
 
     if (rand() % 5 == 1 && !ms1 && !ms2) // if random and both figures are not MovableSquare
-        Canvas::Instance().Remove((f1->GetMass() > f2->GetMass() ? f2 : f1));
-
-    if (ms1 and ms2)
-        throw EHitBoth(ms1, ms2);
-    if (ms1)
-        throw EHit(ms1, f2);
-    if (ms2)
-        throw EHit(ms2, f1);
+    {
+        if (f1->GetMass() > f2->GetMass())
+            throw EFigureDeath(f2);
+        else
+            throw EFigureDeath(f1);
+    }
+    else
+    {
+        EFigureDeath *e = new EFigureDeath();
+        if (ms1)
+        {
+            try {
+                ms1->Collapsed(f2);
+            }
+            catch (const EFigureDeath& e0)
+            {
+                e->f1 = ms1;
+            }
+        }
+        if (ms2)
+        {
+            try {
+                ms2->Collapsed(f1);
+            }
+            catch (const EFigureDeath& e0) {
+                if (e->f1)
+                    e->f2 = ms2;
+                else
+                    e->f1 = ms2;
+            }
+        }
+        if (e->f1)
+            throw *e;
+    }
 }
 double math2D::newVelocity(double v1, double v2, double m1, double m2) {
     return ((m1-m2)*v1 + 2*m2*v2)/(m1+m2);
 }
+
 
 
 

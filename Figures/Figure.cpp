@@ -1,10 +1,12 @@
 #include "Figure.hpp"
-#include "Preferences.h"
+#include "../Preferences.h"
 #include <stdlib.h>
 #include <time.h>
 #include "math.h"
-#include "FigureFactory.h"
-#include "Exceptions/EDivide.h"
+#include "../Factories/FigureFactory.h"
+#include "../Exceptions/EDivide.h"
+#include "../math2D.h"
+#include "../Exceptions/EFigureDeath.h"
 
 
 Figure::Figure(unsigned char color):
@@ -14,15 +16,18 @@ Figure::Figure(unsigned char color):
     velocity(10.0 - rand() % 21,
              10.0 - rand() % 21)
 {}
-Figure::~Figure(){}
+Figure::~Figure(){ cout << "Figure" << endl;}
 
 
 
 void Figure::Move()
 {
-    coords += velocity;
-    if (MbyDivide())
-        throw EDivide();
+    coords += velocity; // TODO think about Canvas::Instance->CheckCollision(this)
+//    if (MbyDivide())
+//        throw EDivide();
+}
+void Figure::Collapsed(Figure *f2) {
+    math2D::CollapseTwoFigures(this,f2);
 }
 bool Figure::MbyDivide() {
     return rand() % 1000 == 1;
@@ -226,16 +231,3 @@ string Figure::GetParameter(string &s, const string &field) {
     // tmp = 23
     return tmp;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -13,6 +13,7 @@ public:
 
     virtual void Draw();
     virtual void Move();
+    virtual void Collapsed(Figure *f);
 
     virtual double DistanceToEdgeFacingPoint(Point coords0);
 

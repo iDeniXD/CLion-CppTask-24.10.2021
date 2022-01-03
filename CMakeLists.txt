@@ -15,11 +15,20 @@ file(GLOB SOURCES
         "*.h"
         "*.cpp"
         "Exceptions/*.hpp"
-        "Exceptions/*.cpp")
+        "Exceptions/*.cpp"
+        "Figures/*.hpp"
+        "Figures/*.cpp"
+        "Interfaces/*.hpp"
+        "Interfaces/*.cpp"
+        "Factories/*.hpp"
+        "Factories/*.cpp"
+        "Allegro/*.hpp"
+        "Allegro/*.cpp"
+        )
 message("SOURCES = ${SOURCES}")
 
 
-add_executable(task0 ${SOURCES} Exceptions/EDivide.cpp Exceptions/EDivide.h Exceptions/EHit.cpp Exceptions/EHit.h Exceptions/EHitBoth.cpp Exceptions/EHitBoth.h Point.h)
+add_executable(task0 ${SOURCES} Exceptions/EDivide.cpp Exceptions/EDivide.h Exceptions/EHit.cpp Exceptions/EHit.h Exceptions/EHitBoth.cpp Exceptions/EHitBoth.h Point.h Exceptions/EFigureDeath.cpp Exceptions/EFigureDeath.h)
 
 
 message("LIBRARIES = ${LIBRARIES}")

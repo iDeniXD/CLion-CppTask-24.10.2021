@@ -82,28 +82,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroApp.cpp">
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Allegro/AllegroApp.cpp">
 			<Option target="task0"/>
 		</Unit>
-		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroApp.hpp">
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Allegro/AllegroApp.hpp">
 			<Option target="task0"/>
 		</Unit>
-		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroBase.cpp">
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Allegro/AllegroBase.cpp">
 			<Option target="task0"/>
 		</Unit>
-		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/AllegroBase.hpp">
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Allegro/AllegroBase.hpp">
 			<Option target="task0"/>
 		</Unit>
 		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.cpp">
 			<Option target="task0"/>
 		</Unit>
 		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.hpp">
-			<Option target="task0"/>
-		</Unit>
-		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Circle.cpp">
-			<Option target="task0"/>
-		</Unit>
-		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Circle.hpp">
 			<Option target="task0"/>
 		</Unit>
 		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.cpp">
@@ -130,6 +124,12 @@
 		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureCollision.h">
 			<Option target="task0"/>
 		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureDeath.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureDeath.h">
+			<Option target="task0"/>
+		</Unit>
 		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EHit.cpp">
 			<Option target="task0"/>
 		</Unit>
@@ -142,28 +142,40 @@
 		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EHitBoth.h">
 			<Option target="task0"/>
 		</Unit>
-		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.cpp">
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Factories/FigureFactory.cpp">
 			<Option target="task0"/>
 		</Unit>
-		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figure.hpp">
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Factories/FigureFactory.h">
 			<Option target="task0"/>
 		</Unit>
-		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory.cpp">
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Circle.cpp">
 			<Option target="task0"/>
 		</Unit>
-		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/FigureFactory.h">
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Circle.hpp">
 			<Option target="task0"/>
 		</Unit>
-		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable.cpp">
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Figure.cpp">
 			<Option target="task0"/>
 		</Unit>
-		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/ISerializable.h">
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Figure.hpp">
 			<Option target="task0"/>
 		</Unit>
-		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.cpp">
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/MovableSquare.cpp">
 			<Option target="task0"/>
 		</Unit>
-		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/MovableSquare.h">
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/MovableSquare.h">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Square.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Square.hpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Interfaces/ISerializable.cpp">
+			<Option target="task0"/>
+		</Unit>
+		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Interfaces/ISerializable.h">
 			<Option target="task0"/>
 		</Unit>
 		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h">
@@ -179,12 +191,6 @@
 			<Option target="task0"/>
 		</Unit>
 		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Screen.h">
-			<Option target="task0"/>
-		</Unit>
-		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.cpp">
-			<Option target="task0"/>
-		</Unit>
-		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Square.hpp">
 			<Option target="task0"/>
 		</Unit>
 		<Unit filename="E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/main.cpp">

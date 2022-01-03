@@ -1,7 +1,8 @@
 #include "Circle.hpp"
-#include "AllegroBase.hpp"
-#include "Preferences.h"
-#include "math2D.h"
+#include "../Allegro/AllegroBase.hpp"
+#include "../Preferences.h"
+#include "../math2D.h"
+#include "../Exceptions/EFigureDeath.h"
 
 Circle::Circle(double r, unsigned char color) :
     Figure(color),
@@ -9,7 +10,7 @@ Circle::Circle(double r, unsigned char color) :
 {
     mass_ = 3.14*r*r;
 }
-Circle::~Circle(){}
+Circle::~Circle(){ cout << "Circle" << endl;}
 
 
 
@@ -36,6 +37,14 @@ void Circle::Move()
     {
         Figure::Bounce(e.border,r_);
     }
+}
+void Circle::Collapsed(Figure *f) {
+    Figure::Collapsed(f);
+    if (rand() % 5 == 1) // if random and both figures are not MovableSquareif (f1->GetMass() > f2->GetMass())
+        if (this->GetMass() > f->GetMass())
+            throw EFigureDeath(f);
+        else
+            throw EFigureDeath(this);
 }
 
 

@@ -1,9 +1,9 @@
 #ifndef FIGURE_H
 #define FIGURE_H
 
-#include "ISerializable.h"
-#include "Point.h"
-#include "Exceptions/EBorderCollision.h"
+#include "../Interfaces/ISerializable.h"
+#include "../Point.h"
+#include "../Exceptions/EBorderCollision.h"
 
 
 class Figure : public ISerializable
@@ -21,6 +21,8 @@ public:
     virtual void Draw() = 0;
     virtual bool MbyDivide();
     virtual void Move();
+    virtual void Collapsed(Figure *f);
+
     typedef EBorderCollision::Border Border;
     virtual void Bounce(Border border, double side = 0);
     virtual void CheckMoveX(double side = 0);

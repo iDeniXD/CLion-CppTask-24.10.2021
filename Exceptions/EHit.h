@@ -6,8 +6,8 @@
 #define TASK0_EHIT_H
 
 #include "EApp.h"
-#include "../Figure.hpp"
-#include "../MovableSquare.h"
+#include "../Figures/Figure.hpp"
+#include "../Figures/MovableSquare.h"
 
 struct EHit : EApp
 {
