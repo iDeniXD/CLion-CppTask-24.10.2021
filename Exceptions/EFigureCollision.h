@@ -5,16 +5,18 @@
 #ifndef TASK0_EFIGURECOLLISION_H
 #define TASK0_EFIGURECOLLISION_H
 
+#include <memory>
 #include "EApp.h"
 #include "../Figures/Figure.hpp"
+#include "../Canvas.hpp"
 
 struct EFigureCollision : EApp
 {
 
-    Figure *f1;
-    Figure *f2;
+    SPFigure* f1;
+    SPFigure* f2;
 
-    EFigureCollision(Figure *f1, Figure *f2);
+    EFigureCollision(SPFigure* f1, SPFigure* f2);
     virtual ~EFigureCollision();
 
     virtual const char* what() const;

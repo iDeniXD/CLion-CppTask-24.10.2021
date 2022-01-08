@@ -16,18 +16,15 @@ Figure::Figure(unsigned char color):
     velocity(10.0 - rand() % 21,
              10.0 - rand() % 21)
 {}
-Figure::~Figure(){ cout << "Figure" << endl;}
+Figure::~Figure(){}
 
 
 
 void Figure::Move()
 {
-    coords += velocity; // TODO think about Canvas::Instance->CheckCollision(this)
+    coords += velocity; // TODO uncomment this
 //    if (MbyDivide())
 //        throw EDivide();
-}
-void Figure::Collapsed(Figure *f2) {
-    math2D::CollapseTwoFigures(this,f2);
 }
 bool Figure::MbyDivide() {
     return rand() % 1000 == 1;

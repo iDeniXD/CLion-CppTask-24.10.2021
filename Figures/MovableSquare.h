@@ -27,6 +27,7 @@ public:
 
     void CheckPressedKeys();
 
+    int GetHealth();
     void SetHealth(int health);
 
     virtual string ToString() const;

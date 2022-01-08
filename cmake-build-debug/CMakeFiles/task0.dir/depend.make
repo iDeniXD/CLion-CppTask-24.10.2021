@@ -230,21 +230,61 @@ CMakeFiles/task0.dir/Exceptions/EDivide.cpp.obj: \
  ../Interfaces/ISerializable.h \
  ../Point.h
 CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj: \
+ ../Canvas.hpp \
  ../Exceptions/EApp.h \
  ../Exceptions/EBorderCollision.h \
  ../Exceptions/EFigureCollision.cpp \
  ../Exceptions/EFigureCollision.h \
  ../Figures/Figure.hpp \
  ../Interfaces/ISerializable.h \
- ../Point.h
+ ../Point.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/altime.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/base.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/events.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/alconfig.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alandroidcfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/albcc32.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/aliphonecfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/allegro_sdl_config.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/almngw32.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/almsvc.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alosxcfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alplatf.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alraspberrypicfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alucfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alunix.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alwatcom.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/astdbool.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/astdint.h
 CMakeFiles/task0.dir/Exceptions/EFigureDeath.cpp.obj: \
+ ../Canvas.hpp \
  ../Exceptions/EApp.h \
  ../Exceptions/EBorderCollision.h \
  ../Exceptions/EFigureDeath.cpp \
  ../Exceptions/EFigureDeath.h \
  ../Figures/Figure.hpp \
+ ../Figures/MovableSquare.h \
+ ../Figures/Square.hpp \
  ../Interfaces/ISerializable.h \
- ../Point.h
+ ../Point.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/altime.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/base.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/events.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/alconfig.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alandroidcfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/albcc32.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/aliphonecfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/allegro_sdl_config.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/almngw32.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/almsvc.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alosxcfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alplatf.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alraspberrypicfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alucfg.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alunix.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alwatcom.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/astdbool.h \
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/astdint.h
 CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj: \
  ../Exceptions/EApp.h \
  ../Exceptions/EBorderCollision.h \
@@ -304,6 +344,8 @@ CMakeFiles/task0.dir/Figures/Circle.cpp.obj: \
  ../Figures/Circle.cpp \
  ../Figures/Circle.hpp \
  ../Figures/Figure.hpp \
+ ../Figures/MovableSquare.h \
+ ../Figures/Square.hpp \
  ../Interfaces/ISerializable.h \
  ../Point.h \
  ../Preferences.h \
@@ -376,6 +418,8 @@ CMakeFiles/task0.dir/Figures/Figure.cpp.obj: \
  ../Factories/FigureFactory.h \
  ../Figures/Figure.cpp \
  ../Figures/Figure.hpp \
+ ../Figures/MovableSquare.h \
+ ../Figures/Square.hpp \
  ../Interfaces/ISerializable.h \
  ../Point.h \
  ../Preferences.h \
@@ -478,6 +522,7 @@ CMakeFiles/task0.dir/Figures/Square.cpp.obj: \
  ../Exceptions/EBorderCollision.h \
  ../Exceptions/EFigureDeath.h \
  ../Figures/Figure.hpp \
+ ../Figures/MovableSquare.h \
  ../Figures/Square.cpp \
  ../Figures/Square.hpp \
  ../Interfaces/ISerializable.h \

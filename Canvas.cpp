@@ -35,24 +35,49 @@ void Canvas::NextFrame()
 void Canvas::MoveFigures() {
     for_each(figures_.begin(),figures_.end(),[this](SPFigure &f)
     {
+        f->Move();
+        MovableSquare *movableSquare = dynamic_cast<MovableSquare *>(&*f);
+        if (movableSquare)
+            movableSquare->CheckPressedKeys();
         try
         {
             if (*prev(figures_.end()) != f)
-                for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[f](SPFigure &f2)
+                for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[&f](SPFigure &f2)
                 {
-                    math2D::CheckCollision(&*f,&*f2);
+
+//                    try
+//                    {
+//                        math2D::CheckCollision(&*f,&*f2);
+//                    }
+//                    catch (const EFigureCollision& e) {
+//                        cout << "Address of the figure that is being checked for collision: " << &f << endl;
+//                        cout << "Address of the figure that is being check with: " << &f2 << endl << endl;
+//                    }
+                    math2D::CheckCollision(f,f2);
                 });
-            f->Move();
         }
-        catch (const EFigureCollision& e)
+        catch (EFigureCollision& e) // TODO rename all errors
         {
             try
             {
-                math2D::CollapseTwoFigures(e.f1,e.f2);
+//                cout << "Address of the figure that is about to be collided: " << &e.f1 << endl;
+//                SPFigure a = e.f1;
+//                cout << "Address of the figure that is about to be collided (as SPFigure): " << &a << endl;
+//                cout << "References: " << a.use_count() << endl;
+//                cout << "Address of the figure that is about to be collided with: " << &e.f2 << endl;
+//                SPFigure b = e.f2;
+//                cout << "Address of the figure that is about to be collided with (as SPFigure): " << &b << endl;
+//                cout << "References: " << b.use_count() << endl << endl;
+                math2D::CollapseTwoFigures(*e.f1,*e.f2);
             }
             catch (const EFigureDeath& ed)
             {
-                toDel_.push_back(SPFigure(e.f1));
+//                cout << "Address of the figure to be put in deleting list: " << &ed.f1 << endl;
+//                SPFigure a = SPFigure(ed.f1);
+//                cout << "Address of the figure to be put in deleting list (as SPFigure): " << &ed.f1 << endl << endl;
+                toDel_.push_back(SPFigure(*ed.f1));
+                if (ed.f2)
+                    toDel_.push_back(SPFigure(*ed.f2));
 //                if (e.f2)
 //                    toDel_.push_back(SPFigure(e.f2));
             }
@@ -62,9 +87,6 @@ void Canvas::MoveFigures() {
             newFigures.push_back(SPFigure(f->Divide()));
         }
 
-        MovableSquare *movableSquare = dynamic_cast<MovableSquare *>(&*f);
-        if (movableSquare)
-            movableSquare->CheckPressedKeys();
     });
 
 
@@ -156,17 +178,10 @@ void Canvas::AddNew() {
     });
     newFigures.clear();
 }
-void Canvas::ClearDeleted() { // TODO stopped here. Problem: for some reason toDel.Clear() throws error
+void Canvas::ClearDeleted() {
     for_each(toDel_.begin(),toDel_.end(),[this](const SPFigure& f)
     {
-        cout << &f << endl;
-    });
-    for_each(figures_.begin(),figures_.end(),[this](const SPFigure& f)
-    {
-        cout << &f << endl;
-    });
-    for_each(toDel_.begin(),toDel_.end(),[this](const SPFigure& f)
-    {
+        cout << f.use_count() << endl;
         figures_.remove(f);
     });
     toDel_.clear();
@@ -176,7 +191,7 @@ void Canvas::ClearDeleted() { // TODO stopped here. Problem: for some reason toD
 
 void Canvas::Add(Figure *f)
 {
-    figures_.push_back(SPFigure(f));
+    newFigures.push_back(SPFigure(f));
 }
 void Canvas::Remove(int i)
 {

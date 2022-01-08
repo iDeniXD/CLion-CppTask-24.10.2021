@@ -25,7 +25,7 @@ MovableSquare::MovableSquare(double a, int health) :
 
     maxHealth_ = health_;
 }
-MovableSquare::~MovableSquare(){ cout << "MovableSquare" << endl;}
+MovableSquare::~MovableSquare(){}
 
 
 
@@ -47,7 +47,7 @@ void MovableSquare::Draw() {
     );
 }
 void MovableSquare::Collapsed(Figure *f) {
-    this->SetHealth(health_ - (int)(f->GetMass() / this->mass_ * 10) % 50);
+    this->SetHealth(health_ - (int)(f->GetMass() / this->mass_ * 10) % 50); // TODO try to base damage on kinetic energy given
 }
 
 
@@ -99,11 +99,15 @@ void MovableSquare::CheckPressedKeys() {
 
 
 
+int MovableSquare::GetHealth() {
+    return health_;
+}
 void MovableSquare::SetHealth(int health)
 {
     this->health_ = health;
-    if (health_ < 1)
-        throw EFigureDeath(this);
+    if (health_ < 1) {
+        throw EFigureDeath();
+    }
 }
 
 
@@ -130,4 +134,5 @@ Figure *MovableSquare::Divide()
 {
     return nullptr;
 }
+
 

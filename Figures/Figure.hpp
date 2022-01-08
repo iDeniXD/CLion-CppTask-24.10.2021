@@ -21,7 +21,6 @@ public:
     virtual void Draw() = 0;
     virtual bool MbyDivide();
     virtual void Move();
-    virtual void Collapsed(Figure *f);
 
     typedef EBorderCollision::Border Border;
     virtual void Bounce(Border border, double side = 0);

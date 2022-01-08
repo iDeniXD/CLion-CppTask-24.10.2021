@@ -10,7 +10,7 @@ Square::Square(double a, unsigned char color) :
 {
     mass_ = a * a;
 }
-Square::~Square(){ cout << "Square" << endl;}
+Square::~Square(){}
 
 
 
@@ -42,14 +42,6 @@ void Square::Move()
     {
         Figure::Bounce(e.border,a_);
     }
-}
-void Square::Collapsed(Figure *f) {
-    Figure::Collapsed(f);
-    if (rand() % 5 == 1) // if random and both figures are not MovableSquareif (f1->GetMass() > f2->GetMass())
-        if (this->GetMass() > f->GetMass())
-            throw EFigureDeath(f);
-        else
-            throw EFigureDeath(this);
 }
 
 

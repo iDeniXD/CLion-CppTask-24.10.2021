@@ -10,7 +10,7 @@ Circle::Circle(double r, unsigned char color) :
 {
     mass_ = 3.14*r*r;
 }
-Circle::~Circle(){ cout << "Circle" << endl;}
+Circle::~Circle(){}
 
 
 
@@ -38,15 +38,6 @@ void Circle::Move()
         Figure::Bounce(e.border,r_);
     }
 }
-void Circle::Collapsed(Figure *f) {
-    Figure::Collapsed(f);
-    if (rand() % 5 == 1) // if random and both figures are not MovableSquareif (f1->GetMass() > f2->GetMass())
-        if (this->GetMass() > f->GetMass())
-            throw EFigureDeath(f);
-        else
-            throw EFigureDeath(this);
-}
-
 
 
 double Circle::DistanceToEdgeFacingPoint(Point coords0) {
