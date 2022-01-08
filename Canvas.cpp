@@ -121,7 +121,10 @@ void Canvas::CountIfTest() {
     }) << endl;
 }
 void Canvas::AccumulateTest() { // TODO solve this
-//    cout << "Total area of all figures: " << accumulate(figures_.begin(),figures_.end(),0.0, Figure::SumArea) << endl;
+    cout << "Total area of all figures: " << accumulate(figures_.begin(),figures_.end(), 0.0, Canvas::SumArea) << endl;
+}
+float Canvas::SumArea(float acc, const SPFigure& f) {
+    return Figure::SumArea(acc,&*f);
 }
 
 

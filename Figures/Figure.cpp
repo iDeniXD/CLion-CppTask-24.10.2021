@@ -153,7 +153,7 @@ void Figure::FromString(string &s)
 
 
 
-float Figure::SumArea(float acc, const Figure *f) {
+float Figure::SumArea(float acc, Figure *f) {
     return acc+(float)(f->mass_);
 }
 

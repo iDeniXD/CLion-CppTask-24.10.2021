@@ -32,6 +32,7 @@ public:
 
     void CountIfTest();
     void AccumulateTest();
+    static float SumArea(float acc, const SPFigure& f);
 
     void ClearMemory();
 
