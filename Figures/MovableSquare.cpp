@@ -13,6 +13,7 @@
 #include <windows.h>
 #include <cstdlib>
 #include <cstdio>
+#include <vector>
 
 using namespace std;
 
@@ -74,34 +75,30 @@ void MovableSquare::SpeedUp() {
 
 
 
-void MovableSquare::CheckPressedKeys() {
-    if ( AllegroApp::Instance().IsPressed( ALLEGRO_KEY_UP ) )
+void MovableSquare::OnKeyPressed(int i) {
+    if ( i == ALLEGRO_KEY_UP )
     {
         Up();
     }
-    if ( AllegroApp::Instance().IsPressed( ALLEGRO_KEY_DOWN ) )
+    if ( i == ALLEGRO_KEY_DOWN )
     {
         Down();
     }
-    if ( AllegroApp::Instance().IsPressed( ALLEGRO_KEY_LEFT ) )
+    if ( i == ALLEGRO_KEY_LEFT )
     {
         Left();
     }
-    if ( AllegroApp::Instance().IsPressed( ALLEGRO_KEY_RIGHT ) )
+    if ( i == ALLEGRO_KEY_RIGHT )
     {
         Right();
     }
-    if ( AllegroApp::Instance().IsPressed( ALLEGRO_KEY_LSHIFT ) )
+    if ( i == ALLEGRO_KEY_LSHIFT )
     {
         SpeedUp();
     }
 }
 
 
-
-int MovableSquare::GetHealth() {
-    return health_;
-}
 void MovableSquare::SetHealth(int health)
 {
     this->health_ = health;
@@ -133,6 +130,16 @@ void MovableSquare::FromString(string &s) {
 Figure *MovableSquare::Divide()
 {
     return nullptr;
+}
+std::vector<int> used_keys_ = {
+        ALLEGRO_KEY_UP,
+        ALLEGRO_KEY_DOWN,
+        ALLEGRO_KEY_LEFT,
+        ALLEGRO_KEY_RIGHT,
+        ALLEGRO_KEY_LSHIFT
+};
+vector<int> MovableSquare::GetUsedKeys() {
+    return used_keys_;
 }
 
 

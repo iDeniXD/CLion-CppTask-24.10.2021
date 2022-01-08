@@ -5,6 +5,8 @@
 #ifndef TASK0_MOVABLESQUARE_H
 #define TASK0_MOVABLESQUARE_H
 
+#include <list>
+#include <vector>
 #include "Square.hpp"
 
 class MovableSquare : public Square
@@ -25,9 +27,8 @@ public:
     void Right();
     void SpeedUp();
 
-    void CheckPressedKeys();
+    void OnKeyPressed(int i);
 
-    int GetHealth();
     void SetHealth(int health);
 
     virtual string ToString() const;
@@ -36,6 +37,7 @@ public:
     virtual Figure* Divide();
 
 
+    static std::vector<int> GetUsedKeys();
 };
 
 #endif //TASK0_MOVABLESQUARE_H

@@ -38,7 +38,7 @@ void Canvas::MoveFigures() {
         f->Move();
         MovableSquare *movableSquare = dynamic_cast<MovableSquare *>(&*f);
         if (movableSquare)
-            movableSquare->CheckPressedKeys();
+            movableSquare->OnKeyPressed(0);
         try
         {
             if (*prev(figures_.end()) != f)
@@ -138,7 +138,7 @@ void Canvas::MoveFigures() {
 //        }
 //        MovableSquare *movableSquare = dynamic_cast<MovableSquare *>(&*f);
 //        if (movableSquare)
-//            movableSquare->CheckPressedKeys();
+//            movableSquare->IsPressed();
 //
 //    });
 //    for_each(figures_.begin(),figures_.end(),[this](SPFigure &f)
@@ -268,8 +268,8 @@ void Canvas::LoadFigures() {
 
 
 
-void Canvas::OnKeyDown(const ALLEGRO_KEYBOARD_EVENT &event) {
-    switch (event.keycode) {
+void Canvas::OnKeyDown(int keycode) {
+    switch (keycode) {
         case ALLEGRO_KEY_F:
             CountIfTest();
             break;
@@ -282,10 +282,16 @@ void Canvas::OnKeyDown(const ALLEGRO_KEYBOARD_EVENT &event) {
         case ALLEGRO_KEY_L:
             LoadFigures();
             break;
-        case ALLEGRO_KEY_ESCAPE:
-            AllegroApp::Instance().Exit();
-            break;
+
     }
+}
+
+void Canvas::OnKeyPressed(int keycode) {
+    for_each(figures_.begin(), figures_.end(), [keycode](SPFigure &f) {
+        MovableSquare *movableSquare = dynamic_cast<MovableSquare *>(&*f);
+        if (movableSquare)
+            movableSquare->OnKeyPressed(keycode);
+    });
 }
 
 

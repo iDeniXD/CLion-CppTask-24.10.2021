@@ -10,13 +10,13 @@ int main(int argc, char **argv) {
     //  3) Make AllegroApp back into no Singleton
     //  4) Make AllegroApp controll keyboard events
     //  5) Improve collision physics
-    if ( !AllegroApp::Instance().Init( Preferences::Instance()->GetScreen().getWidth(),
+    AllegroApp app;
+    if ( !app.Init( Preferences::Instance()->GetScreen().getWidth(),
                     Preferences::Instance()->GetScreen().getHeight(),
                     Preferences::Instance()->GetScreen().getFPS() ) )
     {
         return 1;
     }
-    AllegroApp::Instance().Run();
-    AllegroApp::Instance().Stop();
+    app.Run();
     return 0;
 }

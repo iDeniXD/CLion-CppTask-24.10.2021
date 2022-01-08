@@ -4,20 +4,20 @@
 #include "AllegroBase.hpp"
 #include "../Canvas.hpp"
 #include "../Figures/MovableSquare.h"
+#include <algorithm>
 
 
 class AllegroApp : public AllegroBase
 {
 public:
-    static AllegroApp &Instance();
+    AllegroApp();
+    ~AllegroApp();
 
     virtual void Fps();
     virtual void Draw();
     virtual void OnKeyDown(const ALLEGRO_KEYBOARD_EVENT &keyboard );
-    void Stop();
+
 private:
-    AllegroApp();
-    ~AllegroApp();
     Canvas canvas;
 
 };

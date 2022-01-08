@@ -38,7 +38,8 @@ public:
     void SaveFigures();
     void LoadFigures();
 
-    void OnKeyDown(const ALLEGRO_KEYBOARD_EVENT &event);
+    void OnKeyDown(int keycode);
+    void OnKeyPressed(int keycode);
 
 };
 
