@@ -32,7 +32,7 @@ double math2D::DistanceBetweenTwoPoints(Point coords, Point coords0) {
     return DistanceBetweenTwoPoints(coords.GetX(),coords.GetY(),coords0.GetX(),coords0.GetY());
 }
 void math2D::CollideTwoFigures(SPFigure& f1, SPFigure& f2) {
-    double dxTMP = f1->GetdX(), dyTMP = f1->GetdY(); // TODO try to do tmp figure and f->Collide(f2/tmpF)
+    double dxTMP = f1->GetdX(), dyTMP = f1->GetdY();
 
     f1->SetdX(math2D::newVelocity(f1->GetdX(), f2->GetdX(), f1->GetMass(), f2->GetMass()));
     f1->SetdY(math2D::newVelocity(f1->GetdY(), f2->GetdY(), f1->GetMass(), f2->GetMass()));
@@ -49,7 +49,7 @@ void math2D::CollideTwoFigures(SPFigure& f1, SPFigure& f2) {
     }
     else
     {
-        EFigureDeath *e = 0;
+        EFigureDeath *FigureDeathError = 0;
         if (ms1)
         {
             try {
@@ -57,7 +57,7 @@ void math2D::CollideTwoFigures(SPFigure& f1, SPFigure& f2) {
             }
             catch (const EFigureDeath&)
             {
-                e = new EFigureDeath(&f1);
+                FigureDeathError = new EFigureDeath(&f1);
             }
         }
         if (ms2)
@@ -65,15 +65,15 @@ void math2D::CollideTwoFigures(SPFigure& f1, SPFigure& f2) {
             try {
                 ms2->Collided(&*f1);
             }
-            catch (const EFigureDeath& e0) {
-                if (e)
-                    e->f2 = &f2;
+            catch (const EFigureDeath&) {
+                if (FigureDeathError)
+                    FigureDeathError->f2 = &f2;
                 else
-                    e = new EFigureDeath(&f1);
+                    FigureDeathError = new EFigureDeath(&f1);
             }
         }
-        if (e)
-            throw *e;
+        if (FigureDeathError)
+            throw *FigureDeathError;
     }
 }
 double math2D::newVelocity(double v1, double v2, double m1, double m2) {

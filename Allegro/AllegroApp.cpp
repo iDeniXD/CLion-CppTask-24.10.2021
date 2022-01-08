@@ -15,10 +15,10 @@ AllegroApp::AllegroApp() :
     canvas.Add(FigureFactory::Create(FigureFactory::RandomSquare));
     canvas.Add(FigureFactory::Create(FigureFactory::RandomCircle));
     canvas.Add(FigureFactory::Create(FigureFactory::RandomSquare));
-//    try {
-//        canvas.Add(FigureFactory::Create(FigureFactory::Input)); // TODO uncomment this
-//    }
-//    catch (const invalid_argument&) {}
+    try {
+        canvas.Add(FigureFactory::Create(FigureFactory::Input));
+    }
+    catch (const invalid_argument&) {}
 }
 AllegroApp::~AllegroApp(){
     canvas.ClearMemory();

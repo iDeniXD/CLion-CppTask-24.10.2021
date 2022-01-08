@@ -42,17 +42,17 @@ void Canvas::MoveFigures() {
                     math2D::CheckCollision(f,f2);
                 });
         }
-        catch (EFigureCollision& e) // TODO rename all errors
+        catch (EFigureCollision& collisionError)
         {
             try
             {
-                math2D::CollideTwoFigures(*e.f1, *e.f2);
+                math2D::CollideTwoFigures(*collisionError.f1, *collisionError.f2);
             }
-            catch (const EFigureDeath& ed)
+            catch (const EFigureDeath& FigureDeathError)
             {
-                toDel_.push_back(SPFigure(*ed.f1));
-                if (ed.f2)
-                    toDel_.push_back(SPFigure(*ed.f2));
+                toDel_.push_back(SPFigure(*FigureDeathError.f1));
+                if (FigureDeathError.f2)
+                    toDel_.push_back(SPFigure(*FigureDeathError.f2));
             }
         }
         catch (const EDivide& e)
@@ -120,7 +120,7 @@ void Canvas::CountIfTest() {
         return f->GetY() > Preferences::Instance()->GetScreen().getHeight() / 2;
     }) << endl;
 }
-void Canvas::AccumulateTest() { // TODO solve this
+void Canvas::AccumulateTest() {
     cout << "Total area of all figures: " << accumulate(figures_.begin(),figures_.end(), 0.0, Canvas::SumArea) << endl;
 }
 float Canvas::SumArea(float acc, const SPFigure& f) {
