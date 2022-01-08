@@ -28,7 +28,7 @@ file(GLOB SOURCES
 message("SOURCES = ${SOURCES}")
 
 
-add_executable(task0 ${SOURCES} Exceptions/EDivide.cpp Exceptions/EDivide.h Exceptions/EHit.cpp Exceptions/EHit.h Exceptions/EHitBoth.cpp Exceptions/EHitBoth.h Point.h Exceptions/EFigureDeath.cpp Exceptions/EFigureDeath.h)
+add_executable(task0 ${SOURCES} Exceptions/EDivide.cpp Exceptions/EDivide.h Point.h Exceptions/EFigureDeath.cpp Exceptions/EFigureDeath.h)
 
 
 message("LIBRARIES = ${LIBRARIES}")

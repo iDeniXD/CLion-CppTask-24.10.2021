@@ -47,7 +47,7 @@ void MovableSquare::Draw() {
             al_map_rgb( 255, 255, 255 )
     );
 }
-void MovableSquare::Collapsed(Figure *f) {
+void MovableSquare::Collided(Figure *f) {
     this->SetHealth(health_ - (int)(f->GetMass() / this->mass_ * 10) % 50); // TODO try to base damage on kinetic energy given
 }
 

@@ -144,8 +144,6 @@ CMakeFiles/task0.dir/Canvas.cpp.obj: \
  ../Exceptions/EDivide.h \
  ../Exceptions/EFigureCollision.h \
  ../Exceptions/EFigureDeath.h \
- ../Exceptions/EHit.h \
- ../Exceptions/EHitBoth.h \
  ../Factories/FigureFactory.h \
  ../Figures/Circle.hpp \
  ../Figures/Figure.hpp \
@@ -285,26 +283,6 @@ CMakeFiles/task0.dir/Exceptions/EFigureDeath.cpp.obj: \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alwatcom.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/astdbool.h \
  E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/astdint.h
-CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj: \
- ../Exceptions/EApp.h \
- ../Exceptions/EBorderCollision.h \
- ../Exceptions/EHit.cpp \
- ../Exceptions/EHit.h \
- ../Figures/Figure.hpp \
- ../Figures/MovableSquare.h \
- ../Figures/Square.hpp \
- ../Interfaces/ISerializable.h \
- ../Point.h
-CMakeFiles/task0.dir/Exceptions/EHitBoth.cpp.obj: \
- ../Exceptions/EApp.h \
- ../Exceptions/EBorderCollision.h \
- ../Exceptions/EHitBoth.cpp \
- ../Exceptions/EHitBoth.h \
- ../Figures/Figure.hpp \
- ../Figures/MovableSquare.h \
- ../Figures/Square.hpp \
- ../Interfaces/ISerializable.h \
- ../Point.h
 CMakeFiles/task0.dir/Factories/FigureFactory.cpp.obj: \
  ../Canvas.hpp \
  ../Exceptions/EApp.h \
@@ -678,8 +656,6 @@ CMakeFiles/task0.dir/math2D.cpp.obj: \
  ../Exceptions/EBorderCollision.h \
  ../Exceptions/EFigureCollision.h \
  ../Exceptions/EFigureDeath.h \
- ../Exceptions/EHit.h \
- ../Exceptions/EHitBoth.h \
  ../Figures/Figure.hpp \
  ../Figures/MovableSquare.h \
  ../Figures/Square.hpp \

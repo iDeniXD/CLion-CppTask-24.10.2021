@@ -22,48 +22,48 @@ Figure::~Figure(){}
 
 void Figure::Move()
 {
-    coords += velocity; // TODO uncomment this
-//    if (MbyDivide())
-//        throw EDivide();
+    coords += velocity;
+    if (MbyDivide())
+        throw EDivide();
 }
 bool Figure::MbyDivide() {
     return rand() % 1000 == 1;
 }
-void Figure::Bounce(Border border, double side) {
+void Figure::Bounce(Border border, double centerToEdge) {
     switch (border)
     {
         case Border::BOTTOM:
             SetdY(-GetdY());
-            SetY(Preferences::Instance()->GetScreen().getHeight() - side/2);
+            SetY(Preferences::Instance()->GetScreen().getHeight() - centerToEdge);
 
             break;
         case Border::TOP:
             SetdY(-GetdY());
-            SetY(1.0 + side/2);
+            SetY(1.0 + centerToEdge);
 
             break;
         case Border::LEFT:
             SetdX(-GetdX());
-            SetX(1.0 + side/2);
+            SetX(1.0 + centerToEdge);
 
         break;
         case Border::RIGHT:
             SetdX(-GetdX());
-            SetX(Preferences::Instance()->GetScreen().getWidth() - side/2);
+            SetX(Preferences::Instance()->GetScreen().getWidth() - centerToEdge);
 
             break;
     }
 }
-void Figure::CheckMoveX(double side) {
-    if (GetX() - side/2 < 1.0)
+void Figure::CheckMoveX(double centerToEdge) {
+    if (GetX() - centerToEdge + GetdX() < 1.0)
         throw EBorderCollision(Border::LEFT);
-    if (GetX() + side/2 > Preferences::Instance()->GetScreen().getWidth())
+    if (GetX() + centerToEdge + GetdX() > Preferences::Instance()->GetScreen().getWidth())
         throw EBorderCollision(Border::RIGHT);
 }
-void Figure::CheckMoveY(double side) {
-    if (GetY() - side/2 < 1.0)
+void Figure::CheckMoveY(double centerToEdge) {
+    if (GetY() - centerToEdge + GetdY() < 1.0)
         throw EBorderCollision(Border::TOP);
-    if (GetY() + side/2 > Preferences::Instance()->GetScreen().getHeight())
+    if (GetY() + centerToEdge + GetdY() > Preferences::Instance()->GetScreen().getHeight())
         throw EBorderCollision(Border::BOTTOM);
 }
 

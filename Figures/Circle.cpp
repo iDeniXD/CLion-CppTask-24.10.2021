@@ -20,7 +20,6 @@ void Circle::Draw()
 }
 void Circle::Move()
 {
-    Figure::Move();
     try
     {
         Figure::CheckMoveX(r_);
@@ -37,6 +36,7 @@ void Circle::Move()
     {
         Figure::Bounce(e.border,r_);
     }
+    Figure::Move();
 }
 
 

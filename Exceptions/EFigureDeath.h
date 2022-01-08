@@ -12,9 +12,8 @@
 
 struct EFigureDeath : EApp
 {
-
-    SPFigure* f1;
-    SPFigure* f2;
+    SPFigure* f1 = nullptr;
+    SPFigure* f2 = nullptr;
     EFigureDeath(SPFigure *f1);
     EFigureDeath(SPFigure *f1, SPFigure *f2);
     EFigureDeath() = default;

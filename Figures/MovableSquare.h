@@ -19,7 +19,7 @@ public:
 
     virtual bool MbyDivide();
     virtual void Draw();
-    virtual void Collapsed(Figure *f);
+    virtual void Collided(Figure *f);
 
     void Up();
     void Down();

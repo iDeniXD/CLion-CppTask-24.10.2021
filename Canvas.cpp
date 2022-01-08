@@ -11,9 +11,7 @@
 #include "numeric"
 #include "Allegro/AllegroApp.hpp"
 #include "Exceptions/EFigureCollision.h"
-#include "Exceptions/EHit.h"
 #include "Exceptions/EDivide.h"
-#include "Exceptions/EHitBoth.h"
 #include "Exceptions/EFigureDeath.h"
 
 
@@ -35,24 +33,12 @@ void Canvas::NextFrame()
 void Canvas::MoveFigures() {
     for_each(figures_.begin(),figures_.end(),[this](SPFigure &f)
     {
-        f->Move();
-        MovableSquare *movableSquare = dynamic_cast<MovableSquare *>(&*f);
-        if (movableSquare)
-            movableSquare->OnKeyPressed(0);
         try
         {
+            f->Move();
             if (*prev(figures_.end()) != f)
                 for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[&f](SPFigure &f2)
                 {
-
-//                    try
-//                    {
-//                        math2D::CheckCollision(&*f,&*f2);
-//                    }
-//                    catch (const EFigureCollision& e) {
-//                        cout << "Address of the figure that is being checked for collision: " << &f << endl;
-//                        cout << "Address of the figure that is being check with: " << &f2 << endl << endl;
-//                    }
                     math2D::CheckCollision(f,f2);
                 });
         }
@@ -60,116 +46,20 @@ void Canvas::MoveFigures() {
         {
             try
             {
-//                cout << "Address of the figure that is about to be collided: " << &e.f1 << endl;
-//                SPFigure a = e.f1;
-//                cout << "Address of the figure that is about to be collided (as SPFigure): " << &a << endl;
-//                cout << "References: " << a.use_count() << endl;
-//                cout << "Address of the figure that is about to be collided with: " << &e.f2 << endl;
-//                SPFigure b = e.f2;
-//                cout << "Address of the figure that is about to be collided with (as SPFigure): " << &b << endl;
-//                cout << "References: " << b.use_count() << endl << endl;
-                math2D::CollapseTwoFigures(*e.f1,*e.f2);
+                math2D::CollideTwoFigures(*e.f1, *e.f2);
             }
             catch (const EFigureDeath& ed)
             {
-//                cout << "Address of the figure to be put in deleting list: " << &ed.f1 << endl;
-//                SPFigure a = SPFigure(ed.f1);
-//                cout << "Address of the figure to be put in deleting list (as SPFigure): " << &ed.f1 << endl << endl;
                 toDel_.push_back(SPFigure(*ed.f1));
                 if (ed.f2)
                     toDel_.push_back(SPFigure(*ed.f2));
-//                if (e.f2)
-//                    toDel_.push_back(SPFigure(e.f2));
             }
         }
         catch (const EDivide& e)
         {
             newFigures.push_back(SPFigure(f->Divide()));
         }
-
     });
-
-
-
-
-    // NOTTODO
-    //  try Move()
-    //  catch Collision - try f.Collapsed(e.f)
-    //                    catch Death - remove(e.f0) - remove (e.f1)
-    //  catch divide - Divide()
-    // TODO this won't work since figures need to be moved first and then checked on collision
-//    for_each(figures_.begin(),figures_.end(),[this](SPFigure &f){
-//        try
-//        {
-//            try {
-//                f->Move();
-//            }
-//            catch (const EDivide& e)
-//            {
-//                newFigures.push_back(SPFigure(f->Divide()));
-//            }
-//
-//            if (*prev(figures_.end()) != f)
-//                for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[f](SPFigure &f2)
-//                {
-//                    math2D::CheckCollision(&*f,&*f2);
-//                });
-//        }
-//        catch (const EFigureCollision& e)
-//        {
-//            try {
-//                f->Collapsed(e.f2);
-//            }
-//            catch (const EFigureDeath& e) {
-//                toDel_.push_back(SPFigure(e.f1));
-//                toDel_.push_back(SPFigure(e.f2));
-//            }
-//        }
-//
-//    });
-//
-//    for_each(figures_.begin(),figures_.end(),[this](SPFigure &f){
-//        try {
-//            f->Move();
-//        }
-//        catch (const EDivide& e)
-//        {
-//            newFigures.push_back(SPFigure(f->Divide()));
-//        }
-//        MovableSquare *movableSquare = dynamic_cast<MovableSquare *>(&*f);
-//        if (movableSquare)
-//            movableSquare->IsPressed();
-//
-//    });
-//    for_each(figures_.begin(),figures_.end(),[this](SPFigure &f)
-//    {
-//        if (*prev(figures_.end()) != f)
-//        {
-//            for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[f](SPFigure &f2)
-//            {
-//                try
-//                {
-//                    math2D::CheckCollision(&*f,&*f2);
-//                }
-//                catch (const EFigureCollision& e)
-//                {
-//                    try
-//                    {
-//                        math2D::CollapseTwoFigures(e.f1,e.f2); // TODO rename to collide
-//                    }
-//                    catch (const EHitBoth& e)
-//                    {
-//                        e.ms1->Collapsed(e.ms2);
-//                        e.ms2->Collapsed(e.ms1);
-//                    }
-//                    catch (const EHit& e)
-//                    {
-//                        e.ms->Collapsed(e.f);
-//                    }
-//                }
-//            });
-//        }
-//    });
 }
 void Canvas::AddNew() {
     for_each(newFigures.begin(),newFigures.end(),[this](const SPFigure& f)
@@ -181,7 +71,6 @@ void Canvas::AddNew() {
 void Canvas::ClearDeleted() {
     for_each(toDel_.begin(),toDel_.end(),[this](const SPFigure& f)
     {
-        cout << f.use_count() << endl;
         figures_.remove(f);
     });
     toDel_.clear();
@@ -231,7 +120,7 @@ void Canvas::CountIfTest() {
         return f->GetY() > Preferences::Instance()->GetScreen().getHeight() / 2;
     }) << endl;
 }
-void Canvas::AccumulateTest() {
+void Canvas::AccumulateTest() { // TODO solve this
 //    cout << "Total area of all figures: " << accumulate(figures_.begin(),figures_.end(),0.0, Figure::SumArea) << endl;
 }
 

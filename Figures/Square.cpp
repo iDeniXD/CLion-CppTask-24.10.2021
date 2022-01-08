@@ -25,23 +25,23 @@ void Square::Draw()
 }
 void Square::Move()
 {
+    try
+    {
+        Figure::CheckMoveX(a_/2);
+    }
+    catch (const EBorderCollision& e)
+    {
+        Figure::Bounce(e.border,a_/2);
+    }
+    try
+    {
+        Figure::CheckMoveY(a_/2);
+    }
+    catch (const EBorderCollision& e)
+    {
+        Figure::Bounce(e.border,a_/2);
+    }
     Figure::Move();
-    try
-    {
-        Figure::CheckMoveX(a_);
-    }
-    catch (const EBorderCollision& e)
-    {
-        Figure::Bounce(e.border,a_);
-    }
-    try
-    {
-        Figure::CheckMoveY(a_);
-    }
-    catch (const EBorderCollision& e)
-    {
-        Figure::Bounce(e.border,a_);
-    }
 }
 
 

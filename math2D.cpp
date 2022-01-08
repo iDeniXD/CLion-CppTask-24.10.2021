@@ -7,8 +7,6 @@
 #include "math.h"
 #include "Figures/MovableSquare.h"
 #include "Exceptions/EFigureCollision.h"
-#include "Exceptions/EHit.h"
-#include "Exceptions/EHitBoth.h"
 #include "Allegro/AllegroApp.hpp"
 #include "Exceptions/EFigureDeath.h"
 
@@ -33,8 +31,8 @@ double math2D::DistanceBetweenTwoPoints(double x1, double y1, double x2, double 
 double math2D::DistanceBetweenTwoPoints(Point coords, Point coords0) {
     return DistanceBetweenTwoPoints(coords.GetX(),coords.GetY(),coords0.GetX(),coords0.GetY());
 }
-void math2D::CollapseTwoFigures(SPFigure& f1, SPFigure& f2) {
-    double dxTMP = f1->GetdX(), dyTMP = f1->GetdY(); // TODO try to do tmp figure and f->Collapse(f2/tmpF)
+void math2D::CollideTwoFigures(SPFigure& f1, SPFigure& f2) {
+    double dxTMP = f1->GetdX(), dyTMP = f1->GetdY(); // TODO try to do tmp figure and f->Collide(f2/tmpF)
 
     f1->SetdX(math2D::newVelocity(f1->GetdX(), f2->GetdX(), f1->GetMass(), f2->GetMass()));
     f1->SetdY(math2D::newVelocity(f1->GetdY(), f2->GetdY(), f1->GetMass(), f2->GetMass()));
@@ -55,7 +53,7 @@ void math2D::CollapseTwoFigures(SPFigure& f1, SPFigure& f2) {
         if (ms1)
         {
             try {
-                ms1->Collapsed(&*f2);
+                ms1->Collided(&*f2);
             }
             catch (const EFigureDeath&)
             {
@@ -65,7 +63,7 @@ void math2D::CollapseTwoFigures(SPFigure& f1, SPFigure& f2) {
         if (ms2)
         {
             try {
-                ms2->Collapsed(&*f1);
+                ms2->Collided(&*f1);
             }
             catch (const EFigureDeath& e0) {
                 if (e)
