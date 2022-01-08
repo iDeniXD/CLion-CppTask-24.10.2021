@@ -4,6 +4,8 @@
 
 #include "EDivide.h"
 
+EDivide::EDivide() {}
+
 EDivide::~EDivide() {}
 
 const char *EDivide::what() const {

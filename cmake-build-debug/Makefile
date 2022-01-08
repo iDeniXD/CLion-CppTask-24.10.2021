@@ -320,54 +320,6 @@ Exceptions/EFigureDeath.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EFigureDeath.cpp.s
 .PHONY : Exceptions/EFigureDeath.cpp.s
 
-Exceptions/EHit.obj: Exceptions/EHit.cpp.obj
-.PHONY : Exceptions/EHit.obj
-
-# target to build an object file
-Exceptions/EHit.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj
-.PHONY : Exceptions/EHit.cpp.obj
-
-Exceptions/EHit.i: Exceptions/EHit.cpp.i
-.PHONY : Exceptions/EHit.i
-
-# target to preprocess a source file
-Exceptions/EHit.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EHit.cpp.i
-.PHONY : Exceptions/EHit.cpp.i
-
-Exceptions/EHit.s: Exceptions/EHit.cpp.s
-.PHONY : Exceptions/EHit.s
-
-# target to generate assembly for a file
-Exceptions/EHit.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EHit.cpp.s
-.PHONY : Exceptions/EHit.cpp.s
-
-Exceptions/EHitBoth.obj: Exceptions/EHitBoth.cpp.obj
-.PHONY : Exceptions/EHitBoth.obj
-
-# target to build an object file
-Exceptions/EHitBoth.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EHitBoth.cpp.obj
-.PHONY : Exceptions/EHitBoth.cpp.obj
-
-Exceptions/EHitBoth.i: Exceptions/EHitBoth.cpp.i
-.PHONY : Exceptions/EHitBoth.i
-
-# target to preprocess a source file
-Exceptions/EHitBoth.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EHitBoth.cpp.i
-.PHONY : Exceptions/EHitBoth.cpp.i
-
-Exceptions/EHitBoth.s: Exceptions/EHitBoth.cpp.s
-.PHONY : Exceptions/EHitBoth.s
-
-# target to generate assembly for a file
-Exceptions/EHitBoth.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\task0.dir\build.make CMakeFiles/task0.dir/Exceptions/EHitBoth.cpp.s
-.PHONY : Exceptions/EHitBoth.cpp.s
-
 Factories/FigureFactory.obj: Factories/FigureFactory.cpp.obj
 .PHONY : Factories/FigureFactory.obj
 
@@ -641,12 +593,6 @@ help:
 	@echo ... Exceptions/EFigureDeath.obj
 	@echo ... Exceptions/EFigureDeath.i
 	@echo ... Exceptions/EFigureDeath.s
-	@echo ... Exceptions/EHit.obj
-	@echo ... Exceptions/EHit.i
-	@echo ... Exceptions/EHit.s
-	@echo ... Exceptions/EHitBoth.obj
-	@echo ... Exceptions/EHitBoth.i
-	@echo ... Exceptions/EHitBoth.s
 	@echo ... Factories/FigureFactory.obj
 	@echo ... Factories/FigureFactory.i
 	@echo ... Factories/FigureFactory.s

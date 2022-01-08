@@ -144,8 +144,6 @@ CMakeFiles/task0.dir/Canvas.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EDivide.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureCollision.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureDeath.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EHit.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EHitBoth.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Factories/FigureFactory.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Circle.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Figure.hpp
@@ -230,6 +228,7 @@ CMakeFiles/task0.dir/Exceptions/EDivide.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Interfaces/ISerializable.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
 CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EBorderCollision.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureCollision.cpp
@@ -237,34 +236,53 @@ CMakeFiles/task0.dir/Exceptions/EFigureCollision.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Figure.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Interfaces/ISerializable.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/altime.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/base.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/events.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/alconfig.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alandroidcfg.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/albcc32.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/aliphonecfg.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/allegro_sdl_config.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/almngw32.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/almsvc.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alosxcfg.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alplatf.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alraspberrypicfg.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alucfg.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alunix.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alwatcom.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/astdbool.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/astdint.h
 CMakeFiles/task0.dir/Exceptions/EFigureDeath.cpp.obj
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EBorderCollision.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureDeath.cpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureDeath.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Figure.hpp
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Interfaces/ISerializable.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
-CMakeFiles/task0.dir/Exceptions/EHit.cpp.obj
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EBorderCollision.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EHit.cpp
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EHit.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Figure.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/MovableSquare.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Square.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Interfaces/ISerializable.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
-CMakeFiles/task0.dir/Exceptions/EHitBoth.cpp.obj
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EBorderCollision.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EHitBoth.cpp
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EHitBoth.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Figure.hpp
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/MovableSquare.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Square.hpp
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Interfaces/ISerializable.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/altime.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/base.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/events.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/internal/alconfig.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alandroidcfg.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/albcc32.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/aliphonecfg.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/allegro_sdl_config.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/almngw32.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/almsvc.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alosxcfg.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alplatf.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alraspberrypicfg.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alucfg.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alunix.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/alwatcom.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/astdbool.h
+ E:/installed_CodeBlocks20/CodeBlocks20/MinGW/include/allegro5/platform/astdint.h
 CMakeFiles/task0.dir/Factories/FigureFactory.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Canvas.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EApp.h
@@ -304,6 +322,8 @@ CMakeFiles/task0.dir/Figures/Circle.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Circle.cpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Circle.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Figure.hpp
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/MovableSquare.h
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Square.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Interfaces/ISerializable.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h
@@ -376,6 +396,8 @@ CMakeFiles/task0.dir/Figures/Figure.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Factories/FigureFactory.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Figure.cpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Figure.hpp
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/MovableSquare.h
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Square.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Interfaces/ISerializable.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Point.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Preferences.h
@@ -478,6 +500,7 @@ CMakeFiles/task0.dir/Figures/Square.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EBorderCollision.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureDeath.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Figure.hpp
+ E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/MovableSquare.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Square.cpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Square.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Interfaces/ISerializable.h
@@ -633,8 +656,6 @@ CMakeFiles/task0.dir/math2D.cpp.obj
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EBorderCollision.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureCollision.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EFigureDeath.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EHit.h
- E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Exceptions/EHitBoth.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Figure.hpp
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/MovableSquare.h
  E:/Denis/Documents/DZ/Progmeistars/8 C++/5) 2021.10.24/tasks/task0/Figures/Square.hpp

@@ -21,12 +21,11 @@ public:
     virtual void Draw() = 0;
     virtual bool MbyDivide();
     virtual void Move();
-    virtual void Collapsed(Figure *f);
 
     typedef EBorderCollision::Border Border;
-    virtual void Bounce(Border border, double side = 0);
-    virtual void CheckMoveX(double side = 0);
-    virtual void CheckMoveY(double side = 0);
+    virtual void Bounce(Border border, double centerToEdge = 0);
+    virtual void CheckMoveX(double centerToEdge = 0);
+    virtual void CheckMoveY(double centerToEdge = 0);
 
     virtual double DistanceToEdgeFacingPoint(Point coords0) = 0;
 
@@ -54,7 +53,7 @@ public:
     virtual void FromString(string &s);
 
     virtual Figure* Divide() = 0;
-    static float SumArea(float acc, const Figure *f);
+    static float SumArea(float acc, Figure *f);
 
     friend ostream & operator << (ostream &os, const Figure *f);
     friend istream & operator >> (istream &is, Figure *&f);

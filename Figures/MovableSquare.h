@@ -5,6 +5,8 @@
 #ifndef TASK0_MOVABLESQUARE_H
 #define TASK0_MOVABLESQUARE_H
 
+#include <list>
+#include <vector>
 #include "Square.hpp"
 
 class MovableSquare : public Square
@@ -17,7 +19,7 @@ public:
 
     virtual bool MbyDivide();
     virtual void Draw();
-    virtual void Collapsed(Figure *f);
+    virtual void Collided(Figure *f);
 
     void Up();
     void Down();
@@ -25,7 +27,7 @@ public:
     void Right();
     void SpeedUp();
 
-    void CheckPressedKeys();
+    void OnKeyPressed(int i);
 
     void SetHealth(int health);
 
@@ -35,6 +37,7 @@ public:
     virtual Figure* Divide();
 
 
+    static std::vector<int> GetUsedKeys();
 };
 
 #endif //TASK0_MOVABLESQUARE_H

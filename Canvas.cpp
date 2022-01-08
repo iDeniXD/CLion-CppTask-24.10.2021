@@ -11,9 +11,7 @@
 #include "numeric"
 #include "Allegro/AllegroApp.hpp"
 #include "Exceptions/EFigureCollision.h"
-#include "Exceptions/EHit.h"
 #include "Exceptions/EDivide.h"
-#include "Exceptions/EHitBoth.h"
 #include "Exceptions/EFigureDeath.h"
 
 
@@ -37,117 +35,31 @@ void Canvas::MoveFigures() {
     {
         try
         {
-            if (*prev(figures_.end()) != f)
-                for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[f](SPFigure &f2)
-                {
-                    math2D::CheckCollision(&*f,&*f2);
-                });
             f->Move();
+            if (*prev(figures_.end()) != f)
+                for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[&f](SPFigure &f2)
+                {
+                    math2D::CheckCollision(f,f2);
+                });
         }
-        catch (const EFigureCollision& e)
+        catch (EFigureCollision& collisionError)
         {
             try
             {
-                math2D::CollapseTwoFigures(e.f1,e.f2);
+                math2D::CollideTwoFigures(*collisionError.f1, *collisionError.f2);
             }
-            catch (const EFigureDeath& ed)
+            catch (const EFigureDeath& FigureDeathError)
             {
-                toDel_.push_back(SPFigure(e.f1));
-//                if (e.f2)
-//                    toDel_.push_back(SPFigure(e.f2));
+                toDel_.push_back(SPFigure(*FigureDeathError.f1));
+                if (FigureDeathError.f2)
+                    toDel_.push_back(SPFigure(*FigureDeathError.f2));
             }
         }
         catch (const EDivide& e)
         {
             newFigures.push_back(SPFigure(f->Divide()));
         }
-
-        MovableSquare *movableSquare = dynamic_cast<MovableSquare *>(&*f);
-        if (movableSquare)
-            movableSquare->CheckPressedKeys();
     });
-
-
-
-
-    // NOTTODO
-    //  try Move()
-    //  catch Collision - try f.Collapsed(e.f)
-    //                    catch Death - remove(e.f0) - remove (e.f1)
-    //  catch divide - Divide()
-    // TODO this won't work since figures need to be moved first and then checked on collision
-//    for_each(figures_.begin(),figures_.end(),[this](SPFigure &f){
-//        try
-//        {
-//            try {
-//                f->Move();
-//            }
-//            catch (const EDivide& e)
-//            {
-//                newFigures.push_back(SPFigure(f->Divide()));
-//            }
-//
-//            if (*prev(figures_.end()) != f)
-//                for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[f](SPFigure &f2)
-//                {
-//                    math2D::CheckCollision(&*f,&*f2);
-//                });
-//        }
-//        catch (const EFigureCollision& e)
-//        {
-//            try {
-//                f->Collapsed(e.f2);
-//            }
-//            catch (const EFigureDeath& e) {
-//                toDel_.push_back(SPFigure(e.f1));
-//                toDel_.push_back(SPFigure(e.f2));
-//            }
-//        }
-//
-//    });
-//
-//    for_each(figures_.begin(),figures_.end(),[this](SPFigure &f){
-//        try {
-//            f->Move();
-//        }
-//        catch (const EDivide& e)
-//        {
-//            newFigures.push_back(SPFigure(f->Divide()));
-//        }
-//        MovableSquare *movableSquare = dynamic_cast<MovableSquare *>(&*f);
-//        if (movableSquare)
-//            movableSquare->CheckPressedKeys();
-//
-//    });
-//    for_each(figures_.begin(),figures_.end(),[this](SPFigure &f)
-//    {
-//        if (*prev(figures_.end()) != f)
-//        {
-//            for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[f](SPFigure &f2)
-//            {
-//                try
-//                {
-//                    math2D::CheckCollision(&*f,&*f2);
-//                }
-//                catch (const EFigureCollision& e)
-//                {
-//                    try
-//                    {
-//                        math2D::CollapseTwoFigures(e.f1,e.f2); // TODO rename to collide
-//                    }
-//                    catch (const EHitBoth& e)
-//                    {
-//                        e.ms1->Collapsed(e.ms2);
-//                        e.ms2->Collapsed(e.ms1);
-//                    }
-//                    catch (const EHit& e)
-//                    {
-//                        e.ms->Collapsed(e.f);
-//                    }
-//                }
-//            });
-//        }
-//    });
 }
 void Canvas::AddNew() {
     for_each(newFigures.begin(),newFigures.end(),[this](const SPFigure& f)
@@ -156,15 +68,7 @@ void Canvas::AddNew() {
     });
     newFigures.clear();
 }
-void Canvas::ClearDeleted() { // TODO stopped here. Problem: for some reason toDel.Clear() throws error
-    for_each(toDel_.begin(),toDel_.end(),[this](const SPFigure& f)
-    {
-        cout << &f << endl;
-    });
-    for_each(figures_.begin(),figures_.end(),[this](const SPFigure& f)
-    {
-        cout << &f << endl;
-    });
+void Canvas::ClearDeleted() {
     for_each(toDel_.begin(),toDel_.end(),[this](const SPFigure& f)
     {
         figures_.remove(f);
@@ -176,7 +80,7 @@ void Canvas::ClearDeleted() { // TODO stopped here. Problem: for some reason toD
 
 void Canvas::Add(Figure *f)
 {
-    figures_.push_back(SPFigure(f));
+    newFigures.push_back(SPFigure(f));
 }
 void Canvas::Remove(int i)
 {
@@ -217,7 +121,10 @@ void Canvas::CountIfTest() {
     }) << endl;
 }
 void Canvas::AccumulateTest() {
-//    cout << "Total area of all figures: " << accumulate(figures_.begin(),figures_.end(),0.0, Figure::SumArea) << endl;
+    cout << "Total area of all figures: " << accumulate(figures_.begin(),figures_.end(), 0.0, Canvas::SumArea) << endl;
+}
+float Canvas::SumArea(float acc, const SPFigure& f) {
+    return Figure::SumArea(acc,&*f);
 }
 
 
@@ -253,8 +160,8 @@ void Canvas::LoadFigures() {
 
 
 
-void Canvas::OnKeyDown(const ALLEGRO_KEYBOARD_EVENT &event) {
-    switch (event.keycode) {
+void Canvas::OnKeyDown(int keycode) {
+    switch (keycode) {
         case ALLEGRO_KEY_F:
             CountIfTest();
             break;
@@ -267,10 +174,16 @@ void Canvas::OnKeyDown(const ALLEGRO_KEYBOARD_EVENT &event) {
         case ALLEGRO_KEY_L:
             LoadFigures();
             break;
-        case ALLEGRO_KEY_ESCAPE:
-            AllegroApp::Instance().Exit();
-            break;
+
     }
+}
+
+void Canvas::OnKeyPressed(int keycode) {
+    for_each(figures_.begin(), figures_.end(), [keycode](SPFigure &f) {
+        MovableSquare *movableSquare = dynamic_cast<MovableSquare *>(&*f);
+        if (movableSquare)
+            movableSquare->OnKeyPressed(keycode);
+    });
 }
 
 

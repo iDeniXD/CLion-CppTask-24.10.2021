@@ -4,7 +4,7 @@
 
 #include "EFigureCollision.h"
 
-EFigureCollision::EFigureCollision(Figure *f1, Figure *f2) :
+EFigureCollision::EFigureCollision(SPFigure* f1, SPFigure* f2) :
     f1(f1),
     f2(f2)
 {}

@@ -7,12 +7,15 @@
 
 #include "EApp.h"
 #include "../Figures/Figure.hpp"
+#include "../Canvas.hpp"
+#include "../Figures/MovableSquare.h"
 
 struct EFigureDeath : EApp
 {
-    Figure *f1;
-    Figure *f2;
-    EFigureDeath(Figure *f1, Figure *f2 = nullptr);
+    SPFigure* f1 = nullptr;
+    SPFigure* f2 = nullptr;
+    EFigureDeath(SPFigure *f1);
+    EFigureDeath(SPFigure *f1, SPFigure *f2);
     EFigureDeath() = default;
     virtual ~EFigureDeath();
     virtual const char* what() const;
