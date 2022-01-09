@@ -1,4 +1,0 @@
-ToolSet: w64 6.0 (local)@E:\installed_CodeBlocks20\CodeBlocks20\MinGW
-Options: 
-
-Options:

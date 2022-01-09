@@ -17,3 +17,4 @@ const char *EFigureDeath::what() const {
     return "Some figures are going to die";
 }
 
+

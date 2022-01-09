@@ -1,3 +1,0 @@
-"E:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\task0.dir/objects.a
-E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\ar.exe cr CMakeFiles\task0.dir/objects.a @CMakeFiles\task0.dir\objects1.rsp
-E:\installed_CodeBlocks20\CodeBlocks20\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\task0.dir/objects.a -Wl,--no-whole-archive -o task0.exe -Wl,--out-implib,libtask0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\task0.dir\linklibs.rsp
