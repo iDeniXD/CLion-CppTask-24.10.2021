@@ -11,9 +11,9 @@ private:
     int fps, width, height;
 public:
     Screen(int f, int w, int h);
-    int getFPS();
-    int getWidth();
-    int getHeight();
+    int GetFPS();
+    int GetWidth();
+    int GetHeight();
 };
 
 #endif //TASK0_SCREEN_H

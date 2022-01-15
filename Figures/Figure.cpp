@@ -11,8 +11,8 @@
 
 Figure::Figure(unsigned char color):
     color_(color),
-    coords(rand() % (Preferences::Instance()->GetScreen().getWidth() - 201) + 100,
-           rand() % (Preferences::Instance()->GetScreen().getHeight() - 201) + 100),
+    coords(rand() % (Preferences::Instance()->GetScreen().GetWidth() - 201) + 100,
+           rand() % (Preferences::Instance()->GetScreen().GetHeight() - 201) + 100),
     velocity(10.0 - rand() % 21,
              10.0 - rand() % 21)
 {}
@@ -34,7 +34,7 @@ void Figure::Bounce(Border border, double centerToEdge) {
     {
         case Border::BOTTOM:
             SetdY(-GetdY());
-            SetY(Preferences::Instance()->GetScreen().getHeight() - centerToEdge);
+            SetY(Preferences::Instance()->GetScreen().GetHeight() - centerToEdge);
 
             break;
         case Border::TOP:
@@ -49,7 +49,7 @@ void Figure::Bounce(Border border, double centerToEdge) {
         break;
         case Border::RIGHT:
             SetdX(-GetdX());
-            SetX(Preferences::Instance()->GetScreen().getWidth() - centerToEdge);
+            SetX(Preferences::Instance()->GetScreen().GetWidth() - centerToEdge);
 
             break;
     }
@@ -57,13 +57,13 @@ void Figure::Bounce(Border border, double centerToEdge) {
 void Figure::CheckMoveX(double centerToEdge) {
     if (GetX() - centerToEdge + GetdX() < 1.0)
         throw EBorderCollision(Border::LEFT);
-    if (GetX() + centerToEdge + GetdX() > Preferences::Instance()->GetScreen().getWidth())
+    if (GetX() + centerToEdge + GetdX() > Preferences::Instance()->GetScreen().GetWidth())
         throw EBorderCollision(Border::RIGHT);
 }
 void Figure::CheckMoveY(double centerToEdge) {
     if (GetY() - centerToEdge + GetdY() < 1.0)
         throw EBorderCollision(Border::TOP);
-    if (GetY() + centerToEdge + GetdY() > Preferences::Instance()->GetScreen().getHeight())
+    if (GetY() + centerToEdge + GetdY() > Preferences::Instance()->GetScreen().GetHeight())
         throw EBorderCollision(Border::BOTTOM);
 }
 

@@ -5,9 +5,9 @@
 int main(int argc, char **argv) {
     srand( time(0) );
     AllegroApp app;
-    if ( !app.Init( Preferences::Instance()->GetScreen().getWidth(),
-                    Preferences::Instance()->GetScreen().getHeight(),
-                    Preferences::Instance()->GetScreen().getFPS() ) )
+    if ( !app.Init(Preferences::Instance()->GetScreen().GetWidth(),
+                   Preferences::Instance()->GetScreen().GetHeight(),
+                   Preferences::Instance()->GetScreen().GetFPS() ) )
     {
         return 1;
     }

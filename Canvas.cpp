@@ -111,11 +111,11 @@ void Canvas::Remove(Figure *f)
 void Canvas::CountIfTest() {
     cout << "Figure in the upper part of the screen: " << count_if(figures_.begin(),figures_.end(),[](SPFigure &f)
     {
-        return f->GetY() <= Preferences::Instance()->GetScreen().getHeight() / 2;
+        return f->GetY() <= Preferences::Instance()->GetScreen().GetHeight() / 2;
     }) << endl;
     cout << "Figure in the lower part of the screen: " << count_if(figures_.begin(),figures_.end(),[](SPFigure &f)
     {
-        return f->GetY() > Preferences::Instance()->GetScreen().getHeight() / 2;
+        return f->GetY() > Preferences::Instance()->GetScreen().GetHeight() / 2;
     }) << endl;
 }
 void Canvas::AccumulateTest() {
@@ -123,6 +123,30 @@ void Canvas::AccumulateTest() {
 }
 float Canvas::SumArea(float acc, const SPFigure& f) {
     return Figure::SumArea(acc,&*f);
+}
+void Canvas::CalcQuadrantTest() {
+    list<int> quandrants = CalcQuadrant();
+    for (int i = 0; i < 4; ++i) {
+        cout << "q" << i+1 << ": " << *std::next(quandrants.begin(),i) << endl;
+    }
+    cout << endl;
+}
+initializer_list<int> Canvas::CalcQuadrant() {
+    int q1 = 0, q2 = 0, q3 = 0, q4 = 0;
+    for_each(figures_.begin(),figures_.end(),[&q1, &q2, &q3, &q4](SPFigure f)
+    {
+        if (f->GetX() <= Preferences::Instance()->GetScreen().GetWidth() / 2)
+            if (f->GetY() <= Preferences::Instance()->GetScreen().GetHeight() / 2)
+                q1++;
+            else
+                q3++;
+        else
+        if (f->GetY() <= Preferences::Instance()->GetScreen().GetHeight() / 2)
+            q2++;
+        else
+            q4++;
+    });
+    return {q1,q2,q3,q4};
 }
 
 
@@ -166,6 +190,9 @@ void Canvas::OnKeyDown(int keycode) {
         case ALLEGRO_KEY_G:
             AccumulateTest();
             break;
+        case ALLEGRO_KEY_Q:
+            CalcQuadrantTest();
+            break;
         case ALLEGRO_KEY_S:
             SaveFigures();
             break;
@@ -184,5 +211,7 @@ void Canvas::OnKeyPressed(int keycode) {
             movableSquare->OnKeyPressed(keycode);
     }
 }
+
+
 
 
