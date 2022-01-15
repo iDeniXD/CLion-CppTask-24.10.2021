@@ -11,12 +11,12 @@ Screen::Screen(int f, int w, int h) :
 {
 }
 
-int Screen::getFPS() {
+int Screen::GetFPS() {
     return fps;
 }
-int Screen::getHeight() {
+int Screen::GetHeight() {
     return height;
 }
-int Screen::getWidth() {
+int Screen::GetWidth() {
     return width;
 }

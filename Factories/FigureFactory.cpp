@@ -11,6 +11,15 @@
 #include <stdlib.h>
 #include <time.h>
 
+list<Figure *> FigureFactory::Create(initializer_list<Type> types) {
+    list<Figure *> figures;
+    for (const auto &type : types)
+    {
+        figures.push_back(Create(type));
+    }
+    return figures;
+}
+
 Figure *FigureFactory::Create(Type type)
 {
     switch(type)
@@ -72,3 +81,4 @@ Figure *FigureFactory::FigureOutOfType(string s)
         throw std::invalid_argument("Unknown figure "+s);
     }
 }
+

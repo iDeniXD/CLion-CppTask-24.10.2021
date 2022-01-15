@@ -20,8 +20,8 @@ Canvas::~Canvas(){}
 void Canvas::Draw()
 {
     al_clear_to_color( al_map_rgb( 0, 0, 0 ) ); // Clear screen
-    for(list<SPFigure>::iterator it = figures_.begin(); it != figures_.end(); ++it) {
-        (*it)->Draw();
+    for (auto figure:figures_) {
+        figure->Draw();
     }
 }
 void Canvas::NextFrame()
@@ -31,16 +31,15 @@ void Canvas::NextFrame()
     ClearDeleted();
 }
 void Canvas::MoveFigures() {
-    for_each(figures_.begin(),figures_.end(),[this](SPFigure &f)
-    {
-        try
-        {
-            f->Move();
-            if (*prev(figures_.end()) != f)
-                for_each(next(std::find(figures_.begin(), figures_.end(), f)),figures_.end(),[&f](SPFigure &f2)
-                {
-                    math2D::CheckCollision(f,f2);
-                });
+    for (auto figure : figures_) {
+        try {
+            figure->Move();
+            if (*prev(figures_.end()) != figure)
+            {
+                for (auto figure2 : figures_) {
+                    math2D::CheckCollision(figure,figure2);
+                }
+            }
         }
         catch (EFigureCollision& collisionError)
         {
@@ -57,22 +56,21 @@ void Canvas::MoveFigures() {
         }
         catch (const EDivide& e)
         {
-            newFigures.push_back(SPFigure(f->Divide()));
+            newFigures.push_back(SPFigure(figure->Divide()));
         }
-    });
+    }
 }
 void Canvas::AddNew() {
-    for_each(newFigures.begin(),newFigures.end(),[this](const SPFigure& f)
-    {
-        figures_.push_back(f);
-    });
+    for (const auto& figure : newFigures) {
+        figures_.push_back(figure);
+    }
     newFigures.clear();
 }
 void Canvas::ClearDeleted() {
-    for_each(toDel_.begin(),toDel_.end(),[this](const SPFigure& f)
+    for (const auto &figure : toDel_)
     {
-        figures_.remove(f);
-    });
+        figures_.remove(figure);
+    }
     toDel_.clear();
 }
 
@@ -99,13 +97,13 @@ void Canvas::Remove(int i)
 }
 void Canvas::Remove(Figure *f)
 {
-    for_each(figures_.begin(),figures_.end(),[this, &f](SPFigure &f1)
+    for (const auto &figure : figures_)
     {
-        if (&*f1==f) {
-            toDel_.push_back(f1); // Look up big comment before Canvas::Remove
+        if (&*figure==f) {
+            toDel_.push_back(figure); // Look up big comment before Canvas::Remove
             return;
         }
-    });
+    }
 }
 
 
@@ -113,11 +111,11 @@ void Canvas::Remove(Figure *f)
 void Canvas::CountIfTest() {
     cout << "Figure in the upper part of the screen: " << count_if(figures_.begin(),figures_.end(),[](SPFigure &f)
     {
-        return f->GetY() <= Preferences::Instance()->GetScreen().getHeight() / 2;
+        return f->GetY() <= Preferences::Instance()->GetScreen().GetHeight() / 2;
     }) << endl;
     cout << "Figure in the lower part of the screen: " << count_if(figures_.begin(),figures_.end(),[](SPFigure &f)
     {
-        return f->GetY() > Preferences::Instance()->GetScreen().getHeight() / 2;
+        return f->GetY() > Preferences::Instance()->GetScreen().GetHeight() / 2;
     }) << endl;
 }
 void Canvas::AccumulateTest() {
@@ -125,6 +123,30 @@ void Canvas::AccumulateTest() {
 }
 float Canvas::SumArea(float acc, const SPFigure& f) {
     return Figure::SumArea(acc,&*f);
+}
+void Canvas::CalcQuadrantTest() {
+    list<int> quandrants = CalcQuadrant();
+    for (int i = 0; i < 4; ++i) {
+        cout << "q" << i+1 << ": " << *std::next(quandrants.begin(),i) << endl;
+    }
+    cout << endl;
+}
+initializer_list<int> Canvas::CalcQuadrant() {
+    int q1 = 0, q2 = 0, q3 = 0, q4 = 0;
+    for_each(figures_.begin(),figures_.end(),[&q1, &q2, &q3, &q4](SPFigure f)
+    {
+        if (f->GetX() <= Preferences::Instance()->GetScreen().GetWidth() / 2)
+            if (f->GetY() <= Preferences::Instance()->GetScreen().GetHeight() / 2)
+                q1++;
+            else
+                q3++;
+        else
+        if (f->GetY() <= Preferences::Instance()->GetScreen().GetHeight() / 2)
+            q2++;
+        else
+            q4++;
+    });
+    return {q1,q2,q3,q4};
 }
 
 
@@ -140,10 +162,10 @@ void Canvas::SaveFigures() {
     cout << "Saving figures..." << endl;
 
     fstream file("figures.txt",fstream::out);
-    for_each(figures_.begin(),figures_.end(),[&file](SPFigure &f)
+    for (const auto &figure : figures_)
     {
-        file << f;
-    });
+        file << figure;
+    }
     file.close();
 }
 void Canvas::LoadFigures() {
@@ -168,6 +190,9 @@ void Canvas::OnKeyDown(int keycode) {
         case ALLEGRO_KEY_G:
             AccumulateTest();
             break;
+        case ALLEGRO_KEY_Q:
+            CalcQuadrantTest();
+            break;
         case ALLEGRO_KEY_S:
             SaveFigures();
             break;
@@ -179,11 +204,14 @@ void Canvas::OnKeyDown(int keycode) {
 }
 
 void Canvas::OnKeyPressed(int keycode) {
-    for_each(figures_.begin(), figures_.end(), [keycode](SPFigure &f) {
-        MovableSquare *movableSquare = dynamic_cast<MovableSquare *>(&*f);
+    for (const auto &figure : figures_)
+    {
+        MovableSquare *movableSquare = dynamic_cast<MovableSquare *>(&*figure);
         if (movableSquare)
             movableSquare->OnKeyPressed(keycode);
-    });
+    }
 }
+
+
 
 

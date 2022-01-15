@@ -15,10 +15,10 @@ protected:
     int health_, maxHealth_;
 public:
     MovableSquare(double a = 10, int health = 100);
-    ~MovableSquare();
+    ~MovableSquare() override;
 
-    virtual bool MbyDivide();
-    virtual void Draw();
+    bool MbyDivide() override;
+    void Draw() override;
     virtual void Collided(Figure *f);
 
     void Up();
@@ -31,10 +31,10 @@ public:
 
     void SetHealth(int health);
 
-    virtual string ToString() const;
-    virtual void FromString(string &s);
+    string ToString() const override;
+    void FromString(string &s) override;
 
-    virtual Figure* Divide();
+    Figure* Divide() override;
 
 
     static std::vector<int> GetUsedKeys();

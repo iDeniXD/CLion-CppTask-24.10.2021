@@ -6,6 +6,7 @@
 #define TASK0_FIGUREFACTORY_H
 
 #include "../Figures/Figure.hpp"
+#include "list"
 
 class FigureFactory
 {
@@ -17,6 +18,8 @@ public:
         RandomMovable,
         Input
     };
+
+    static list<Figure *> Create(initializer_list<Type> types);
 
     static Figure *Create(Type type);
 

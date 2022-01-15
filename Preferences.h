@@ -13,6 +13,9 @@ public:
     static Preferences *Instance();
 
     Screen GetScreen();
+
+    Preferences(const Preferences&) = delete;
+    Preferences &operator=(const Preferences&) = delete;
 private:
     Preferences();
     static Preferences *instance;

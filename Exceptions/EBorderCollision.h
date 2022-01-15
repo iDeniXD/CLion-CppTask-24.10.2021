@@ -18,10 +18,10 @@ struct EBorderCollision : EApp
     };
 
     EBorderCollision(Border border);
-    ~EBorderCollision();
+    ~EBorderCollision() override;
 
     Border border;
-    virtual const char* what() const;
+    const char* what() const override;
     virtual const Border &GetBorder();
 };
 

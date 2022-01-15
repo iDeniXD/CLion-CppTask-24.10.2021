@@ -17,9 +17,9 @@ struct EFigureCollision : EApp
     SPFigure* f2;
 
     EFigureCollision(SPFigure* f1, SPFigure* f2);
-    virtual ~EFigureCollision();
+    ~EFigureCollision() override;
 
-    virtual const char* what() const;
+    const char* what() const override;
 };
 
 #endif //TASK0_EFIGURECOLLISION_H
