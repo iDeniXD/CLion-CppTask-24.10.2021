@@ -9,16 +9,16 @@ protected:
     double a_;
 public:
     Square(double a = 10, unsigned char color = 1);
-    ~Square();
+    ~Square() override;
 
-    virtual void Draw();
-    virtual void Move();
+    void Draw() override;
+    void Move() override;
 
-    virtual double DistanceToEdgeFacingPoint(Point coords0);
+    double DistanceToEdgeFacingPoint(Point coords0) override;
 
-    virtual string ToString() const;
-    virtual void FromString(string &s);
+    string ToString() const override;
+    void FromString(string &s) override;
 
-    virtual Figure* Divide();
+    Figure* Divide() override;
 };
 #endif // SQUARE_H

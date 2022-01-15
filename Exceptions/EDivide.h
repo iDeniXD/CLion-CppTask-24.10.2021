@@ -11,8 +11,8 @@
 struct EDivide : EApp
 {
     EDivide();
-    virtual ~EDivide();
-    virtual const char* what() const;
+    ~EDivide() override;
+    const char* what() const override;
 };
 
 #endif //TASK0_EDIVIDE_H

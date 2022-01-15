@@ -9,16 +9,16 @@ protected:
     double r_;
 public:
     Circle(double r = 10, unsigned char color = 1);
-    ~Circle();
+    ~Circle() override;
 
-    virtual void Draw();
-    virtual void Move();
+    void Draw() override;
+    void Move() override;
 
-    virtual double DistanceToEdgeFacingPoint(Point coords0);
+    double DistanceToEdgeFacingPoint(Point coords0) override;
 
-    virtual string ToString() const;
-    virtual void FromString(string &s);
+    string ToString() const override;
+    void FromString(string &s) override;
 
-    virtual Figure* Divide();
+    Figure* Divide() override;
 };
 #endif // CIRCLE_H

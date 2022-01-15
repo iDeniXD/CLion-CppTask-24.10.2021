@@ -11,11 +11,11 @@ class AllegroApp : public AllegroBase
 {
 public:
     AllegroApp();
-    ~AllegroApp();
+    ~AllegroApp() override;
 
-    virtual void Fps();
-    virtual void Draw();
-    virtual void OnKeyDown(const ALLEGRO_KEYBOARD_EVENT &keyboard );
+    void Fps() override;
+    void Draw() override;
+    void OnKeyDown(const ALLEGRO_KEYBOARD_EVENT &keyboard ) override;
 
 private:
     Canvas canvas;
