@@ -7,14 +7,6 @@ AllegroApp::AllegroApp() :
     canvas.Add(FigureFactory::Create(FigureFactory::RandomMovable));
     canvas.Add(FigureFactory::Create(FigureFactory::RandomCircle));
     canvas.Add(FigureFactory::Create(FigureFactory::RandomSquare));
-    canvas.Add(FigureFactory::Create(FigureFactory::RandomCircle));
-    canvas.Add(FigureFactory::Create(FigureFactory::RandomSquare));
-    canvas.Add(FigureFactory::Create(FigureFactory::RandomCircle));
-    canvas.Add(FigureFactory::Create(FigureFactory::RandomSquare));
-    canvas.Add(FigureFactory::Create(FigureFactory::RandomCircle));
-    canvas.Add(FigureFactory::Create(FigureFactory::RandomSquare));
-    canvas.Add(FigureFactory::Create(FigureFactory::RandomCircle));
-    canvas.Add(FigureFactory::Create(FigureFactory::RandomSquare));
     try {
         canvas.Add(FigureFactory::Create(FigureFactory::Input));
     }
