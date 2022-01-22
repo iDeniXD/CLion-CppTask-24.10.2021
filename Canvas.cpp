@@ -125,13 +125,13 @@ float Canvas::SumArea(float acc, const SPFigure& f) {
     return Figure::SumArea(acc,&*f);
 }
 void Canvas::CalcQuadrantTest() {
-    list<int> quandrants = CalcQuadrant();
+    list<int> quadrants = CalcQuadrant();
     for (int i = 0; i < 4; ++i) {
-        cout << "q" << i+1 << ": " << *std::next(quandrants.begin(),i) << endl;
+        cout << "q" << i+1 << ": " << *std::next(quadrants.begin(), i) << endl;
     }
     cout << endl;
 }
-initializer_list<int> Canvas::CalcQuadrant() {
+list<int> Canvas::CalcQuadrant() {
     int q1 = 0, q2 = 0, q3 = 0, q4 = 0;
     for_each(figures_.begin(),figures_.end(),[&q1, &q2, &q3, &q4](SPFigure f)
     {
@@ -146,7 +146,7 @@ initializer_list<int> Canvas::CalcQuadrant() {
         else
             q4++;
     });
-    return {q1,q2,q3,q4};
+    return list<int>{q1,q2,q3,q4};
 }
 
 

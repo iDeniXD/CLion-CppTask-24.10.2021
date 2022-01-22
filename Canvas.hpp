@@ -34,7 +34,7 @@ public:
     void AccumulateTest();
     static float SumArea(float acc, const SPFigure& f);
     void CalcQuadrantTest();
-    initializer_list<int> CalcQuadrant();
+    list<int> CalcQuadrant();
 
     void ClearMemory();
 
