@@ -44,6 +44,7 @@ public:
     void OnKeyDown(int keycode);
     void OnKeyPressed(int keycode);
 
+    void TestMoveConstructor();
 };
 
 #endif // CANVAS_H

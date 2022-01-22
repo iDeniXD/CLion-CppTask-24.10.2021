@@ -10,6 +10,11 @@ Circle::Circle(double r, unsigned char color) :
 {
     mass_ = 3.14*r*r;
 }
+Circle::Circle(Circle &&other) :
+        Figure(move(other))
+{
+    std::cout << "Move of Circle class" << std::endl;
+}
 Circle::~Circle(){}
 
 
@@ -72,5 +77,4 @@ Figure *Circle::Divide() {
 
     return newFigure;
 }
-
 

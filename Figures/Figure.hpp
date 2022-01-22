@@ -15,7 +15,8 @@ protected:
     unsigned char color_;
 
 public:
-    Figure(unsigned char color = 1);
+    explicit Figure(unsigned char color = 1);
+    Figure(Figure &&other);
     ~Figure();
 
     virtual void Draw() = 0;

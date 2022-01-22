@@ -15,6 +15,7 @@ protected:
     int health_, maxHealth_;
 public:
     MovableSquare(double a = 10, int health = 100);
+    MovableSquare(MovableSquare &&other);
     ~MovableSquare() override;
 
     bool MbyDivide() override;

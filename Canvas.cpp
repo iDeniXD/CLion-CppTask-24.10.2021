@@ -179,6 +179,10 @@ void Canvas::LoadFigures() {
     while (file >> f)
         Add(f);
 }
+void Canvas::TestMoveConstructor() {
+    Circle a = move(Circle(20,255));
+//    figures_.push_back(SPFigure(&a)); // Почему ошибка?
+}
 
 
 
@@ -199,7 +203,9 @@ void Canvas::OnKeyDown(int keycode) {
         case ALLEGRO_KEY_L:
             LoadFigures();
             break;
-
+        case ALLEGRO_KEY_M:
+            TestMoveConstructor();
+            break;
     }
 }
 
@@ -211,6 +217,7 @@ void Canvas::OnKeyPressed(int keycode) {
             movableSquare->OnKeyPressed(keycode);
     }
 }
+
 
 
 

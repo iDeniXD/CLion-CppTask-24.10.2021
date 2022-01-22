@@ -26,6 +26,15 @@ MovableSquare::MovableSquare(double a, int health) :
 
     maxHealth_ = health_;
 }
+MovableSquare::MovableSquare(MovableSquare &&other) :
+        Square(move(other))
+{
+    std::cout << "Move of MovableSquare class" << std::endl;
+    health_ = other.health_;
+    other.health_ = 0;
+    maxHealth_ = other.maxHealth_;
+    maxHealth_ = 0;
+}
 MovableSquare::~MovableSquare(){}
 
 
@@ -141,5 +150,6 @@ std::vector<int> used_keys_ = {
 vector<int> MovableSquare::GetUsedKeys() {
     return used_keys_;
 }
+
 
 
