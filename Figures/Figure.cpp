@@ -16,6 +16,19 @@ Figure::Figure(unsigned char color):
     velocity(10.0 - rand() % 21,
              10.0 - rand() % 21)
 {}
+Figure::Figure(Figure &&other) {
+    std::cout << "Move of Figure class" << std::endl;
+
+    coords = other.coords;
+    other.coords = 0;
+    velocity = other.velocity;
+    other.velocity = 0;
+
+    mass_ = other.mass_;
+    other.mass_ = 0;
+    color_ = other.color_;
+    other.color_ = 0;
+}
 Figure::~Figure(){}
 
 
@@ -228,3 +241,4 @@ string Figure::GetParameter(string &s, const string &field) {
     // tmp = 23
     return tmp;
 }
+

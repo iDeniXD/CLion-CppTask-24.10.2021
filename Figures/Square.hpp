@@ -9,6 +9,7 @@ protected:
     double a_;
 public:
     Square(double a = 10, unsigned char color = 1);
+    Square(Square &&other);
     ~Square() override;
 
     void Draw() override;

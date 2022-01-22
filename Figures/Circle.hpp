@@ -9,6 +9,7 @@ protected:
     double r_;
 public:
     Circle(double r = 10, unsigned char color = 1);
+    Circle(Circle && other);
     ~Circle() override;
 
     void Draw() override;

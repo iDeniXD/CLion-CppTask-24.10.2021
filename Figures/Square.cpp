@@ -10,6 +10,11 @@ Square::Square(double a, unsigned char color) :
 {
     mass_ = a * a;
 }
+Square::Square(Square &&other) :
+    Figure(move(other))
+{
+    std::cout << "Move of Square class" << std::endl;
+}
 Square::~Square(){}
 
 
@@ -88,4 +93,5 @@ Figure* Square::Divide() {
 
     return newFigure;
 }
+
 
